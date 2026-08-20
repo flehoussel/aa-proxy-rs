@@ -220,7 +220,7 @@
   # Useful for ffplay/VLC debugging and stream inspection.
   # 
   # Set to 0 or leave unset to disable.
-  media_dump_base_port = 1
+  media_dump_base_port = 0
 
 ### 🕵️ MITM / 🖥️ Display injection
   # TOML file used to store injected display service profiles. Supports multiple main/cluster/auxiliary media sink entries. Display IDs are assigned automatically from the current SDR. Default: `/data/aa-proxy-rs/inject-displays.toml`. Supersedes the legacy `inject_display_types` / `inject_cluster_*` / `inject_aux_*` fields below (kept for backward compatibility but ignored at runtime).
@@ -264,7 +264,7 @@
   add_vendor_channel = true
 
   # Enable developer mode. Emulates a Google Head Unit, allowing installation and use of apps that are normally unavailable. Commonly used by developers when testing or developing new applications.
-  developer_mode = true
+  developer_mode = false
 
   # Remove the Bluetooth service from the `service discovery response`. May help on head units with integrated wireless Android Auto.
   remove_bluetooth = false
@@ -279,7 +279,7 @@
   remove_wifi = false
 
   # Enable a Waze workaround for LHT (Left-Hand Traffic) countries by swapping U_TURN_LEFT with U_TURN_RIGHT in navigation and HUD.
-  waze_lht_workaround = true
+  waze_lht_workaround = false
 
   # Stop automatic reconnection after manually selecting `Disconnect` in Android Auto on the phone. aa-proxy will not attempt to reconnect until the next restart or until a Bluetooth connection is initiated manually from the phone.
   stop_on_disconnect = false
