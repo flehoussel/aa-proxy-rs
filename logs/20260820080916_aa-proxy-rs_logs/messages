@@ -1,0 +1,541 @@
+Jan  1 00:00:03 aa-proxy syslog.info syslogd started: BusyBox v1.37.0
+Jan  1 00:00:03 aa-proxy user.info console: Starting klogd: OK
+Jan  1 00:00:03 aa-proxy kern.notice kernel: klogd started: BusyBox v1.37.0 (2026-08-10 07:26:09 UTC)
+Jan  1 00:00:03 aa-proxy kern.info kernel: [    0.000000] Booting Linux on physical CPU 0x0000000000 [0x410fd083]
+Jan  1 00:00:03 aa-proxy kern.notice kernel: [    0.000000] Linux version 6.12.61-v8 (buildroot@2893b27da37f) (aarch64-linux-gcc.br_real (Buildroot 2021.11-18033-g83947c7bb6) 14.3.0, GNU ld (GNU Binutils) 2.43.1) #4 SMP PREEMPT Mon Aug 10 15:29:06 UTC 2026
+Jan  1 00:00:03 aa-proxy kern.notice kernel: [    0.000000] random: crng init done
+Jan  1 00:00:03 aa-proxy kern.info kernel: [    0.000000] Machine model: Raspberry Pi 4 Model B Rev 1.1
+Jan  1 00:00:03 aa-proxy kern.info kernel: [    0.000000] efi: UEFI not found.
+Jan  1 00:00:03 aa-proxy kern.info kernel: [    0.000000] Reserved memory: created CMA memory pool at 0x000000002c000000, size 64 MiB
+Jan  1 00:00:03 aa-proxy kern.info kernel: [    0.000000] OF: reserved mem: initialized node linux,cma, compatible id shared-dma-pool
+Jan  1 00:00:03 aa-proxy kern.info kernel: [    0.000000] OF: reserved mem: 0x000000002c000000..0x000000002fffffff (65536 KiB) map reusable linux,cma
+Jan  1 00:00:03 aa-proxy kern.info kernel: [    0.000000] OF: reserved mem: 0x000000003ef743e0..0x000000003ef74427 (0 KiB) nomap non-reusable nvram@0
+Jan  1 00:00:03 aa-proxy kern.info kernel: [    0.000000] OF: reserved mem: 0x000000003ef73fa0..0x000000003ef7439f (1 KiB) nomap non-reusable nvram@1
+Jan  1 00:00:03 aa-proxy kern.info kernel: [    0.000000] NUMA: Faking a node at [mem 0x0000000000000000-0x00000000fbffffff]
+Jan  1 00:00:03 aa-proxy kern.info kernel: [    0.000000] NODE_DATA(0) allocated [mem 0xfb7f2180-0xfb7f4e7f]
+Jan  1 00:00:03 aa-proxy kern.info kernel: [    0.000000] Zone ranges:
+Jan  1 00:00:03 aa-proxy kern.info kernel: [    0.000000]   DMA      [mem 0x0000000000000000-0x000000003fffffff]
+Jan  1 00:00:03 aa-proxy kern.info kernel: [    0.000000]   DMA32    [mem 0x0000000040000000-0x00000000fbffffff]
+Jan  1 00:00:03 aa-proxy kern.info kernel: [    0.000000]   Normal   empty
+Jan  1 00:00:03 aa-proxy kern.info kernel: [    0.000000] Movable zone start for each node
+Jan  1 00:00:03 aa-proxy kern.info kernel: [    0.000000] Early memory node ranges
+Jan  1 00:00:03 aa-proxy kern.info kernel: [    0.000000]   node   0: [mem 0x0000000000000000-0x000000003bffffff]
+Jan  1 00:00:03 aa-proxy kern.info kernel: [    0.000000]   node   0: [mem 0x0000000040000000-0x00000000fbffffff]
+Jan  1 00:00:03 aa-proxy kern.info kernel: [    0.000000] Initmem setup node 0 [mem 0x0000000000000000-0x00000000fbffffff]
+Jan  1 00:00:03 aa-proxy kern.info kernel: [    0.000000] On node 0, zone DMA32: 16384 pages in unavailable ranges
+Jan  1 00:00:03 aa-proxy kern.info kernel: [    0.000000] On node 0, zone DMA32: 16384 pages in unavailable ranges
+Jan  1 00:00:03 aa-proxy kern.info kernel: [    0.000000] percpu: Embedded 21 pages/cpu s48472 r8192 d29352 u86016
+Jan  1 00:00:03 aa-proxy kern.debug kernel: [    0.000000] pcpu-alloc: s48472 r8192 d29352 u86016 alloc=21*4096
+Jan  1 00:00:03 aa-proxy kern.debug kernel: [    0.000000] pcpu-alloc: [0] 0 [0] 1 [0] 2 [0] 3 
+Jan  1 00:00:03 aa-proxy kern.info kernel: [    0.000000] Detected PIPT I-cache on CPU0
+Jan  1 00:00:03 aa-proxy kern.info kernel: [    0.000000] CPU features: detected: Spectre-v2
+Jan  1 00:00:03 aa-proxy kern.info kernel: [    0.000000] CPU features: detected: Spectre-v4
+Jan  1 00:00:03 aa-proxy kern.info kernel: [    0.000000] CPU features: detected: Spectre-BHB
+Jan  1 00:00:03 aa-proxy kern.info kernel: [    0.000000] CPU features: detected: ARM erratum 1742098
+Jan  1 00:00:03 aa-proxy kern.info kernel: [    0.000000] CPU features: detected: ARM errata 1165522, 1319367, or 1530923
+Jan  1 00:00:03 aa-proxy kern.info kernel: [    0.000000] alternatives: applying boot alternatives
+Jan  1 00:00:03 aa-proxy kern.notice kernel: [    0.000000] Kernel command line: coherent_pool=1M 8250.nr_uarts=1 snd_bcm2835.enable_headphones=0 cgroup_disable=memory numa_policy=interleave nvme.max_host_mem_size_mb=0 bcm2708_fb.fbwidth=0 bcm2708_fb.fbheight=0 bcm2708_fb.
+Jan  1 00:00:03 aa-proxy kern.info kernel: [    0.000000] cgroup: Disabling memory control group subsystem
+Jan  1 00:00:03 aa-proxy kern.info kernel: [    0.000000] mempolicy: NUMA default policy overridden to 'interleave:0'
+Jan  1 00:00:03 aa-proxy kern.info kernel: [    0.000000] Dentry cache hash table entries: 524288 (order: 10, 4194304 bytes, linear)
+Jan  1 00:00:03 aa-proxy kern.info kernel: [    0.000000] Inode-cache hash table entries: 262144 (order: 9, 2097152 bytes, linear)
+Jan  1 00:00:03 aa-proxy kern.info kernel: [    0.000000] Fallback order for Node 0: 0 
+Jan  1 00:00:03 aa-proxy kern.info kernel: [    0.000000] Built 1 zonelists, mobility grouping on.  Total pages: 1015808
+Jan  1 00:00:03 aa-proxy kern.info kernel: [    0.000000] Policy zone: DMA32
+Jan  1 00:00:03 aa-proxy kern.info kernel: [    0.000000] mem auto-init: stack:all(zero), heap alloc:off, heap free:off
+Jan  1 00:00:03 aa-proxy kern.info kernel: [    0.000000] software IO TLB: area num 4.
+Jan  1 00:00:03 aa-proxy kern.info kernel: [    0.000000] software IO TLB: mapped [mem 0x0000000038000000-0x000000003c000000] (64MB)
+Jan  1 00:00:03 aa-proxy kern.info kernel: [    0.000000] SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=4, Nodes=1
+Jan  1 00:00:03 aa-proxy kern.info kernel: [    0.000000] rcu: Preemptible hierarchical RCU implementation.
+Jan  1 00:00:03 aa-proxy kern.info kernel: [    0.000000] rcu: 	RCU event tracing is enabled.
+Jan  1 00:00:03 aa-proxy kern.info kernel: [    0.000000] 	Trampoline variant of Tasks RCU enabled.
+Jan  1 00:00:03 aa-proxy kern.info kernel: [    0.000000] 	Tracing variant of Tasks RCU enabled.
+Jan  1 00:00:03 aa-proxy kern.info kernel: [    0.000000] rcu: RCU calculated value of scheduler-enlistment delay is 25 jiffies.
+Jan  1 00:00:03 aa-proxy kern.info kernel: [    0.000000] RCU Tasks: Setting shift to 2 and lim to 1 rcu_task_cb_adjust=1 rcu_task_cpu_ids=4.
+Jan  1 00:00:03 aa-proxy kern.info kernel: [    0.000000] RCU Tasks Trace: Setting shift to 2 and lim to 1 rcu_task_cb_adjust=1 rcu_task_cpu_ids=4.
+Jan  1 00:00:03 aa-proxy kern.info kernel: [    0.000000] NR_IRQS: 64, nr_irqs: 64, preallocated irqs: 0
+Jan  1 00:00:03 aa-proxy kern.info kernel: [    0.000000] Root IRQ handler: gic_handle_irq
+Jan  1 00:00:03 aa-proxy kern.info kernel: [    0.000000] GIC: Using split EOI/Deactivate mode
+Jan  1 00:00:03 aa-proxy kern.info kernel: [    0.000000] rcu: srcu_init: Setting srcu_struct sizes based on contention.
+Jan  1 00:00:03 aa-proxy kern.info kernel: [    0.000000] arch_timer: cp15 timer(s) running at 54.00MHz (phys).
+Jan  1 00:00:03 aa-proxy kern.info kernel: [    0.000000] clocksource: arch_sys_counter: mask: 0xffffffffffffff max_cycles: 0xc743ce346, max_idle_ns: 440795203123 ns
+Jan  1 00:00:03 aa-proxy kern.info kernel: [    0.000000] sched_clock: 56 bits at 54MHz, resolution 18ns, wraps every 4398046511102ns
+Jan  1 00:00:03 aa-proxy kern.info kernel: [    0.000138] Console: colour dummy device 80x25
+Jan  1 00:00:03 aa-proxy kern.info kernel: [    0.000189] Calibrating delay loop (skipped), value calculated using timer frequency.. 108.00 BogoMIPS (lpj=216000)
+Jan  1 00:00:03 aa-proxy kern.info kernel: [    0.000196] pid_max: default: 32768 minimum: 301
+Jan  1 00:00:03 aa-proxy kern.info kernel: [    0.000226] LSM: initializing lsm=capability
+Jan  1 00:00:03 aa-proxy kern.info kernel: [    0.000305] Mount-cache hash table entries: 8192 (order: 4, 65536 bytes, linear)
+Jan  1 00:00:03 aa-proxy kern.info kernel: [    0.000329] Mountpoint-cache hash table entries: 8192 (order: 4, 65536 bytes, linear)
+Jan  1 00:00:03 aa-proxy kern.info kernel: [    0.001622] rcu: Hierarchical SRCU implementation.
+Jan  1 00:00:03 aa-proxy kern.info kernel: [    0.001628] rcu: 	Max phase no-delay instances is 1000.
+Jan  1 00:00:03 aa-proxy kern.info kernel: [    0.001754] Timer migration: 1 hierarchy levels; 8 children per group; 1 crossnode level
+Jan  1 00:00:03 aa-proxy kern.info kernel: [    0.002292] EFI services will not be available.
+Jan  1 00:00:03 aa-proxy kern.info kernel: [    0.002446] smp: Bringing up secondary CPUs ...
+Jan  1 00:00:03 aa-proxy kern.info kernel: [    0.002738] Detected PIPT I-cache on CPU1
+Jan  1 00:00:03 aa-proxy kern.info kernel: [    0.002801] CPU1: Booted secondary processor 0x0000000001 [0x410fd083]
+Jan  1 00:00:03 aa-proxy kern.info kernel: [    0.003123] Detected PIPT I-cache on CPU2
+Jan  1 00:00:03 aa-proxy kern.info kernel: [    0.003160] CPU2: Booted secondary processor 0x0000000002 [0x410fd083]
+Jan  1 00:00:03 aa-proxy kern.info kernel: [    0.003451] Detected PIPT I-cache on CPU3
+Jan  1 00:00:03 aa-proxy kern.info kernel: [    0.003489] CPU3: Booted secondary processor 0x0000000003 [0x410fd083]
+Jan  1 00:00:03 aa-proxy kern.info kernel: [    0.003538] smp: Brought up 1 node, 4 CPUs
+Jan  1 00:00:03 aa-proxy kern.info kernel: [    0.003543] SMP: Total of 4 processors activated.
+Jan  1 00:00:03 aa-proxy kern.info kernel: [    0.003545] CPU: All CPU(s) started at EL2
+Jan  1 00:00:03 aa-proxy kern.info kernel: [    0.003547] CPU features: detected: 32-bit EL0 Support
+Jan  1 00:00:03 aa-proxy kern.info kernel: [    0.003550] CPU features: detected: CRC32 instructions
+Jan  1 00:00:03 aa-proxy kern.info kernel: [    0.003577] alternatives: applying system-wide alternatives
+Jan  1 00:00:03 aa-proxy kern.info kernel: [    0.004110] Memory: 3832076K/4063232K available (9344K kernel code, 924K rwdata, 2932K rodata, 1216K init, 373K bss, 161688K reserved, 65536K cma-reserved)
+Jan  1 00:00:03 aa-proxy kern.info kernel: [    0.004494] devtmpfs: initialized
+Jan  1 00:00:03 aa-proxy kern.notice kernel: [    0.008842] Enabled cp15_barrier support
+Jan  1 00:00:03 aa-proxy kern.notice kernel: [    0.008853] Enabled setend support
+Jan  1 00:00:03 aa-proxy kern.info kernel: [    0.008918] clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 7645041785100000 ns
+Jan  1 00:00:03 aa-proxy kern.info kernel: [    0.008929] futex hash table entries: 1024 (order: 4, 65536 bytes, linear)
+Jan  1 00:00:03 aa-proxy kern.info kernel: [    0.009779] 29024 pages in range for non-PLT usage
+Jan  1 00:00:03 aa-proxy kern.info kernel: [    0.009784] 520544 pages in range for PLT usage
+Jan  1 00:00:03 aa-proxy kern.info kernel: [    0.009904] pinctrl core: initialized pinctrl subsystem
+Jan  1 00:00:03 aa-proxy kern.info kernel: [    0.010173] DMI not present or invalid.
+Jan  1 00:00:03 aa-proxy kern.info kernel: [    0.011643] NET: Registered PF_NETLINK/PF_ROUTE protocol family
+Jan  1 00:00:03 aa-proxy kern.info kernel: [    0.012323] DMA: preallocated 1024 KiB GFP_KERNEL pool for atomic allocations
+Jan  1 00:00:03 aa-proxy kern.info kernel: [    0.012425] DMA: preallocated 1024 KiB GFP_KERNEL|GFP_DMA pool for atomic allocations
+Jan  1 00:00:03 aa-proxy kern.info kernel: [    0.012591] DMA: preallocated 1024 KiB GFP_KERNEL|GFP_DMA32 pool for atomic allocations
+Jan  1 00:00:03 aa-proxy kern.info kernel: [    0.012601] audit: initializing netlink subsys (disabled)
+Jan  1 00:00:03 aa-proxy kern.notice kernel: [    0.012731] audit: type=2000 audit(0.012:1): state=initialized audit_enabled=0 res=1
+Jan  1 00:00:03 aa-proxy kern.info kernel: [    0.012949] thermal_sys: Registered thermal governor 'step_wise'
+Jan  1 00:00:03 aa-proxy kern.info kernel: [    0.012969] cpuidle: using governor menu
+Jan  1 00:00:03 aa-proxy kern.info kernel: [    0.013045] hw-breakpoint: found 6 breakpoint and 4 watchpoint registers.
+Jan  1 00:00:03 aa-proxy kern.info kernel: [    0.013094] ASID allocator initialised with 65536 entries
+Jan  1 00:00:03 aa-proxy kern.info kernel: [    0.013505] Serial: AMBA PL011 UART driver
+Jan  1 00:00:03 aa-proxy kern.info kernel: [    0.016020] /soc/interrupt-controller@40041000: Fixed dependency cycle(s) with /soc/interrupt-controller@40041000
+Jan  1 00:00:03 aa-proxy kern.info kernel: [    0.016390] bcm2835-mbox fe00b880.mailbox: mailbox enabled
+Jan  1 00:00:03 aa-proxy kern.info kernel: [    0.024026] raspberrypi-firmware soc:firmware: Attached to firmware from 2025-12-08T19:39:51, variant start
+Jan  1 00:00:03 aa-proxy kern.info kernel: [    0.028021] raspberrypi-firmware soc:firmware: Firmware hash is 2226a853bb9f5fd80392e3a4a89e457aeca88008
+Jan  1 00:00:03 aa-proxy kern.info kernel: [    0.033535] /scb/pcie@7d500000: Fixed dependency cycle(s) with /scb/pcie@7d500000
+Jan  1 00:00:03 aa-proxy kern.info kernel: [    0.033641] /scb/pcie@7d500000: Fixed dependency cycle(s) with /scb/pcie@7d500000
+Jan  1 00:00:03 aa-proxy kern.info kernel: [    0.035360] bcm2835-dma fe007000.dma-controller: DMA legacy API manager, dmachans=0x1
+Jan  1 00:00:03 aa-proxy kern.info kernel: [    0.036518] iommu: Default domain type: Translated
+Jan  1 00:00:03 aa-proxy kern.info kernel: [    0.036522] iommu: DMA domain TLB invalidation policy: strict mode
+Jan  1 00:00:03 aa-proxy kern.notice kernel: [    0.036821] SCSI subsystem initialized
+Jan  1 00:00:03 aa-proxy kern.info kernel: [    0.036893] usbcore: registered new interface driver usbfs
+Jan  1 00:00:03 aa-proxy kern.info kernel: [    0.036910] usbcore: registered new interface driver hub
+Jan  1 00:00:03 aa-proxy kern.info kernel: [    0.036928] usbcore: registered new device driver usb
+Jan  1 00:00:03 aa-proxy kern.info kernel: [    0.037068] pps_core: LinuxPPS API ver. 1 registered
+Jan  1 00:00:03 aa-proxy kern.info kernel: [    0.037071] pps_core: Software ver. 5.3.6 - Copyright 2005-2007 Rodolfo Giometti <giometti@linux.it>
+Jan  1 00:00:03 aa-proxy kern.info kernel: [    0.037079] PTP clock support registered
+Jan  1 00:00:03 aa-proxy kern.info kernel: [    0.037620] vgaarb: loaded
+Jan  1 00:00:03 aa-proxy kern.info kernel: [    0.037826] clocksource: Switched to clocksource arch_sys_counter
+Jan  1 00:00:03 aa-proxy kern.info kernel: [    0.041602] NET: Registered PF_INET protocol family
+Jan  1 00:00:03 aa-proxy kern.info kernel: [    0.041808] IP idents hash table entries: 65536 (order: 7, 524288 bytes, linear)
+Jan  1 00:00:03 aa-proxy kern.info kernel: [    0.043666] tcp_listen_portaddr_hash hash table entries: 2048 (order: 3, 32768 bytes, linear)
+Jan  1 00:00:03 aa-proxy kern.info kernel: [    0.043699] Table-perturb hash table entries: 65536 (order: 6, 262144 bytes, linear)
+Jan  1 00:00:03 aa-proxy kern.info kernel: [    0.043710] TCP established hash table entries: 32768 (order: 6, 262144 bytes, linear)
+Jan  1 00:00:03 aa-proxy kern.info kernel: [    0.043802] TCP bind hash table entries: 32768 (order: 8, 1048576 bytes, linear)
+Jan  1 00:00:03 aa-proxy kern.info kernel: [    0.044777] TCP: Hash tables configured (established 32768 bind 32768)
+Jan  1 00:00:03 aa-proxy kern.info kernel: [    0.044904] UDP hash table entries: 2048 (order: 4, 65536 bytes, linear)
+Jan  1 00:00:03 aa-proxy kern.info kernel: [    0.044941] UDP-Lite hash table entries: 2048 (order: 4, 65536 bytes, linear)
+Jan  1 00:00:03 aa-proxy kern.info kernel: [    0.045066] NET: Registered PF_UNIX/PF_LOCAL protocol family
+Jan  1 00:00:03 aa-proxy kern.info kernel: [    0.045091] PCI: CLS 0 bytes, default 64
+Jan  1 00:00:03 aa-proxy kern.notice kernel: [    0.045880] Initialise system trusted keyrings
+Jan  1 00:00:03 aa-proxy kern.info kernel: [    0.046022] workingset: timestamp_bits=42 max_order=20 bucket_order=0
+Jan  1 00:00:03 aa-proxy kern.notice kernel: [    0.046760] Key type asymmetric registered
+Jan  1 00:00:03 aa-proxy kern.notice kernel: [    0.046765] Asymmetric key parser 'x509' registered
+Jan  1 00:00:03 aa-proxy kern.info kernel: [    0.046794] Block layer SCSI generic (bsg) driver version 0.4 loaded (major 249)
+Jan  1 00:00:03 aa-proxy kern.info kernel: [    0.046864] io scheduler mq-deadline registered
+Jan  1 00:00:03 aa-proxy kern.info kernel: [    0.046868] io scheduler kyber registered
+Jan  1 00:00:03 aa-proxy kern.info kernel: [    0.046884] io scheduler bfq registered
+Jan  1 00:00:03 aa-proxy kern.info kernel: [    0.048309] pinctrl-bcm2835 fe200000.gpio: GPIO_OUT persistence: yes
+Jan  1 00:00:03 aa-proxy kern.info kernel: [    0.050918] ledtrig-cpu: registered to indicate activity on CPUs
+Jan  1 00:00:03 aa-proxy kern.info kernel: [    0.051287] brcm-pcie fd500000.pcie: host bridge /scb/pcie@7d500000 ranges:
+Jan  1 00:00:03 aa-proxy kern.info kernel: [    0.051297] brcm-pcie fd500000.pcie:   No bus range found for /scb/pcie@7d500000, using [bus 00-ff]
+Jan  1 00:00:03 aa-proxy kern.info kernel: [    0.051314] brcm-pcie fd500000.pcie:      MEM 0x0600000000..0x063fffffff -> 0x00c0000000
+Jan  1 00:00:03 aa-proxy kern.info kernel: [    0.051328] brcm-pcie fd500000.pcie:   IB MEM 0x0000000000..0x00bfffffff -> 0x0400000000
+Jan  1 00:00:03 aa-proxy kern.info kernel: [    0.052013] brcm-pcie fd500000.pcie: PCI host bridge to bus 0000:00
+Jan  1 00:00:03 aa-proxy kern.info kernel: [    0.052021] pci_bus 0000:00: root bus resource [bus 00-ff]
+Jan  1 00:00:03 aa-proxy kern.info kernel: [    0.052026] pci_bus 0000:00: root bus resource [mem 0x600000000-0x63fffffff] (bus address [0xc0000000-0xffffffff])
+Jan  1 00:00:03 aa-proxy kern.info kernel: [    0.052064] pci 0000:00:00.0: [14e4:2711] type 01 class 0x060400 PCIe Root Port
+Jan  1 00:00:03 aa-proxy kern.info kernel: [    0.052078] pci 0000:00:00.0: PCI bridge to [bus 01]
+Jan  1 00:00:03 aa-proxy kern.info kernel: [    0.052084] pci 0000:00:00.0:   bridge window [mem 0x600000000-0x6000fffff]
+Jan  1 00:00:03 aa-proxy kern.info kernel: [    0.052125] pci 0000:00:00.0: PME# supported from D0 D3hot
+Jan  1 00:00:03 aa-proxy kern.warn kernel: [    0.053656] pci_bus 0000:01: supply vpcie3v3 not found, using dummy regulator
+Jan  1 00:00:03 aa-proxy kern.warn kernel: [    0.053694] pci_bus 0000:01: supply vpcie3v3aux not found, using dummy regulator
+Jan  1 00:00:03 aa-proxy kern.warn kernel: [    0.053702] pci_bus 0000:01: supply vpcie12v not found, using dummy regulator
+Jan  1 00:00:03 aa-proxy kern.info kernel: [    0.153834] brcm-pcie fd500000.pcie: clkreq-mode set to default
+Jan  1 00:00:03 aa-proxy kern.info kernel: [    0.155891] brcm-pcie fd500000.pcie: link up, 5.0 GT/s PCIe x1 (SSC)
+Jan  1 00:00:03 aa-proxy kern.info kernel: [    0.155998] pci 0000:01:00.0: [1106:3483] type 00 class 0x0c0330 PCIe Endpoint
+Jan  1 00:00:03 aa-proxy kern.info kernel: [    0.156023] pci 0000:01:00.0: BAR 0 [mem 0x00000000-0x00000fff 64bit]
+Jan  1 00:00:03 aa-proxy kern.info kernel: [    0.156077] pci 0000:01:00.0: ASPM: VL805 fixup applied
+Jan  1 00:00:03 aa-proxy kern.info kernel: [    0.156127] pci 0000:01:00.0: PME# supported from D0 D3cold
+Jan  1 00:00:03 aa-proxy kern.info kernel: [    0.161899] pci 0000:00:00.0: bridge window [mem 0x600000000-0x6000fffff]: assigned
+Jan  1 00:00:03 aa-proxy kern.info kernel: [    0.161906] pci 0000:01:00.0: BAR 0 [mem 0x600000000-0x600000fff 64bit]: assigned
+Jan  1 00:00:03 aa-proxy kern.info kernel: [    0.161947] pci 0000:00:00.0: PCI bridge to [bus 01]
+Jan  1 00:00:03 aa-proxy kern.info kernel: [    0.161952] pci 0000:00:00.0:   bridge window [mem 0x600000000-0x6000fffff]
+Jan  1 00:00:03 aa-proxy kern.info kernel: [    0.161958] pci_bus 0000:00: resource 4 [mem 0x600000000-0x63fffffff]
+Jan  1 00:00:03 aa-proxy kern.info kernel: [    0.161962] pci_bus 0000:01: resource 1 [mem 0x600000000-0x6000fffff]
+Jan  1 00:00:03 aa-proxy kern.info kernel: [    0.162067] pcieport 0000:00:00.0: enabling device (0000 -> 0002)
+Jan  1 00:00:03 aa-proxy kern.info kernel: [    0.162134] pcieport 0000:00:00.0: PME: Signaling with IRQ 26
+Jan  1 00:00:03 aa-proxy kern.info kernel: [    0.162265] pcieport 0000:00:00.0: AER: enabled with IRQ 26
+Jan  1 00:00:03 aa-proxy kern.err kernel: [    0.162645] bcm2708_fb soc:fb: Unable to determine number of FBs. Disabling driver.
+Jan  1 00:00:03 aa-proxy kern.err kernel: [    0.162677] bcm2708_fb soc:fb: probe with driver bcm2708_fb failed with error -2
+Jan  1 00:00:03 aa-proxy kern.info kernel: [    0.167272] Serial: 8250/16550 driver, 1 ports, IRQ sharing enabled
+Jan  1 00:00:03 aa-proxy kern.info kernel: [    0.168041] iproc-rng200 fe104000.rng: hwrng registered
+Jan  1 00:00:03 aa-proxy kern.info kernel: [    0.168117] vc-mem: phys_addr:0x00000000 mem_base=0x3ec00000 mem_size:0x40000000(1024 MiB)
+Jan  1 00:00:03 aa-proxy kern.info kernel: [    0.168988] Loading iSCSI transport class v2.0-870.
+Jan  1 00:00:03 aa-proxy kern.info kernel: [    0.170719] bcmgenet fd580000.ethernet: GENET 5.0 EPHY: 0x0000
+Jan  1 00:00:03 aa-proxy kern.info kernel: [    0.365857] unimac-mdio unimac-mdio.-19: Broadcom UniMAC MDIO bus
+Jan  1 00:00:03 aa-proxy kern.info kernel: [    0.366352] usbcore: registered new interface driver lan78xx
+Jan  1 00:00:03 aa-proxy kern.info kernel: [    0.366372] usbcore: registered new interface driver smsc95xx
+Jan  1 00:00:03 aa-proxy kern.info kernel: [    0.367602] xhci_hcd 0000:01:00.0: enabling device (0000 -> 0002)
+Jan  1 00:00:03 aa-proxy kern.info kernel: [    0.367686] xhci_hcd 0000:01:00.0: xHCI Host Controller
+Jan  1 00:00:03 aa-proxy kern.info kernel: [    0.367698] xhci_hcd 0000:01:00.0: new USB bus registered, assigned bus number 1
+Jan  1 00:00:03 aa-proxy kern.info kernel: [    0.368624] xhci_hcd 0000:01:00.0: hcc params 0x002841eb hci version 0x100 quirks 0x0300240000000890
+Jan  1 00:00:03 aa-proxy kern.info kernel: [    0.368987] xhci_hcd 0000:01:00.0: xHCI Host Controller
+Jan  1 00:00:03 aa-proxy kern.info kernel: [    0.368993] xhci_hcd 0000:01:00.0: new USB bus registered, assigned bus number 2
+Jan  1 00:00:03 aa-proxy kern.info kernel: [    0.368999] xhci_hcd 0000:01:00.0: Host supports USB 3.0 SuperSpeed
+Jan  1 00:00:03 aa-proxy kern.info kernel: [    0.369143] usb usb1: New USB device found, idVendor=1d6b, idProduct=0002, bcdDevice= 6.12
+Jan  1 00:00:03 aa-proxy kern.info kernel: [    0.369148] usb usb1: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+Jan  1 00:00:03 aa-proxy kern.info kernel: [    0.369152] usb usb1: Product: xHCI Host Controller
+Jan  1 00:00:03 aa-proxy kern.info kernel: [    0.369155] usb usb1: Manufacturer: Linux 6.12.61-v8 xhci-hcd
+Jan  1 00:00:03 aa-proxy kern.info kernel: [    0.369157] usb usb1: SerialNumber: 0000:01:00.0
+Jan  1 00:00:03 aa-proxy kern.info kernel: [    0.369408] hub 1-0:1.0: USB hub found
+Jan  1 00:00:03 aa-proxy kern.info kernel: [    0.369454] hub 1-0:1.0: 1 port detected
+Jan  1 00:00:03 aa-proxy kern.info kernel: [    0.369771] usb usb2: New USB device found, idVendor=1d6b, idProduct=0003, bcdDevice= 6.12
+Jan  1 00:00:03 aa-proxy kern.info kernel: [    0.369776] usb usb2: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+Jan  1 00:00:03 aa-proxy kern.info kernel: [    0.369779] usb usb2: Product: xHCI Host Controller
+Jan  1 00:00:03 aa-proxy kern.info kernel: [    0.369782] usb usb2: Manufacturer: Linux 6.12.61-v8 xhci-hcd
+Jan  1 00:00:03 aa-proxy kern.info kernel: [    0.369784] usb usb2: SerialNumber: 0000:01:00.0
+Jan  1 00:00:03 aa-proxy kern.info kernel: [    0.369987] hub 2-0:1.0: USB hub found
+Jan  1 00:00:03 aa-proxy kern.info kernel: [    0.370031] hub 2-0:1.0: 4 ports detected
+Jan  1 00:00:03 aa-proxy kern.info kernel: [    0.370514] dwc_otg: version 3.00a 10-AUG-2012 (platform bus)
+Jan  1 00:00:03 aa-proxy kern.debug kernel: [    0.370553] dwc_otg: FIQ enabled
+Jan  1 00:00:03 aa-proxy kern.debug kernel: [    0.370555] dwc_otg: NAK holdoff enabled
+Jan  1 00:00:03 aa-proxy kern.debug kernel: [    0.370556] dwc_otg: FIQ split-transaction FSM enabled
+Jan  1 00:00:03 aa-proxy kern.debug kernel: [    0.370559] Module dwc_common_port init
+Jan  1 00:00:03 aa-proxy kern.warn kernel: [    0.370942] dwc2 fe980000.usb: supply vusb_d not found, using dummy regulator
+Jan  1 00:00:03 aa-proxy kern.warn kernel: [    0.370992] dwc2 fe980000.usb: supply vusb_a not found, using dummy regulator
+Jan  1 00:00:03 aa-proxy kern.info kernel: [    0.471421] dwc2 fe980000.usb: EPs: 8, dedicated fifos, 4080 entries in SPRAM
+Jan  1 00:00:03 aa-proxy kern.info kernel: [    0.471753] usbcore: registered new interface driver uas
+Jan  1 00:00:03 aa-proxy kern.info kernel: [    0.471788] usbcore: registered new interface driver usb-storage
+Jan  1 00:00:03 aa-proxy kern.info kernel: [    0.471980] mousedev: PS/2 mouse device common for all mice
+Jan  1 00:00:03 aa-proxy kern.info kernel: [    0.472747] sdhci: Secure Digital Host Controller Interface driver
+Jan  1 00:00:03 aa-proxy kern.info kernel: [    0.472750] sdhci: Copyright(c) Pierre Ossman
+Jan  1 00:00:03 aa-proxy kern.info kernel: [    0.472829] sdhci-pltfm: SDHCI platform and OF driver helper
+Jan  1 00:00:03 aa-proxy kern.info kernel: [    0.472989] hid: raw HID events driver (C) Jiri Kosina
+Jan  1 00:00:03 aa-proxy kern.info kernel: [    0.473035] usbcore: registered new interface driver usbhid
+Jan  1 00:00:03 aa-proxy kern.info kernel: [    0.473037] usbhid: USB HID core driver
+Jan  1 00:00:03 aa-proxy kern.info kernel: [    0.473592] hw perfevents: enabled with armv8_cortex_a72 PMU driver, 7 (0,8000003f) counters available
+Jan  1 00:00:03 aa-proxy kern.info kernel: [    0.474452] NET: Registered PF_PACKET protocol family
+Jan  1 00:00:03 aa-proxy kern.notice kernel: [    0.474468] Key type dns_resolver registered
+Jan  1 00:00:03 aa-proxy kern.info kernel: [    0.484137] registered taskstats version 1
+Jan  1 00:00:03 aa-proxy kern.notice kernel: [    0.484255] Loading compiled-in X.509 certificates
+Jan  1 00:00:03 aa-proxy kern.info kernel: [    0.486913] Demotion targets for Node 0: null
+Jan  1 00:00:03 aa-proxy kern.notice kernel: [    0.486980] Key type .fscrypt registered
+Jan  1 00:00:03 aa-proxy kern.notice kernel: [    0.486982] Key type fscrypt-provisioning registered
+Jan  1 00:00:03 aa-proxy kern.info kernel: [    0.487827] pl011-axi fe201000.serial: there is not valid maps for state default
+Jan  1 00:00:03 aa-proxy kern.info kernel: [    0.487899] pl011-axi fe201000.serial: cts_event_workaround enabled
+Jan  1 00:00:03 aa-proxy kern.info kernel: [    0.488131] fe201000.serial: ttyAMA1 at MMIO 0xfe201000 (irq = 38, base_baud = 0) is a PL011 AXI
+Jan  1 00:00:03 aa-proxy kern.info kernel: [    0.488244] serial serial0: tty port ttyAMA1 registered
+Jan  1 00:00:03 aa-proxy kern.info kernel: [    0.488901] bcm2835-aux-uart fe215040.serial: there is not valid maps for state default
+Jan  1 00:00:03 aa-proxy kern.info kernel: [    0.489331] printk: legacy console [ttyS0] disabled
+Jan  1 00:00:03 aa-proxy kern.info kernel: [    0.489546] fe215040.serial: ttyS0 at MMIO 0xfe215040 (irq = 39, base_baud = 62500000) is a 16550
+Jan  1 00:00:03 aa-proxy kern.info kernel: [    0.489574] printk: legacy console [ttyS0] enabled
+Jan  1 00:00:03 aa-proxy kern.info kernel: [    1.943633] bcm2835-wdt bcm2835-wdt: Broadcom BCM2835 watchdog timer
+Jan  1 00:00:03 aa-proxy kern.info kernel: [    1.950220] bcm2835-power bcm2835-power: Broadcom BCM2835 power domains driver
+Jan  1 00:00:03 aa-proxy kern.info kernel: [    1.958131] mmc-bcm2835 fe300000.mmcnr: mmc_debug:0 mmc_debug2:0
+Jan  1 00:00:03 aa-proxy kern.info kernel: [    1.964245] mmc-bcm2835 fe300000.mmcnr: DMA channel allocated
+Jan  1 00:00:03 aa-proxy kern.info kernel: [    1.993991] of_cfs_init
+Jan  1 00:00:03 aa-proxy kern.info kernel: [    1.998554] of_cfs_init: OK
+Jan  1 00:00:03 aa-proxy kern.info kernel: [    2.003547] clk: Disabling unused clocks
+Jan  1 00:00:03 aa-proxy kern.info kernel: [    2.009291] PM: genpd: Disabling unused power domains
+Jan  1 00:00:03 aa-proxy kern.info kernel: [    2.042955] mmc0: SDHCI controller on fe340000.mmc [fe340000.mmc] using ADMA
+Jan  1 00:00:03 aa-proxy kern.info kernel: [    2.050291] Waiting for root device /dev/mmcblk0p3...
+Jan  1 00:00:03 aa-proxy kern.info kernel: [    2.061834] usb 1-1: new high-speed USB device number 2 using xhci_hcd
+Jan  1 00:00:03 aa-proxy kern.info kernel: [    2.103792] mmc1: new high speed SDIO card at address 0001
+Jan  1 00:00:03 aa-proxy kern.info kernel: [    2.167020] mmc0: new ultra high speed DDR50 SDHC card at address 5048
+Jan  1 00:00:03 aa-proxy kern.info kernel: [    2.174084] mmcblk0: mmc0:5048 SD16G 14.5 GiB
+Jan  1 00:00:03 aa-proxy kern.info kernel: [    2.180087]  mmcblk0: p1 p2 p3 p4
+Jan  1 00:00:03 aa-proxy kern.info kernel: [    2.183772] mmcblk0: mmc0:5048 SD16G 14.5 GiB
+Jan  1 00:00:03 aa-proxy kern.info kernel: [    2.192999] erofs: (device mmcblk0p3): mounted with root inode @ nid 36.
+Jan  1 00:00:03 aa-proxy kern.info kernel: [    2.199865] VFS: Mounted root (erofs filesystem) readonly on device 179:3.
+Jan  1 00:00:03 aa-proxy kern.info kernel: [    2.206967] devtmpfs: mounted
+Jan  1 00:00:03 aa-proxy kern.info kernel: [    2.210773] Freeing unused kernel memory: 1216K
+Jan  1 00:00:03 aa-proxy kern.info kernel: [    2.215517] Run /etc/overlay_init as init process
+Jan  1 00:00:03 aa-proxy kern.info kernel: [    2.217252] usb 1-1: New USB device found, idVendor=2109, idProduct=3431, bcdDevice= 4.21
+Jan  1 00:00:03 aa-proxy kern.debug kernel: [    2.220320]   with arguments:
+Jan  1 00:00:03 aa-proxy kern.info kernel: [    2.228595] usb 1-1: New USB device strings: Mfr=0, Product=1, SerialNumber=0
+Jan  1 00:00:03 aa-proxy kern.debug kernel: [    2.228606]     /etc/overlay_init
+Jan  1 00:00:03 aa-proxy kern.info kernel: [    2.235836] usb 1-1: Product: USB2.0 Hub
+Jan  1 00:00:03 aa-proxy kern.debug kernel: [    2.235837]   with environment:
+Jan  1 00:00:03 aa-proxy kern.debug kernel: [    2.239818]     HOME=/
+Jan  1 00:00:03 aa-proxy kern.debug kernel: [    2.239822]     TERM=linux
+Jan  1 00:00:03 aa-proxy kern.info kernel: [    2.240800] hub 1-1:1.0: USB hub found
+Jan  1 00:00:03 aa-proxy kern.info kernel: [    2.244877] hub 1-1:1.0: 4 ports detected
+Jan  1 00:00:03 aa-proxy kern.info kernel: [    2.782560] EXT4-fs (mmcblk0p4): recovery complete
+Jan  1 00:00:03 aa-proxy kern.info kernel: [    2.789481] EXT4-fs (mmcblk0p4): mounted filesystem c4173d4f-1630-4b77-a7ad-8b104610d247 r/w with ordered data mode. Quota mode: disabled.
+Jan  1 00:00:03 aa-proxy kern.warn kernel: [    2.956988] FAT-fs (mmcblk0p1): Volume was not properly unmounted. Some data may be corrupt. Please run fsck.
+Jan  1 00:00:03 aa-proxy kern.notice kernel: [    3.025756] cfg80211: Loading compiled-in X.509 certificates for regulatory database
+Jan  1 00:00:03 aa-proxy kern.notice kernel: [    3.040787] Loaded X.509 cert 'benh@debian.org: 577e021cb980e0e820821ba7b54b4961b8b4fadf'
+Jan  1 00:00:03 aa-proxy kern.notice kernel: [    3.049431] Loaded X.509 cert 'romain.perier@gmail.com: 3abbc6ec146e09d1b6016ab9d6cf71dd233f0328'
+Jan  1 00:00:03 aa-proxy kern.notice kernel: [    3.058762] Loaded X.509 cert 'sforshee: 00b28ddf47aef9cea7'
+Jan  1 00:00:03 aa-proxy kern.notice kernel: [    3.064810] Loaded X.509 cert 'wens: 61c038651aabdcf94bd0ac7ff06c7248db18c600'
+Jan  1 00:00:03 aa-proxy kern.debug kernel: [    3.103008] brcmfmac: F1 signature read @0x18000000=0x15264345
+Jan  1 00:00:03 aa-proxy kern.info kernel: [    3.106398] brcmfmac: brcmf_fw_alloc_request: using brcm/brcmfmac43455-sdio for chip BCM4345/6
+Jan  1 00:00:03 aa-proxy kern.info kernel: [    3.115416] usbcore: registered new interface driver brcmfmac
+Jan  1 00:00:03 aa-proxy kern.info kernel: [    3.187995] Bluetooth: Core ver 2.22
+Jan  1 00:00:03 aa-proxy kern.info kernel: [    3.191730] NET: Registered PF_BLUETOOTH protocol family
+Jan  1 00:00:03 aa-proxy kern.info kernel: [    3.197180] Bluetooth: HCI device and connection manager initialized
+Jan  1 00:00:03 aa-proxy kern.info kernel: [    3.203713] Bluetooth: HCI socket layer initialized
+Jan  1 00:00:03 aa-proxy kern.info kernel: [    3.208708] Bluetooth: L2CAP socket layer initialized
+Jan  1 00:00:03 aa-proxy kern.info kernel: [    3.213868] Bluetooth: SCO socket layer initialized
+Jan  1 00:00:03 aa-proxy kern.info kernel: [    3.226727] Bluetooth: HCI UART driver ver 2.3
+Jan  1 00:00:03 aa-proxy kern.info kernel: [    3.231263] Bluetooth: HCI UART protocol H4 registered
+Jan  1 00:00:03 aa-proxy kern.info kernel: [    3.236517] Bluetooth: HCI UART protocol Three-wire (H5) registered
+Jan  1 00:00:03 aa-proxy kern.info kernel: [    3.242970] Bluetooth: HCI UART protocol Broadcom registered
+Jan  1 00:00:03 aa-proxy kern.warn kernel: [    3.247368] hci_uart_bcm serial0-0: supply vbat not found, using dummy regulator
+Jan  1 00:00:03 aa-proxy kern.warn kernel: [    3.256365] hci_uart_bcm serial0-0: supply vddio not found, using dummy regulator
+Jan  1 00:00:03 aa-proxy kern.info kernel: [    3.512082] brcmfmac: brcmf_c_process_txcap_blob: no txcap_blob available (err=-2)
+Jan  1 00:00:03 aa-proxy kern.info kernel: [    3.520253] brcmfmac: brcmf_c_preinit_dcmds: Firmware: BCM4345/6 wl0: Aug 29 2023 01:47:08 version 7.45.265 (28bca26 CY) FWID 01-b677b91b
+Jan  1 00:00:03 aa-proxy user.info console: Running sysctl: OK
+Jan  1 00:00:03 aa-proxy user.warn console: haveged: command socket is listening at fd 3
+Jan  1 00:00:03 aa-proxy daemon.notice haveged: haveged starting up
+Jan  1 00:00:03 aa-proxy user.info console: Starting haveged: OK
+Jan  1 00:00:03 aa-proxy kern.info kernel: [    3.634382] Bluetooth: hci0: BCM: chip id 107
+Jan  1 00:00:03 aa-proxy kern.info kernel: [    3.639219] Bluetooth: hci0: BCM: features 0x2f
+Jan  1 00:00:03 aa-proxy kern.info kernel: [    3.645257] Bluetooth: hci0: BCM4345C0
+Jan  1 00:00:03 aa-proxy kern.info kernel: [    3.649197] Bluetooth: hci0: BCM4345C0 (003.001.025) build 0000
+Jan  1 00:00:03 aa-proxy kern.info kernel: [    3.658913] Bluetooth: hci0: BCM4345C0 'brcm/BCM4345C0.raspberrypi,4-model-b.hcd' Patch
+Jan  1 00:00:03 aa-proxy user.info console: Starting system dbus-daemon: OK
+Jan  1 00:00:04 aa-proxy user.info console: 1970-01-01, 00:00:04.071 ^[[34m[INFO]^[[0m 🛸 ^[[1m^[[34maa-proxy-rs^[[0m is starting, build: 20260810_074609, git: 6715391-br#1510894
+Jan  1 00:00:04 aa-proxy user.info console: 1970-01-01, 00:00:04.072 ^[[34m[INFO]^[[0m ^[[3m^[[90m main: ^[[0m 🗃️ Generating config from input template: ^[[1m^[[32m/etc/umtprd/umtprd.conf.in^[[0m
+Jan  1 00:00:04 aa-proxy user.info console: 1970-01-01, 00:00:04.074 ^[[34m[INFO]^[[0m ^[[3m^[[90m main: ^[[0m 💾 Saving generated file as: ^[[1m^[[32m/var/run/umtprd.conf^[[0m
+Jan  1 00:00:04 aa-proxy user.info console: 1970-01-01, 00:00:04.074 ^[[34m[INFO]^[[0m ^[[3m^[[90m main: ^[[0m 🗃️ Generating config from input template: ^[[1m^[[32m/etc/dnsmasq.conf.in^[[0m
+Jan  1 00:00:04 aa-proxy user.info console: 1970-01-01, 00:00:04.074 ^[[34m[INFO]^[[0m ^[[3m^[[90m main: ^[[0m 💾 Saving generated file as: ^[[1m^[[32m/var/run/dnsmasq.conf^[[0m
+Jan  1 00:00:04 aa-proxy user.info console: 1970-01-01, 00:00:04.074 ^[[34m[INFO]^[[0m ^[[3m^[[90m main: ^[[0m 🗃️ Generating config from input template: ^[[1m^[[32m/etc/network/interfaces.in^[[0m
+Jan  1 00:00:04 aa-proxy user.info console: 1970-01-01, 00:00:04.075 ^[[34m[INFO]^[[0m ^[[3m^[[90m main: ^[[0m 💾 Saving generated file as: ^[[1m^[[32m/var/run/interfaces^[[0m
+Jan  1 00:00:04 aa-proxy user.info console: 1970-01-01, 00:00:04.075 ^[[34m[INFO]^[[0m ^[[3m^[[90m main: ^[[0m 🗃️ Generating config from input template: ^[[1m^[[32m/etc/S92usb_gadget.in^[[0m
+Jan  1 00:00:04 aa-proxy user.info console: 1970-01-01, 00:00:04.075 ^[[34m[INFO]^[[0m ^[[3m^[[90m main: ^[[0m 💾 Saving generated file as: ^[[1m^[[32m/var/run/S92usb_gadget^[[0m
+Jan  1 00:00:04 aa-proxy user.info console: 1970-01-01, 00:00:04.075 ^[[34m[INFO]^[[0m ^[[3m^[[90m main: ^[[0m 🚀 Making script executable: ^[[1m^[[32m/var/run/S92usb_gadget^[[0m
+Jan  1 00:00:04 aa-proxy user.info console: Starting bluetoothd: OK
+Jan  1 00:00:04 aa-proxy user.info console: Configuring eth0...
+Jan  1 00:00:04 aa-proxy user.info console: eth_mode is empty or not set. Skipping eth0 config.
+Jan  1 00:00:04 aa-proxy user.info console: Starting network: 1970-01-01, 00:00:04.148 ^[[34m[INFO]^[[0m 🛸 ^[[1m^[[34maa-proxy-rs^[[0m is starting, build: 20260810_074609, git: 6715391-br#1510894
+Jan  1 00:00:04 aa-proxy user.info console: 1970-01-01, 00:00:04.148 ^[[34m[INFO]^[[0m ^[[3m^[[90m main: ^[[0m 🗃️ Generating config from input template: ^[[1m^[[32m/etc/hostapd.conf.in^[[0m
+Jan  1 00:00:04 aa-proxy user.info console: 1970-01-01, 00:00:04.148 ^[[34m[INFO]^[[0m ^[[3m^[[90m main: ^[[0m 💾 Saving generated file as: ^[[1m^[[32m/var/run/hostapd.conf^[[0m
+Jan  1 00:00:04 aa-proxy daemon.info bluetoothd[169]: Bluetooth daemon 5.79
+Jan  1 00:00:04 aa-proxy daemon.info bluetoothd[169]: Starting SDP server
+Jan  1 00:00:04 aa-proxy daemon.warn bluetoothd[169]: profiles/network/bnep.c:bnep_init() kernel lacks bnep-protocol support
+Jan  1 00:00:04 aa-proxy daemon.warn bluetoothd[169]: src/plugin.c:init_plugin() System does not support network plugin
+Jan  1 00:00:04 aa-proxy daemon.warn bluetoothd[169]: profiles/audio/micp.c:micp_init() D-Bus experimental not enabled
+Jan  1 00:00:04 aa-proxy daemon.warn bluetoothd[169]: src/plugin.c:init_plugin() System does not support micp plugin
+Jan  1 00:00:04 aa-proxy daemon.warn bluetoothd[169]: src/plugin.c:init_plugin() System does not support ccp plugin
+Jan  1 00:00:04 aa-proxy daemon.warn bluetoothd[169]: src/plugin.c:init_plugin() System does not support csip plugin
+Jan  1 00:00:04 aa-proxy daemon.info bluetoothd[169]: Bluetooth management interface 1.23 initialized
+Jan  1 00:00:04 aa-proxy user.info console: OK
+Jan  1 00:00:04 aa-proxy kern.info kernel: [    4.330530] Bluetooth: hci0: BCM: features 0x2f
+Jan  1 00:00:04 aa-proxy kern.info kernel: [    4.336580] Bluetooth: hci0: BCM43455 37.4MHz Raspberry Pi 3+-0190
+Jan  1 00:00:04 aa-proxy kern.info kernel: [    4.342890] Bluetooth: hci0: BCM4345C0 (003.001.025) build 0382
+Jan  1 00:00:04 aa-proxy authpriv.info dropbear[201]: Running in background
+Jan  1 00:00:04 aa-proxy user.info console: Starting dropbear sshd: OK
+Jan  1 00:00:04 aa-proxy daemon.info bluetoothd[169]: Battery Provider Manager created
+Jan  1 00:00:04 aa-proxy kern.info kernel: [    4.369065] Bluetooth: MGMT ver 1.23
+Jan  1 00:00:04 aa-proxy kern.info kernel: [    4.386571] NET: Registered PF_ALG protocol family
+Jan  1 00:00:04 aa-proxy daemon.info dnsmasq[210]: started, version 2.92 cachesize 150
+Jan  1 00:00:04 aa-proxy daemon.info dnsmasq[210]: compile time options: IPv6 GNU-getopt DBus no-UBus no-i18n no-IDN DHCP DHCPv6 no-Lua TFTP no-conntrack ipset no-nftset auth no-DNSSEC loop-detect inotify dumpfile
+Jan  1 00:00:04 aa-proxy daemon.warn dnsmasq[210]: warning: no upstream servers configured
+Jan  1 00:00:04 aa-proxy daemon.info dnsmasq-dhcp[210]: DHCP, IP range 10.0.0.2 -- 10.0.0.20, lease time 12h
+Jan  1 00:00:04 aa-proxy daemon.info dnsmasq[210]: cleared cache
+Jan  1 00:00:04 aa-proxy user.info console: Starting dnsmasq: OK
+Jan  1 00:00:04 aa-proxy user.info console: Starting swupdate: OK
+Jan  1 00:00:04 aa-proxy user.info swupdate: RUN [main] : software set: stable mode: part1
+Jan  1 00:00:04 aa-proxy user.debug swupdate: RUN [listener_create] : creating socket at /tmp/swupdateprog
+Jan  1 00:00:04 aa-proxy user.debug swupdate: RUN [listener_create] : creating socket at /tmp/sockinstctrl
+Jan  1 00:00:04 aa-proxy user.debug swupdate: RUN [network_initializer] : Main loop daemon
+Jan  1 00:00:04 aa-proxy user.debug swupdate: RUN [start_swupdate_subprocess] : Started webserver with pid 237 and fd 8
+Jan  1 00:00:04 aa-proxy user.info swupdate: RUN [start_mongoose] : Mongoose web server v7.17 with PID 237 listening on :8080 and serving /var/www/swupdate
+Jan  1 00:00:04 aa-proxy kern.info kernel: [    4.485351] file system registered
+Jan  1 00:00:04 aa-proxy user.info console: Setting up usb_gadgets: OK
+Jan  1 00:00:05 aa-proxy user.info console: Starting umtprd: OK
+Jan  1 00:00:05 aa-proxy user.info console: Starting aa-proxy-rs: OK
+Jan  1 00:00:05 aa-proxy daemon.info : starting pid 271, tty '/dev/console': '/sbin/getty -L  console 0 vt100 '
+Jan  1 00:00:05 aa-proxy daemon.info : starting pid 272, tty '/dev/tty1': '/sbin/getty -L  tty1 0 vt100 '
+Jan  1 00:00:05 aa-proxy daemon.info : starting pid 273, tty '/dev/ttyGS0': '/sbin/getty -L ttyGS0 115200 vt100 '
+Jan  1 00:00:05 aa-proxy kern.info kernel: [    5.655389] Bluetooth: RFCOMM TTY layer initialized
+Jan  1 00:00:05 aa-proxy kern.info kernel: [    5.660394] Bluetooth: RFCOMM socket layer initialized
+Jan  1 00:00:05 aa-proxy kern.info kernel: [    5.665645] Bluetooth: RFCOMM ver 1.11
+Jan  1 00:00:05 aa-proxy kern.err kernel: [    5.853272] Bluetooth: hci0: ACL packet for unknown connection handle 12
+Jan  1 00:00:06 aa-proxy kern.err kernel: [    6.072327] Bluetooth: Unexpected continuation frame (len 0)
+Jan  1 00:00:06 aa-proxy kern.err kernel: [    6.174855] Bluetooth: Unexpected continuation frame (len 0)
+Jan  1 00:00:06 aa-proxy kern.err kernel: [    6.191089] Bluetooth: Unexpected continuation frame (len 0)
+Jan  1 00:00:10 aa-proxy daemon.info hostapd: wlan0: STA de:e9:3b:55:97:cf IEEE 802.11: associated
+Jan  1 00:00:10 aa-proxy daemon.info hostapd: wlan0: STA de:e9:3b:55:97:cf WPA: pairwise key handshake completed (RSN)
+Jan  1 00:00:11 aa-proxy kern.err kernel: [   11.055646] ieee80211 phy0: brcmf_p2p_send_action_frame: Unknown Frame: category 0x8a, action 0x6
+Jan  1 00:00:14 aa-proxy daemon.info hostapd: wlan0: STA de:e9:3b:55:97:cf IEEE 802.11: disassociated
+Jan  1 00:00:14 aa-proxy daemon.info dnsmasq-dhcp[210]: DHCPDISCOVER(wlan0) de:e9:3b:55:97:cf 
+Jan  1 00:00:14 aa-proxy daemon.info dnsmasq-dhcp[210]: DHCPACK(wlan0) 10.0.0.5 de:e9:3b:55:97:cf Pixel-9
+Jan  1 00:00:14 aa-proxy daemon.info dnsmasq-dhcp[210]: DHCPDISCOVER(wlan0) de:e9:3b:55:97:cf 
+Jan  1 00:00:14 aa-proxy daemon.info dnsmasq-dhcp[210]: DHCPACK(wlan0) 10.0.0.5 de:e9:3b:55:97:cf Pixel-9
+Jan  1 00:00:14 aa-proxy daemon.info dnsmasq-dhcp[210]: DHCPDISCOVER(wlan0) de:e9:3b:55:97:cf 
+Jan  1 00:00:14 aa-proxy daemon.info dnsmasq-dhcp[210]: DHCPACK(wlan0) 10.0.0.5 de:e9:3b:55:97:cf Pixel-9
+Jan  1 00:00:18 aa-proxy daemon.info hostapd: wlan0: STA de:e9:3b:55:97:cf IEEE 802.11: associated
+Jan  1 00:00:18 aa-proxy daemon.info hostapd: wlan0: STA de:e9:3b:55:97:cf WPA: pairwise key handshake completed (RSN)
+Jan  1 00:00:18 aa-proxy kern.err kernel: [   18.400270] ieee80211 phy0: brcmf_p2p_send_action_frame: Unknown Frame: category 0x8a, action 0x6
+Jan  1 00:00:19 aa-proxy daemon.info dnsmasq-dhcp[210]: DHCPDISCOVER(wlan0) de:e9:3b:55:97:cf 
+Jan  1 00:00:19 aa-proxy daemon.info dnsmasq-dhcp[210]: DHCPACK(wlan0) 10.0.0.5 de:e9:3b:55:97:cf Pixel-9
+Jan  1 00:00:22 aa-proxy daemon.err bluetoothd[169]: Failed to disconnect device: Disconnected (0x0e)
+Jan  1 00:00:22 aa-proxy kern.info kernel: [   22.343070] dwc2 fe980000.usb: bound driver configfs-gadget.accessory
+Jan  1 00:00:22 aa-proxy kern.info kernel: [   22.377232] dwc2 fe980000.usb: new device is high-speed
+Jan  1 00:00:22 aa-proxy kern.info kernel: [   22.730916] android_work: sent uevent USB_STATE=CONNECTED
+Jan  1 00:00:22 aa-proxy kern.info kernel: [   22.745752] dwc2 fe980000.usb: new device is high-speed
+Jan  1 00:00:22 aa-proxy kern.info kernel: [   22.806496] dwc2 fe980000.usb: new address 1
+Jan  1 00:00:22 aa-proxy kern.info kernel: [   22.827294] android_work: sent uevent USB_STATE=CONFIGURED
+Jan  1 00:00:30 aa-proxy daemon.info hostapd: wlan0: STA de:e9:3b:55:97:cf IEEE 802.11: disassociated
+Jan  1 00:00:30 aa-proxy kern.info kernel: [   30.274277] android_work: sent uevent USB_STATE=DISCONNECTED
+Jan  1 00:00:30 aa-proxy kern.info kernel: [   30.280160] android_work: did not send uevent (0 0 0000000000000000)
+Jan  1 00:00:30 aa-proxy daemon.warn bluetoothd[169]: src/profile.c:register_profile() :1.3 tried to register 00001108-0000-1000-8000-00805f9b34fb which is already registered
+Jan  1 00:00:31 aa-proxy kern.err kernel: [   31.092214] Bluetooth: hci0: ACL packet for unknown connection handle 12
+Jan  1 00:00:31 aa-proxy kern.err kernel: [   31.225279] Bluetooth: Unexpected continuation frame (len 0)
+Jan  1 00:00:31 aa-proxy kern.err kernel: [   31.659048] Bluetooth: Unexpected continuation frame (len 0)
+Jan  1 00:00:31 aa-proxy kern.err kernel: [   31.732797] Bluetooth: Unexpected continuation frame (len 0)
+Jan  1 00:00:36 aa-proxy daemon.info hostapd: wlan0: STA de:e9:3b:55:97:cf IEEE 802.11: associated
+Jan  1 00:00:36 aa-proxy daemon.info hostapd: wlan0: STA de:e9:3b:55:97:cf WPA: pairwise key handshake completed (RSN)
+Jan  1 00:00:36 aa-proxy kern.err kernel: [   36.073253] ieee80211 phy0: brcmf_p2p_send_action_frame: Unknown Frame: category 0x8a, action 0x6
+Jan  1 00:00:36 aa-proxy daemon.info dnsmasq-dhcp[210]: DHCPDISCOVER(wlan0) de:e9:3b:55:97:cf 
+Jan  1 00:00:36 aa-proxy daemon.info dnsmasq-dhcp[210]: DHCPACK(wlan0) 10.0.0.5 de:e9:3b:55:97:cf Pixel-9
+Jan  1 00:00:39 aa-proxy kern.info kernel: [   39.112423] dwc2 fe980000.usb: bound driver configfs-gadget.accessory
+Jan  1 00:00:39 aa-proxy daemon.err bluetoothd[169]: No matching connection for device
+Jan  1 00:00:39 aa-proxy kern.info kernel: [   39.281664] dwc2 fe980000.usb: new device is high-speed
+Jan  1 00:00:39 aa-proxy kern.info kernel: [   39.342904] android_work: sent uevent USB_STATE=CONNECTED
+Jan  1 00:00:39 aa-proxy kern.info kernel: [   39.358956] dwc2 fe980000.usb: new device is high-speed
+Jan  1 00:00:39 aa-proxy kern.info kernel: [   39.420693] dwc2 fe980000.usb: new address 15
+Jan  1 00:00:39 aa-proxy kern.info kernel: [   39.440404] android_work: sent uevent USB_STATE=CONFIGURED
+Jan  1 00:00:47 aa-proxy daemon.info hostapd: wlan0: STA de:e9:3b:55:97:cf IEEE 802.11: disassociated
+Jan  1 00:00:47 aa-proxy kern.info kernel: [   47.400904] android_work: sent uevent USB_STATE=DISCONNECTED
+Jan  1 00:00:47 aa-proxy daemon.warn bluetoothd[169]: src/profile.c:register_profile() :1.4 tried to register 00001108-0000-1000-8000-00805f9b34fb which is already registered
+Jan  1 00:00:48 aa-proxy kern.err kernel: [   48.563750] Bluetooth: hci0: ACL packet for unknown connection handle 12
+Jan  1 00:00:48 aa-proxy kern.err kernel: [   48.776835] Bluetooth: Unexpected continuation frame (len 0)
+Jan  1 00:00:49 aa-proxy kern.err kernel: [   49.103084] Bluetooth: Unexpected continuation frame (len 0)
+Jan  1 00:00:49 aa-proxy kern.err kernel: [   49.119331] Bluetooth: Unexpected continuation frame (len 0)
+Jan  1 00:00:55 aa-proxy daemon.info hostapd: wlan0: STA de:e9:3b:55:97:cf IEEE 802.11: associated
+Jan  1 00:00:55 aa-proxy daemon.info hostapd: wlan0: STA de:e9:3b:55:97:cf WPA: pairwise key handshake completed (RSN)
+Jan  1 00:00:55 aa-proxy kern.err kernel: [   55.429661] ieee80211 phy0: brcmf_p2p_send_action_frame: Unknown Frame: category 0x8a, action 0x6
+Jan  1 00:00:56 aa-proxy daemon.info dnsmasq-dhcp[210]: DHCPDISCOVER(wlan0) de:e9:3b:55:97:cf 
+Jan  1 00:00:56 aa-proxy daemon.info dnsmasq-dhcp[210]: DHCPACK(wlan0) 10.0.0.5 de:e9:3b:55:97:cf Pixel-9
+Jan  1 00:00:59 aa-proxy daemon.err bluetoothd[169]: src/profile.c:ext_io_disconnected() Unable to get io data for AA Wireless: getpeername: Transport endpoint is not connected (107)
+Jan  1 00:00:59 aa-proxy kern.info kernel: [   59.088281] dwc2 fe980000.usb: bound driver configfs-gadget.accessory
+Jan  1 00:00:59 aa-proxy daemon.err bluetoothd[169]: No matching connection for device
+Jan  1 00:00:59 aa-proxy kern.info kernel: [   59.248932] dwc2 fe980000.usb: new device is high-speed
+Jan  1 00:00:59 aa-proxy kern.info kernel: [   59.311001] android_work: sent uevent USB_STATE=CONNECTED
+Jan  1 00:00:59 aa-proxy kern.info kernel: [   59.325937] dwc2 fe980000.usb: new device is high-speed
+Jan  1 00:00:59 aa-proxy kern.info kernel: [   59.389091] dwc2 fe980000.usb: new address 19
+Jan  1 00:00:59 aa-proxy kern.info kernel: [   59.411172] android_work: sent uevent USB_STATE=CONFIGURED
+Jan  1 00:01:06 aa-proxy daemon.info hostapd: wlan0: STA de:e9:3b:55:97:cf IEEE 802.11: disassociated
+Jan  1 00:01:07 aa-proxy kern.info kernel: [   67.015610] android_work: sent uevent USB_STATE=DISCONNECTED
+Jan  1 00:01:07 aa-proxy daemon.warn bluetoothd[169]: src/profile.c:register_profile() :1.5 tried to register 00001108-0000-1000-8000-00805f9b34fb which is already registered
+Jan  1 00:01:07 aa-proxy kern.err kernel: [   67.324032] Bluetooth: hci0: ACL packet for unknown connection handle 12
+Jan  1 00:01:07 aa-proxy kern.err kernel: [   67.469570] Bluetooth: Unexpected continuation frame (len 0)
+Jan  1 00:01:07 aa-proxy kern.err kernel: [   67.795854] Bluetooth: Unexpected continuation frame (len 0)
+Jan  1 00:01:07 aa-proxy kern.err kernel: [   67.812083] Bluetooth: Unexpected continuation frame (len 0)
+Jan  1 00:01:08 aa-proxy daemon.warn bluetoothd[169]: src/profile.c:register_profile() :1.6 tried to register 00001108-0000-1000-8000-00805f9b34fb which is already registered
+Jan  1 00:01:09 aa-proxy daemon.info hostapd: wlan0: STA de:e9:3b:55:97:cf IEEE 802.11: associated
+Jan  1 00:01:09 aa-proxy daemon.info hostapd: wlan0: STA de:e9:3b:55:97:cf WPA: pairwise key handshake completed (RSN)
+Jan  1 00:01:09 aa-proxy kern.err kernel: [   69.345585] ieee80211 phy0: brcmf_p2p_send_action_frame: Unknown Frame: category 0x8a, action 0x6
+Jan  1 00:01:09 aa-proxy daemon.info dnsmasq-dhcp[210]: DHCPDISCOVER(wlan0) de:e9:3b:55:97:cf 
+Jan  1 00:01:09 aa-proxy daemon.info dnsmasq-dhcp[210]: DHCPACK(wlan0) 10.0.0.5 de:e9:3b:55:97:cf Pixel-9
+Jan  1 00:01:12 aa-proxy kern.info kernel: [   72.088318] dwc2 fe980000.usb: bound driver configfs-gadget.accessory
+Jan  1 00:01:12 aa-proxy daemon.err bluetoothd[169]: No matching connection for device
+Jan  1 00:01:12 aa-proxy kern.info kernel: [   72.305702] dwc2 fe980000.usb: new device is high-speed
+Jan  1 00:01:12 aa-proxy kern.info kernel: [   72.366455] android_work: sent uevent USB_STATE=CONNECTED
+Jan  1 00:01:12 aa-proxy kern.info kernel: [   72.381734] dwc2 fe980000.usb: new device is high-speed
+Jan  1 00:01:12 aa-proxy kern.info kernel: [   72.443320] dwc2 fe980000.usb: new address 32
+Jan  1 00:01:12 aa-proxy kern.info kernel: [   72.461590] android_work: sent uevent USB_STATE=CONFIGURED
+Jan  1 00:01:20 aa-proxy daemon.info hostapd: wlan0: STA de:e9:3b:55:97:cf IEEE 802.11: disassociated
+Jan  1 00:01:20 aa-proxy daemon.warn bluetoothd[169]: src/profile.c:register_profile() :1.7 tried to register 00001108-0000-1000-8000-00805f9b34fb which is already registered
+Jan  1 00:01:20 aa-proxy kern.info kernel: [   80.645069] android_work: sent uevent USB_STATE=DISCONNECTED
+Jan  1 00:01:20 aa-proxy kern.err kernel: [   80.960483] Bluetooth: hci0: ACL packet for unknown connection handle 12
+Jan  1 00:01:21 aa-proxy kern.err kernel: [   81.172267] Bluetooth: Unexpected continuation frame (len 0)
+Jan  1 00:01:21 aa-proxy kern.err kernel: [   81.426046] Bluetooth: Unexpected continuation frame (len 0)
+Jan  1 00:01:21 aa-proxy kern.err kernel: [   81.442254] Bluetooth: Unexpected continuation frame (len 0)
+Jan  1 00:01:22 aa-proxy daemon.info hostapd: wlan0: STA de:e9:3b:55:97:cf IEEE 802.11: associated
+Jan  1 00:01:22 aa-proxy daemon.info hostapd: wlan0: STA de:e9:3b:55:97:cf WPA: pairwise key handshake completed (RSN)
+Jan  1 00:01:23 aa-proxy kern.err kernel: [   83.063706] ieee80211 phy0: brcmf_p2p_send_action_frame: Unknown Frame: category 0x8a, action 0x6
+Jan  1 00:01:23 aa-proxy daemon.info dnsmasq-dhcp[210]: DHCPDISCOVER(wlan0) de:e9:3b:55:97:cf 
+Jan  1 00:01:23 aa-proxy daemon.info dnsmasq-dhcp[210]: DHCPACK(wlan0) 10.0.0.5 de:e9:3b:55:97:cf Pixel-9
+Jan  1 00:01:26 aa-proxy daemon.err bluetoothd[169]: src/profile.c:ext_io_disconnected() Unable to get io data for AA Wireless: getpeername: Transport endpoint is not connected (107)
+Jan  1 00:01:26 aa-proxy kern.info kernel: [   86.089973] dwc2 fe980000.usb: bound driver configfs-gadget.accessory
+Jan  1 00:01:26 aa-proxy daemon.err bluetoothd[169]: No matching connection for device
+Jan  1 00:01:26 aa-proxy kern.info kernel: [   86.385850] dwc2 fe980000.usb: new device is high-speed
+Jan  1 00:01:26 aa-proxy kern.info kernel: [   86.447178] android_work: sent uevent USB_STATE=CONNECTED
+Jan  1 00:01:26 aa-proxy kern.info kernel: [   86.462021] dwc2 fe980000.usb: new device is high-speed
+Jan  1 00:01:26 aa-proxy kern.info kernel: [   86.525811] dwc2 fe980000.usb: new address 22
+Jan  1 00:01:26 aa-proxy kern.info kernel: [   86.547080] android_work: sent uevent USB_STATE=CONFIGURED
+Jan  1 00:01:34 aa-proxy daemon.info hostapd: wlan0: STA de:e9:3b:55:97:cf IEEE 802.11: disassociated
+Jan  1 00:01:34 aa-proxy kern.info kernel: [   94.445724] android_work: sent uevent USB_STATE=DISCONNECTED
+Jan  1 00:01:34 aa-proxy kern.info kernel: [   94.452216] android_work: did not send uevent (0 0 0000000000000000)
+Jan  1 00:01:34 aa-proxy daemon.warn bluetoothd[169]: src/profile.c:register_profile() :1.8 tried to register 00001108-0000-1000-8000-00805f9b34fb which is already registered
+Jan  1 00:01:35 aa-proxy kern.err kernel: [   95.623557] Bluetooth: hci0: ACL packet for unknown connection handle 12
+Jan  1 00:01:35 aa-proxy kern.err kernel: [   95.721209] Bluetooth: Unexpected continuation frame (len 0)
+Jan  1 00:01:36 aa-proxy kern.err kernel: [   96.057484] Bluetooth: Unexpected continuation frame (len 0)
+Jan  1 00:01:36 aa-proxy kern.err kernel: [   96.078719] Bluetooth: Unexpected continuation frame (len 0)
+Jan  1 00:01:36 aa-proxy daemon.warn bluetoothd[169]: src/profile.c:register_profile() :1.9 tried to register 00001108-0000-1000-8000-00805f9b34fb which is already registered
+Jan  1 00:01:42 aa-proxy daemon.info hostapd: wlan0: STA de:e9:3b:55:97:cf IEEE 802.11: associated
+Jan  1 00:01:42 aa-proxy daemon.info hostapd: wlan0: STA de:e9:3b:55:97:cf WPA: pairwise key handshake completed (RSN)
+Jan  1 00:01:42 aa-proxy kern.err kernel: [  102.521421] ieee80211 phy0: brcmf_p2p_send_action_frame: Unknown Frame: category 0x8a, action 0x6
+Jan  1 00:01:43 aa-proxy daemon.info dnsmasq-dhcp[210]: DHCPDISCOVER(wlan0) de:e9:3b:55:97:cf 
+Jan  1 00:01:43 aa-proxy daemon.info dnsmasq-dhcp[210]: DHCPACK(wlan0) 10.0.0.5 de:e9:3b:55:97:cf Pixel-9
+Jan  1 00:01:46 aa-proxy daemon.err bluetoothd[169]: src/profile.c:ext_io_disconnected() Unable to get io data for AA Wireless: getpeername: Transport endpoint is not connected (107)
+Jan  1 00:01:46 aa-proxy kern.info kernel: [  106.102501] dwc2 fe980000.usb: bound driver configfs-gadget.accessory
+Jan  1 00:01:46 aa-proxy daemon.err bluetoothd[169]: No matching connection for device
+Jan  1 00:01:46 aa-proxy kern.info kernel: [  106.354011] dwc2 fe980000.usb: new device is high-speed
+Jan  1 00:01:46 aa-proxy kern.info kernel: [  106.415547] android_work: sent uevent USB_STATE=CONNECTED
+Jan  1 00:01:46 aa-proxy kern.info kernel: [  106.435914] dwc2 fe980000.usb: new device is high-speed
+Jan  1 00:01:46 aa-proxy kern.info kernel: [  106.496939] dwc2 fe980000.usb: new address 3
+Jan  1 00:01:46 aa-proxy kern.info kernel: [  106.516298] android_work: sent uevent USB_STATE=CONFIGURED
+Jan  1 00:01:53 aa-proxy daemon.info hostapd: wlan0: STA de:e9:3b:55:97:cf IEEE 802.11: disassociated
+Jan  1 00:01:53 aa-proxy kern.info kernel: [  113.968291] android_work: sent uevent USB_STATE=DISCONNECTED
+Jan  1 00:01:53 aa-proxy kern.info kernel: [  113.974758] android_work: did not send uevent (0 0 0000000000000000)
+Jan  1 00:01:53 aa-proxy daemon.warn bluetoothd[169]: src/profile.c:register_profile() :1.10 tried to register 00001108-0000-1000-8000-00805f9b34fb which is already registered
+Jan  1 00:01:54 aa-proxy kern.err kernel: [  114.840925] Bluetooth: hci0: ACL packet for unknown connection handle 12
+Jan  1 00:01:54 aa-proxy kern.err kernel: [  114.935213] Bluetooth: Unexpected continuation frame (len 0)
+Jan  1 00:01:55 aa-proxy kern.err kernel: [  115.318970] Bluetooth: Unexpected continuation frame (len 0)
+Jan  1 00:01:55 aa-proxy kern.err kernel: [  115.543977] Bluetooth: Unexpected continuation frame (len 0)
+Jan  1 00:01:55 aa-proxy daemon.warn bluetoothd[169]: src/profile.c:register_profile() :1.11 tried to register 00001108-0000-1000-8000-00805f9b34fb which is already registered
+Jan  1 00:01:57 aa-proxy daemon.info hostapd: wlan0: STA de:e9:3b:55:97:cf IEEE 802.11: associated
+Jan  1 00:01:57 aa-proxy daemon.info hostapd: wlan0: STA de:e9:3b:55:97:cf WPA: pairwise key handshake completed (RSN)
+Jan  1 00:01:57 aa-proxy kern.err kernel: [  117.864878] ieee80211 phy0: brcmf_p2p_send_action_frame: Unknown Frame: category 0x8a, action 0x6
+Jan  1 00:01:58 aa-proxy daemon.info dnsmasq-dhcp[210]: DHCPDISCOVER(wlan0) de:e9:3b:55:97:cf 
+Jan  1 00:01:58 aa-proxy daemon.info dnsmasq-dhcp[210]: DHCPACK(wlan0) 10.0.0.5 de:e9:3b:55:97:cf Pixel-9
+Jan  1 00:02:01 aa-proxy daemon.err bluetoothd[169]: src/profile.c:ext_io_disconnected() Unable to get io data for AA Wireless: getpeername: Transport endpoint is not connected (107)
+Jan  1 00:02:01 aa-proxy kern.info kernel: [  121.114145] dwc2 fe980000.usb: bound driver configfs-gadget.accessory
+Jan  1 00:02:01 aa-proxy daemon.err bluetoothd[169]: No matching connection for device
+Jan  1 00:02:01 aa-proxy kern.info kernel: [  121.458187] dwc2 fe980000.usb: new device is high-speed
+Jan  1 00:02:01 aa-proxy kern.info kernel: [  121.519586] android_work: sent uevent USB_STATE=CONNECTED
+Jan  1 00:02:01 aa-proxy kern.info kernel: [  121.534405] dwc2 fe980000.usb: new device is high-speed
+Jan  1 00:02:01 aa-proxy kern.info kernel: [  121.595554] dwc2 fe980000.usb: new address 6
+Jan  1 00:02:01 aa-proxy kern.info kernel: [  121.613141] android_work: sent uevent USB_STATE=CONFIGURED
+Jan  1 00:02:09 aa-proxy daemon.info hostapd: wlan0: STA de:e9:3b:55:97:cf IEEE 802.11: disassociated
+Jan  1 00:02:09 aa-proxy kern.info kernel: [  129.369955] android_work: sent uevent USB_STATE=DISCONNECTED
+Jan  1 00:02:09 aa-proxy daemon.warn bluetoothd[169]: src/profile.c:register_profile() :1.12 tried to register 00001108-0000-1000-8000-00805f9b34fb which is already registered
+Jan  1 00:02:09 aa-proxy kern.err kernel: [  129.691136] Bluetooth: hci0: ACL packet for unknown connection handle 12
+Jan  1 00:02:10 aa-proxy kern.err kernel: [  130.104179] Bluetooth: Unexpected continuation frame (len 0)
+Jan  1 00:02:10 aa-proxy kern.err kernel: [  130.546685] Bluetooth: Unexpected continuation frame (len 0)
+Jan  1 00:02:10 aa-proxy kern.err kernel: [  130.691688] Bluetooth: Unexpected continuation frame (len 0)
+Jan  1 00:02:11 aa-proxy daemon.warn bluetoothd[169]: src/profile.c:register_profile() :1.13 tried to register 00001108-0000-1000-8000-00805f9b34fb which is already registered
+Jan  1 00:02:13 aa-proxy daemon.info hostapd: wlan0: STA de:e9:3b:55:97:cf IEEE 802.11: associated
+Jan  1 00:02:13 aa-proxy daemon.info hostapd: wlan0: STA de:e9:3b:55:97:cf WPA: pairwise key handshake completed (RSN)
+Jan  1 00:02:13 aa-proxy kern.err kernel: [  133.286712] ieee80211 phy0: brcmf_p2p_send_action_frame: Unknown Frame: category 0x8a, action 0x6
+Jan  1 00:02:13 aa-proxy daemon.info dnsmasq-dhcp[210]: DHCPDISCOVER(wlan0) de:e9:3b:55:97:cf 
+Jan  1 00:02:13 aa-proxy daemon.info dnsmasq-dhcp[210]: DHCPACK(wlan0) 10.0.0.5 de:e9:3b:55:97:cf Pixel-9
+Jan  1 00:02:16 aa-proxy kern.info kernel: [  136.084066] dwc2 fe980000.usb: bound driver configfs-gadget.accessory
+Jan  1 00:02:16 aa-proxy daemon.err bluetoothd[169]: No matching connection for device
+Jan  1 00:02:16 aa-proxy kern.info kernel: [  136.306635] dwc2 fe980000.usb: new device is high-speed
+Jan  1 00:02:16 aa-proxy kern.info kernel: [  136.368591] android_work: sent uevent USB_STATE=CONNECTED
+Jan  1 00:02:16 aa-proxy kern.info kernel: [  136.383637] dwc2 fe980000.usb: new device is high-speed
+Jan  1 00:02:16 aa-proxy kern.info kernel: [  136.444472] dwc2 fe980000.usb: new address 11
+Jan  1 00:02:16 aa-proxy kern.info kernel: [  136.475679] android_work: sent uevent USB_STATE=CONFIGURED
+Aug 20 06:08:52 aa-proxy daemon.info hostapd: wlan0: STA 9c:b1:50:6f:d9:34 IEEE 802.11: associated
+Aug 20 06:08:52 aa-proxy daemon.info hostapd: wlan0: STA 9c:b1:50:6f:d9:34 WPA: pairwise key handshake completed (RSN)
+Aug 20 06:08:52 aa-proxy daemon.info dnsmasq-dhcp[210]: DHCPREQUEST(wlan0) 10.0.0.12 9c:b1:50:6f:d9:34 
+Aug 20 06:08:52 aa-proxy daemon.info dnsmasq-dhcp[210]: DHCPACK(wlan0) 10.0.0.12 9c:b1:50:6f:d9:34 FRSMI25-GRAVITY
+Aug 20 06:08:57 aa-proxy kern.err kernel: [  914.092656] Bluetooth: hci0: ACL packet for unknown connection handle 11
+Aug 20 06:08:57 aa-proxy kern.err kernel: [  914.117612] Bluetooth: Unexpected continuation frame (len 0)
+Aug 20 06:08:57 aa-proxy kern.err kernel: [  914.410150] Bluetooth: Unexpected continuation frame (len 0)
+Aug 20 06:08:57 aa-proxy kern.err kernel: [  914.430129] Bluetooth: Unexpected continuation frame (len 0)
+Aug 20 06:08:57 aa-proxy daemon.err bluetoothd[169]: src/profile.c:ext_io_disconnected() Unable to get io data for AA Proxy Companion Control: getpeername: Transport endpoint is not connected (107)
+Aug 20 06:09:02 aa-proxy kern.err kernel: [  918.606448] Bluetooth: Unexpected continuation frame (len 0)

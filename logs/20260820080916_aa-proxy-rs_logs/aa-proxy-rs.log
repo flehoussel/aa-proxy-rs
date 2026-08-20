@@ -1,0 +1,544 @@
+1970-01-01, 00:00:04.072 [34m[INFO][0m 🛸 [1m[34maa-proxy-rs[0m is starting, build: 20260810_074609, git: 6715391-br#1510894
+1970-01-01, 00:00:04.072 [34m[INFO][0m [3m[90m main: [0m 🗃️ Generating config from input template: [1m[32m/etc/umtprd/umtprd.conf.in[0m
+1970-01-01, 00:00:04.074 [34m[INFO][0m [3m[90m main: [0m 💾 Saving generated file as: [1m[32m/var/run/umtprd.conf[0m
+1970-01-01, 00:00:04.074 [34m[INFO][0m [3m[90m main: [0m 🗃️ Generating config from input template: [1m[32m/etc/dnsmasq.conf.in[0m
+1970-01-01, 00:00:04.074 [34m[INFO][0m [3m[90m main: [0m 💾 Saving generated file as: [1m[32m/var/run/dnsmasq.conf[0m
+1970-01-01, 00:00:04.075 [34m[INFO][0m [3m[90m main: [0m 🗃️ Generating config from input template: [1m[32m/etc/network/interfaces.in[0m
+1970-01-01, 00:00:04.075 [34m[INFO][0m [3m[90m main: [0m 💾 Saving generated file as: [1m[32m/var/run/interfaces[0m
+1970-01-01, 00:00:04.075 [34m[INFO][0m [3m[90m main: [0m 🗃️ Generating config from input template: [1m[32m/etc/S92usb_gadget.in[0m
+1970-01-01, 00:00:04.075 [34m[INFO][0m [3m[90m main: [0m 💾 Saving generated file as: [1m[32m/var/run/S92usb_gadget[0m
+1970-01-01, 00:00:04.075 [34m[INFO][0m [3m[90m main: [0m 🚀 Making script executable: [1m[32m/var/run/S92usb_gadget[0m
+1970-01-01, 00:00:04.148 [34m[INFO][0m 🛸 [1m[34maa-proxy-rs[0m is starting, build: 20260810_074609, git: 6715391-br#1510894
+1970-01-01, 00:00:04.148 [34m[INFO][0m [3m[90m main: [0m 🗃️ Generating config from input template: [1m[32m/etc/hostapd.conf.in[0m
+1970-01-01, 00:00:04.148 [34m[INFO][0m [3m[90m main: [0m 💾 Saving generated file as: [1m[32m/var/run/hostapd.conf[0m
+1970-01-01, 00:00:05.528 [34m[INFO][0m 🛸 [1m[34maa-proxy-rs[0m is starting, build: 20260810_074609, git: 6715391-br#1510894
+1970-01-01, 00:00:05.528 [34m[INFO][0m [3m[90m main: [0m 📟 host device: [1m[34mRaspberry Pi 4 Model B Rev 1.1[0m
+1970-01-01, 00:00:05.529 [34m[INFO][0m ⚙️ I/O backend: [1m[32mio_uring[0m (kernel async I/O)
+1970-01-01, 00:00:05.529 [34m[INFO][0m [3m[90m main: [0m ⚙️ config loaded from file: /etc/aa-proxy-rs/config.toml
+1970-01-01, 00:00:05.529 [34m[INFO][0m [3m[90m main: [0m 📜 Log file path: [1m[32m/var/log/aa-proxy-rs.log[0m
+1970-01-01, 00:00:05.529 [34m[INFO][0m [3m[90m main: [0m 💥 Panic reports: [1m[32menabled[0m dir=[1m[32m/data/aa-proxy-rs/crashes[0m
+1970-01-01, 00:00:05.529 [34m[INFO][0m [3m[90m main: [0m 🖼️ SDR UI overrides: [1m[32menabled[0m file=[1m[32m/etc/aa-proxy-rs/sdr-ui-overrides.toml[0m autocreate=true
+1970-01-01, 00:00:05.547 [34m[INFO][0m [wasm] initial loaded wasm script count=0
+1970-01-01, 00:00:05.578 [34m[INFO][0m [3m[90m proxy: [0m 🛰️ Starting TCP server for MD...
+1970-01-01, 00:00:05.579 [34m[INFO][0m [3m[90m proxy: [0m 🛰️ MD TCP server bound to: [4m0.0.0.0:5288[24m
+1970-01-01, 00:00:05.579 [34m[INFO][0m [3m[90m proxy: [0m 🛰️ Starting TCP server for DHU...
+1970-01-01, 00:00:05.579 [34m[INFO][0m [3m[90m proxy: [0m 🛰️ DHU TCP server bound to: [4m0.0.0.0:5277[24m
+1970-01-01, 00:00:05.579 [31m[ERROR][0m [31mmedia_dump_base_port is set but mitm = false — media tap disabled![0m
+1970-01-01, 00:00:05.589 [34m[INFO][0m [3m[90m main: [0m webserver running at http://0.0.0.0:80/
+1970-01-01, 00:00:05.594 [34m[INFO][0m [3m[90m proxy: [0m 💤 waiting for bluetooth handshake...
+1970-01-01, 00:00:05.598 [34m[INFO][0m [3m[90m usb: [0m Using UDC: "fe980000.usb"
+1970-01-01, 00:00:05.628 [34m[INFO][0m [3m[90m bluetooth: [0m 🥏 Bluetooth alias: [1m[32maa-proxy-b9c1b6[0m
+1970-01-01, 00:00:05.629 [34m[INFO][0m [3m[90m bluetooth: [0m 🥏 Opened bluetooth adapter [1mhci0[0m with address [1mDC:A6:32:04:A4:8C[22m
+1970-01-01, 00:00:05.669 [34m[INFO][0m [3m[90m bluetooth: [0m 📱 AA Wireless Profile: registered
+1970-01-01, 00:00:05.669 [34m[INFO][0m [3m[90m companion_bt: [0m pairing: registered default Companion Classic BT pairing agent
+1970-01-01, 00:00:05.670 [34m[INFO][0m [3m[90m bluetooth: [0m 📱 Companion Classic BT pairing agent: registered
+1970-01-01, 00:00:05.693 [34m[INFO][0m [3m[90m bluetooth: [0m 📱 Companion Classic BT: adapter is pairable/discoverable with no timeout
+1970-01-01, 00:00:05.694 [34m[INFO][0m [3m[90m companion_bt: [0m registered Classic BT companion profile name=AA Proxy Companion Control uuid=3f0d2c8e-7e7e-4f38-8c98-6a7a4d94c001 channel=23
+1970-01-01, 00:00:05.694 [34m[INFO][0m [3m[90m bluetooth: [0m 📱 Companion Classic BT custom profile: registered
+1970-01-01, 00:00:05.695 [34m[INFO][0m [3m[90m companion_bt: [0m registered Classic BT companion profile name=AA Proxy Companion Serial uuid=00001101-0000-1000-8000-00805f9b34fb channel=24
+1970-01-01, 00:00:05.695 [34m[INFO][0m [3m[90m bluetooth: [0m 📱 Companion Classic BT SPP fallback profile: registered
+1970-01-01, 00:00:05.695 [34m[INFO][0m [3m[90m usb: [0m 🔌 Initializing USB Manager
+1970-01-01, 00:00:05.698 [34m[INFO][0m [3m[90m usb: [0m 🔌 USB Manager: Disabled all USB gadgets
+1970-01-01, 00:00:05.700 [34m[INFO][0m [3m[90m bluetooth: [0m 🎧 Headset Profile (HSP): registered
+1970-01-01, 00:00:05.705 [34m[INFO][0m [3m[90m bluetooth: [0m ⏳ Waiting for phone to connect via bluetooth...
+1970-01-01, 00:00:05.705 [34m[INFO][0m [3m[90m bluetooth: [0m 📋 Loaded 1 known device(s) from /etc/aa-proxy-rs/known_devices
+1970-01-01, 00:00:05.705 [34m[INFO][0m [3m[90m bluetooth: [0m 🥏 Using 1 known-good device(s)...
+1970-01-01, 00:00:05.705 [34m[INFO][0m [3m[90m bluetooth: [0m 🧲 Attempting to start an AndroidAuto session via bluetooth with the following devices, in this order: [C0:1C:6A:6C:1E:5A]
+1970-01-01, 00:00:05.706 [34m[INFO][0m [3m[90m bluetooth: [0m 🧲 Trying to connect to: C0:1C:6A:6C:1E:5A ([1m[34mPixel 9[0m), attempt: 1/3
+1970-01-01, 00:00:06.291 [34m[INFO][0m [3m[90m bluetooth: [0m 🎧 Headset Profile (HSP): connect from [1mC0:1C:6A:6C:1E:5A[0m
+1970-01-01, 00:00:06.292 [34m[INFO][0m [3m[90m bluetooth: [0m 🔗 Successfully connected to device: C0:1C:6A:6C:1E:5A ([1m[34mPixel 9[0m)
+1970-01-01, 00:00:06.292 [34m[INFO][0m [3m[90m bluetooth: [0m 🧪 bt-wireless-proxy: waiting up to 120s for PHONE AA Wireless RFCOMM (after phone BT trigger)
+1970-01-01, 00:00:06.926 [34m[INFO][0m [3m[90m bluetooth: [0m 📱 AA Wireless Profile: inbound RFCOMM from [1mC0:1C:6A:6C:1E:5A[0m while after phone BT trigger
+1970-01-01, 00:00:06.926 [34m[INFO][0m [3m[90m bluetooth: [0m 🧪 bt-wireless-proxy: accepted PHONE AA Wireless RFCOMM from C0:1C:6A:6C:1E:5A (after phone BT trigger)
+1970-01-01, 00:00:06.927 [34m[INFO][0m [3m[90m sdr-ui: [0m current phone identity set: id=[1mphone_ed849bccf4e9[0m name=[1mPixel 9[0m mac=**:**:**:**:1E:5A
+1970-01-01, 00:00:06.927 [34m[INFO][0m [3m[90m bluetooth: [0m 📲 Sending parameters via bluetooth to phone...
+1970-01-01, 00:00:06.927 [34m[INFO][0m [3m[90m bluetooth: [0m 🛜 Sending Host IP Address: 10.0.0.1
+1970-01-01, 00:00:06.936 [34m[INFO][0m [3m[90m bluetooth: [0m 📨 stage #1 of 5: Sending [33mWifiStartRequest[0m frame to phone...
+1970-01-01, 00:00:07.004 [34m[INFO][0m [3m[90m bluetooth: [0m 📨 stage #2 of 5: Received [33mWifiInfoRequest[0m frame from phone (⏱️ 67 ms)
+1970-01-01, 00:00:07.004 [34m[INFO][0m [3m[90m bluetooth: [0m 🛜 Sending Host SSID and Password: aa-proxy, aa-proxy
+1970-01-01, 00:00:07.004 [34m[INFO][0m [3m[90m bluetooth: [0m 📨 stage #3 of 5: Sending [33mWifiInfoResponse[0m frame to phone...
+1970-01-01, 00:00:07.005 [34m[INFO][0m [3m[90m bluetooth: [0m 📨 stage #4 of 5: Received [33mWifiStartResponse[0m frame from phone (⏱️ 1 ms)
+1970-01-01, 00:00:19.726 [34m[INFO][0m [3m[90m bluetooth: [0m 📨 stage #5 of 5: Received [33mWifiConnectStatus[0m frame from phone (⏱️ 12720 ms)
+1970-01-01, 00:00:19.726 [34m[INFO][0m [3m[90m bluetooth: [0m 📋 Loaded 1 known device(s) from /etc/aa-proxy-rs/known_devices
+1970-01-01, 00:00:19.726 [34m[INFO][0m [3m[90m proxy: [0m 🛰️ MD TCP server: listening for phone connection...
+1970-01-01, 00:00:20.044 [34m[INFO][0m [3m[90m proxy: [0m 📳 TCP server: new client connected: [1m10.0.0.5:42316[22m
+1970-01-01, 00:00:20.048 [34m[INFO][0m [3m[90m proxy: [0m starting companion reverse bridge HTTP, Android IP: 10.0.0.5, remote=10.0.0.5:9999 local=127.0.0.1:80
+1970-01-01, 00:00:20.049 [34m[INFO][0m [3m[90m proxy: [0m tcp_bridge[HTTP]: connecting remote=10.0.0.5:9999 local=127.0.0.1:80
+1970-01-01, 00:00:20.052 [34m[INFO][0m [3m[90m proxy: [0m starting companion reverse bridge WS, Android IP: 10.0.0.5, remote=10.0.0.5:9998 local=127.0.0.1:80
+1970-01-01, 00:00:20.053 [34m[INFO][0m [3m[90m proxy: [0m tcp_bridge[WS]: connecting remote=10.0.0.5:9998 local=127.0.0.1:80
+1970-01-01, 00:00:20.053 [34m[INFO][0m [3m[90m proxy: [0m starting companion reverse bridge SWUPDATE, Android IP: 10.0.0.5, remote=10.0.0.5:9997 local=127.0.0.1:8080
+1970-01-01, 00:00:20.053 [34m[INFO][0m [3m[90m proxy: [0m tcp_bridge[SWUPDATE]: connecting remote=10.0.0.5:9997 local=127.0.0.1:8080
+1970-01-01, 00:00:20.058 [34m[INFO][0m [3m[90m proxy: [0m 🧪 bt-wireless-proxy car-wifi-mitm: PHONE TCP accepted on MD listener; commit barrier seq=1
+1970-01-01, 00:00:20.058 [34m[INFO][0m [3m[90m proxy: [0m 📂 Opening USB accessory device: [4m/dev/usb_accessory[24m
+1970-01-01, 00:00:20.058 [34m[INFO][0m [3m[90m proxy: [0m tcp_bridge[HTTP]: failed to connect to remote server 10.0.0.5:9999: Connection refused (os error 111)
+1970-01-01, 00:00:20.058 [34m[INFO][0m [3m[90m proxy: [0m tcp_bridge[WS]: failed to connect to remote server 10.0.0.5:9998: Connection refused (os error 111)
+1970-01-01, 00:00:20.058 [34m[INFO][0m [3m[90m proxy: [0m tcp_bridge[SWUPDATE]: failed to connect to remote server 10.0.0.5:9997: Connection refused (os error 111)
+1970-01-01, 00:00:20.058 [34m[INFO][0m [3m[90m proxy: [0m ♾️ Starting to proxy data between HU and MD...
+1970-01-01, 00:00:20.059 [34m[INFO][0m [3m[90m mitm/HU: [0m 🔄 running in [1mpassthrough[0m mode (MITM disabled in config)
+1970-01-01, 00:00:20.059 [34m[INFO][0m [3m[90m mitm/MD: [0m 🔄 running in [1mpassthrough[0m mode (MITM disabled in config)
+1970-01-01, 00:00:20.059 [34m[INFO][0m [3m[90m proxy: [0m ⚙️ Showing transfer statistics: [1m[34mdisabled[0m
+1970-01-01, 00:00:22.038 [34m[INFO][0m [3m[90m bluetooth: [0m 🎧 Headset Profile (HSP): unregistering ...
+1970-01-01, 00:00:22.340 [34m[INFO][0m [3m[90m bluetooth: [0m 🎧 Headset Profile (HSP): unregistered
+1970-01-01, 00:00:22.340 [34m[INFO][0m [3m[90m bluetooth: [0m 🚀 Bluetooth launch sequence completed
+1970-01-01, 00:00:22.351 [34m[INFO][0m [3m[90m usb: [0m 🔌 USB Manager: Switched to accessory gadget
+1970-01-01, 00:00:29.179 [34m[INFO][0m [3m[90m proxy: [0m tcp_bridge[HTTP]: connecting remote=10.0.0.5:9999 local=127.0.0.1:80
+1970-01-01, 00:00:29.179 [34m[INFO][0m [3m[90m proxy: [0m tcp_bridge[WS]: connecting remote=10.0.0.5:9998 local=127.0.0.1:80
+1970-01-01, 00:00:29.188 [34m[INFO][0m [3m[90m proxy: [0m tcp_bridge[HTTP]: failed to connect to remote server 10.0.0.5:9999: Connection refused (os error 111)
+1970-01-01, 00:00:29.188 [34m[INFO][0m [3m[90m proxy: [0m tcp_bridge[WS]: failed to connect to remote server 10.0.0.5:9998: Connection refused (os error 111)
+1970-01-01, 00:00:30.068 [31m[ERROR][0m [3m[90m proxy: [0m 🔴 Connection error: unexpected transfer stall
+1970-01-01, 00:00:30.068 [34m[INFO][0m [3m[90m proxy: [0m disassociating WiFi client: DE:E9:3B:55:97:CF
+1970-01-01, 00:00:30.071 [34m[INFO][0m [3m[90m proxy: [0m ⌛ session time: 10s 11ms 954us 49ns
+1970-01-01, 00:00:30.071 [34m[INFO][0m [3m[90m proxy: [0m 💤 waiting for bluetooth handshake...
+1970-01-01, 00:00:30.071 [34m[INFO][0m [3m[90m main: [0m 📵 TCP/USB connection closed or not started, trying again...
+1970-01-01, 00:00:30.271 [34m[INFO][0m [3m[90m usb: [0m 🔌 Initializing USB Manager
+1970-01-01, 00:00:30.284 [34m[INFO][0m [3m[90m usb: [0m 🔌 USB Manager: Disabled all USB gadgets
+1970-01-01, 00:00:30.288 [33m[WARN][0m [3m[90m bluetooth: [0m 🎧 Headset Profile (HSP) registering error: Bluetooth operation not permitted: UUID already registered, ignoring
+1970-01-01, 00:00:30.289 [34m[INFO][0m [3m[90m bluetooth: [0m ⏳ Waiting for phone to connect via bluetooth...
+1970-01-01, 00:00:30.289 [34m[INFO][0m [3m[90m bluetooth: [0m 📋 Loaded 1 known device(s) from /etc/aa-proxy-rs/known_devices
+1970-01-01, 00:00:30.289 [34m[INFO][0m [3m[90m bluetooth: [0m 🥏 Using 1 known-good device(s)...
+1970-01-01, 00:00:30.289 [34m[INFO][0m [3m[90m bluetooth: [0m 🧲 Attempting to start an AndroidAuto session via bluetooth with the following devices, in this order: [C0:1C:6A:6C:1E:5A]
+1970-01-01, 00:00:30.290 [34m[INFO][0m [3m[90m bluetooth: [0m 🧲 Trying to connect to: C0:1C:6A:6C:1E:5A ([1m[34mPixel 9[0m), attempt: 1/3
+1970-01-01, 00:00:31.835 [34m[INFO][0m [3m[90m bluetooth: [0m 🎧 Headset Profile (HSP): connect from [1mC0:1C:6A:6C:1E:5A[0m
+1970-01-01, 00:00:31.837 [34m[INFO][0m [3m[90m bluetooth: [0m 🔗 Successfully connected to device: C0:1C:6A:6C:1E:5A ([1m[34mPixel 9[0m)
+1970-01-01, 00:00:31.837 [34m[INFO][0m [3m[90m bluetooth: [0m 🧪 bt-wireless-proxy: waiting up to 120s for PHONE AA Wireless RFCOMM (after phone BT trigger)
+1970-01-01, 00:00:32.243 [34m[INFO][0m [3m[90m bluetooth: [0m 📱 AA Wireless Profile: inbound RFCOMM from [1mC0:1C:6A:6C:1E:5A[0m while after phone BT trigger
+1970-01-01, 00:00:32.243 [34m[INFO][0m [3m[90m bluetooth: [0m 🧪 bt-wireless-proxy: accepted PHONE AA Wireless RFCOMM from C0:1C:6A:6C:1E:5A (after phone BT trigger)
+1970-01-01, 00:00:32.245 [34m[INFO][0m [3m[90m sdr-ui: [0m current phone identity set: id=[1mphone_ed849bccf4e9[0m name=[1mPixel 9[0m mac=**:**:**:**:1E:5A
+1970-01-01, 00:00:32.245 [34m[INFO][0m [3m[90m bluetooth: [0m 📲 Sending parameters via bluetooth to phone...
+1970-01-01, 00:00:32.245 [34m[INFO][0m [3m[90m bluetooth: [0m 🛜 Sending Host IP Address: 10.0.0.1
+1970-01-01, 00:00:32.245 [34m[INFO][0m [3m[90m bluetooth: [0m 📨 stage #1 of 5: Sending [33mWifiStartRequest[0m frame to phone...
+1970-01-01, 00:00:32.316 [34m[INFO][0m [3m[90m bluetooth: [0m 📨 stage #2 of 5: Received [33mWifiInfoRequest[0m frame from phone (⏱️ 70 ms)
+1970-01-01, 00:00:32.316 [34m[INFO][0m [3m[90m bluetooth: [0m 🛜 Sending Host SSID and Password: aa-proxy, aa-proxy
+1970-01-01, 00:00:32.316 [34m[INFO][0m [3m[90m bluetooth: [0m 📨 stage #3 of 5: Sending [33mWifiInfoResponse[0m frame to phone...
+1970-01-01, 00:00:32.341 [34m[INFO][0m [3m[90m bluetooth: [0m 📨 stage #4 of 5: Received [33mWifiStartResponse[0m frame from phone (⏱️ 24 ms)
+1970-01-01, 00:00:36.943 [34m[INFO][0m [3m[90m bluetooth: [0m 📨 stage #5 of 5: Received [33mWifiConnectStatus[0m frame from phone (⏱️ 4602 ms)
+1970-01-01, 00:00:36.944 [34m[INFO][0m [3m[90m bluetooth: [0m 📋 Loaded 1 known device(s) from /etc/aa-proxy-rs/known_devices
+1970-01-01, 00:00:36.944 [34m[INFO][0m [3m[90m proxy: [0m 🛰️ MD TCP server: listening for phone connection...
+1970-01-01, 00:00:37.187 [34m[INFO][0m [3m[90m proxy: [0m 📳 TCP server: new client connected: [1m10.0.0.5:58262[22m
+1970-01-01, 00:00:37.187 [34m[INFO][0m [3m[90m proxy: [0m starting companion reverse bridge HTTP, Android IP: 10.0.0.5, remote=10.0.0.5:9999 local=127.0.0.1:80
+1970-01-01, 00:00:37.187 [34m[INFO][0m [3m[90m proxy: [0m tcp_bridge[HTTP]: connecting remote=10.0.0.5:9999 local=127.0.0.1:80
+1970-01-01, 00:00:37.188 [34m[INFO][0m [3m[90m proxy: [0m starting companion reverse bridge WS, Android IP: 10.0.0.5, remote=10.0.0.5:9998 local=127.0.0.1:80
+1970-01-01, 00:00:37.188 [34m[INFO][0m [3m[90m proxy: [0m tcp_bridge[WS]: connecting remote=10.0.0.5:9998 local=127.0.0.1:80
+1970-01-01, 00:00:37.188 [34m[INFO][0m [3m[90m proxy: [0m starting companion reverse bridge SWUPDATE, Android IP: 10.0.0.5, remote=10.0.0.5:9997 local=127.0.0.1:8080
+1970-01-01, 00:00:37.189 [34m[INFO][0m [3m[90m proxy: [0m tcp_bridge[SWUPDATE]: connecting remote=10.0.0.5:9997 local=127.0.0.1:8080
+1970-01-01, 00:00:37.189 [34m[INFO][0m [3m[90m proxy: [0m 🧪 bt-wireless-proxy car-wifi-mitm: PHONE TCP accepted on MD listener; commit barrier seq=2
+1970-01-01, 00:00:37.189 [34m[INFO][0m [3m[90m proxy: [0m 📂 Opening USB accessory device: [4m/dev/usb_accessory[24m
+1970-01-01, 00:00:37.189 [34m[INFO][0m [3m[90m proxy: [0m ♾️ Starting to proxy data between HU and MD...
+1970-01-01, 00:00:37.190 [34m[INFO][0m [3m[90m mitm/HU: [0m 🔄 running in [1mpassthrough[0m mode (MITM disabled in config)
+1970-01-01, 00:00:37.190 [34m[INFO][0m [3m[90m mitm/MD: [0m 🔄 running in [1mpassthrough[0m mode (MITM disabled in config)
+1970-01-01, 00:00:37.190 [34m[INFO][0m [3m[90m proxy: [0m ⚙️ Showing transfer statistics: [1m[34mdisabled[0m
+1970-01-01, 00:00:37.193 [34m[INFO][0m [3m[90m proxy: [0m tcp_bridge[HTTP]: failed to connect to remote server 10.0.0.5:9999: Connection refused (os error 111)
+1970-01-01, 00:00:37.193 [34m[INFO][0m [3m[90m proxy: [0m tcp_bridge[WS]: failed to connect to remote server 10.0.0.5:9998: Connection refused (os error 111)
+1970-01-01, 00:00:37.193 [34m[INFO][0m [3m[90m proxy: [0m tcp_bridge[SWUPDATE]: failed to connect to remote server 10.0.0.5:9997: Connection refused (os error 111)
+1970-01-01, 00:00:39.109 [34m[INFO][0m [3m[90m bluetooth: [0m 🚀 Bluetooth launch sequence completed
+1970-01-01, 00:00:39.120 [34m[INFO][0m [3m[90m usb: [0m 🔌 USB Manager: Switched to accessory gadget
+1970-01-01, 00:00:46.455 [34m[INFO][0m [3m[90m proxy: [0m tcp_bridge[HTTP]: connecting remote=10.0.0.5:9999 local=127.0.0.1:80
+1970-01-01, 00:00:46.456 [34m[INFO][0m [3m[90m proxy: [0m tcp_bridge[WS]: connecting remote=10.0.0.5:9998 local=127.0.0.1:80
+1970-01-01, 00:00:46.465 [34m[INFO][0m [3m[90m proxy: [0m tcp_bridge[HTTP]: failed to connect to remote server 10.0.0.5:9999: Connection refused (os error 111)
+1970-01-01, 00:00:46.465 [34m[INFO][0m [3m[90m proxy: [0m tcp_bridge[WS]: failed to connect to remote server 10.0.0.5:9998: Connection refused (os error 111)
+1970-01-01, 00:00:47.196 [31m[ERROR][0m [3m[90m proxy: [0m 🔴 Connection error: unexpected transfer stall
+1970-01-01, 00:00:47.196 [34m[INFO][0m [3m[90m proxy: [0m disassociating WiFi client: DE:E9:3B:55:97:CF
+1970-01-01, 00:00:47.197 [34m[INFO][0m [3m[90m proxy: [0m ⌛ session time: 10s 7ms 50us 532ns
+1970-01-01, 00:00:47.197 [34m[INFO][0m [3m[90m proxy: [0m 💤 waiting for bluetooth handshake...
+1970-01-01, 00:00:47.197 [34m[INFO][0m [3m[90m main: [0m 📵 TCP/USB connection closed or not started, trying again...
+1970-01-01, 00:00:47.398 [34m[INFO][0m [3m[90m usb: [0m 🔌 Initializing USB Manager
+1970-01-01, 00:00:47.398 [34m[INFO][0m [3m[90m usb: [0m 🔌 USB Manager: Disabled all USB gadgets
+1970-01-01, 00:00:47.408 [33m[WARN][0m [3m[90m bluetooth: [0m 🎧 Headset Profile (HSP) registering error: Bluetooth operation not permitted: UUID already registered, ignoring
+1970-01-01, 00:00:47.408 [34m[INFO][0m [3m[90m bluetooth: [0m ⏳ Waiting for phone to connect via bluetooth...
+1970-01-01, 00:00:47.408 [34m[INFO][0m [3m[90m bluetooth: [0m 📋 Loaded 1 known device(s) from /etc/aa-proxy-rs/known_devices
+1970-01-01, 00:00:47.408 [34m[INFO][0m [3m[90m bluetooth: [0m 🥏 Using 1 known-good device(s)...
+1970-01-01, 00:00:47.409 [34m[INFO][0m [3m[90m bluetooth: [0m 🧲 Attempting to start an AndroidAuto session via bluetooth with the following devices, in this order: [C0:1C:6A:6C:1E:5A]
+1970-01-01, 00:00:47.409 [34m[INFO][0m [3m[90m bluetooth: [0m 🧲 Trying to connect to: C0:1C:6A:6C:1E:5A ([1m[34mPixel 9[0m), attempt: 1/3
+1970-01-01, 00:00:49.157 [34m[INFO][0m [3m[90m bluetooth: [0m 🎧 Headset Profile (HSP): connect from [1mC0:1C:6A:6C:1E:5A[0m
+1970-01-01, 00:00:49.158 [34m[INFO][0m [3m[90m bluetooth: [0m 🔗 Successfully connected to device: C0:1C:6A:6C:1E:5A ([1m[34mPixel 9[0m)
+1970-01-01, 00:00:49.158 [34m[INFO][0m [3m[90m bluetooth: [0m 🧪 bt-wireless-proxy: waiting up to 120s for PHONE AA Wireless RFCOMM (after phone BT trigger)
+1970-01-01, 00:00:49.685 [34m[INFO][0m [3m[90m bluetooth: [0m 📱 AA Wireless Profile: inbound RFCOMM from [1mC0:1C:6A:6C:1E:5A[0m while after phone BT trigger
+1970-01-01, 00:00:49.685 [34m[INFO][0m [3m[90m bluetooth: [0m 🧪 bt-wireless-proxy: accepted PHONE AA Wireless RFCOMM from C0:1C:6A:6C:1E:5A (after phone BT trigger)
+1970-01-01, 00:00:49.686 [34m[INFO][0m [3m[90m sdr-ui: [0m current phone identity set: id=[1mphone_ed849bccf4e9[0m name=[1mPixel 9[0m mac=**:**:**:**:1E:5A
+1970-01-01, 00:00:49.686 [34m[INFO][0m [3m[90m bluetooth: [0m 📲 Sending parameters via bluetooth to phone...
+1970-01-01, 00:00:49.686 [34m[INFO][0m [3m[90m bluetooth: [0m 🛜 Sending Host IP Address: 10.0.0.1
+1970-01-01, 00:00:49.686 [34m[INFO][0m [3m[90m bluetooth: [0m 📨 stage #1 of 5: Sending [33mWifiStartRequest[0m frame to phone...
+1970-01-01, 00:00:49.832 [34m[INFO][0m [3m[90m bluetooth: [0m 📨 stage #2 of 5: Received [33mWifiInfoRequest[0m frame from phone (⏱️ 145 ms)
+1970-01-01, 00:00:49.832 [34m[INFO][0m [3m[90m bluetooth: [0m 🛜 Sending Host SSID and Password: aa-proxy, aa-proxy
+1970-01-01, 00:00:49.832 [34m[INFO][0m [3m[90m bluetooth: [0m 📨 stage #3 of 5: Sending [33mWifiInfoResponse[0m frame to phone...
+1970-01-01, 00:00:49.833 [34m[INFO][0m [3m[90m bluetooth: [0m 📨 stage #4 of 5: Received [33mWifiStartResponse[0m frame from phone (⏱️ 0 ms)
+1970-01-01, 00:00:56.797 [34m[INFO][0m [3m[90m bluetooth: [0m 📨 stage #5 of 5: Received [33mWifiConnectStatus[0m frame from phone (⏱️ 6963 ms)
+1970-01-01, 00:00:56.798 [34m[INFO][0m [3m[90m bluetooth: [0m 📋 Loaded 1 known device(s) from /etc/aa-proxy-rs/known_devices
+1970-01-01, 00:00:56.798 [34m[INFO][0m [3m[90m proxy: [0m 🛰️ MD TCP server: listening for phone connection...
+1970-01-01, 00:00:56.798 [34m[INFO][0m [3m[90m proxy: [0m 📳 TCP server: new client connected: [1m10.0.0.5:49982[22m
+1970-01-01, 00:00:56.798 [34m[INFO][0m [3m[90m proxy: [0m starting companion reverse bridge HTTP, Android IP: 10.0.0.5, remote=10.0.0.5:9999 local=127.0.0.1:80
+1970-01-01, 00:00:56.799 [34m[INFO][0m [3m[90m proxy: [0m tcp_bridge[HTTP]: connecting remote=10.0.0.5:9999 local=127.0.0.1:80
+1970-01-01, 00:00:56.799 [34m[INFO][0m [3m[90m proxy: [0m starting companion reverse bridge WS, Android IP: 10.0.0.5, remote=10.0.0.5:9998 local=127.0.0.1:80
+1970-01-01, 00:00:56.799 [34m[INFO][0m [3m[90m proxy: [0m tcp_bridge[WS]: connecting remote=10.0.0.5:9998 local=127.0.0.1:80
+1970-01-01, 00:00:56.799 [34m[INFO][0m [3m[90m proxy: [0m starting companion reverse bridge SWUPDATE, Android IP: 10.0.0.5, remote=10.0.0.5:9997 local=127.0.0.1:8080
+1970-01-01, 00:00:56.800 [34m[INFO][0m [3m[90m proxy: [0m tcp_bridge[SWUPDATE]: connecting remote=10.0.0.5:9997 local=127.0.0.1:8080
+1970-01-01, 00:00:56.800 [34m[INFO][0m [3m[90m proxy: [0m 🧪 bt-wireless-proxy car-wifi-mitm: PHONE TCP accepted on MD listener; commit barrier seq=3
+1970-01-01, 00:00:56.801 [34m[INFO][0m [3m[90m proxy: [0m 📂 Opening USB accessory device: [4m/dev/usb_accessory[24m
+1970-01-01, 00:00:56.801 [34m[INFO][0m [3m[90m proxy: [0m ♾️ Starting to proxy data between HU and MD...
+1970-01-01, 00:00:56.801 [34m[INFO][0m [3m[90m mitm/HU: [0m 🔄 running in [1mpassthrough[0m mode (MITM disabled in config)
+1970-01-01, 00:00:56.801 [34m[INFO][0m [3m[90m mitm/MD: [0m 🔄 running in [1mpassthrough[0m mode (MITM disabled in config)
+1970-01-01, 00:00:56.801 [34m[INFO][0m [3m[90m proxy: [0m ⚙️ Showing transfer statistics: [1m[34mdisabled[0m
+1970-01-01, 00:00:56.805 [34m[INFO][0m [3m[90m proxy: [0m tcp_bridge[HTTP]: failed to connect to remote server 10.0.0.5:9999: Connection refused (os error 111)
+1970-01-01, 00:00:56.805 [34m[INFO][0m [3m[90m proxy: [0m tcp_bridge[WS]: failed to connect to remote server 10.0.0.5:9998: Connection refused (os error 111)
+1970-01-01, 00:00:56.805 [34m[INFO][0m [3m[90m proxy: [0m tcp_bridge[SWUPDATE]: failed to connect to remote server 10.0.0.5:9997: Connection refused (os error 111)
+1970-01-01, 00:00:59.085 [34m[INFO][0m [3m[90m bluetooth: [0m 🚀 Bluetooth launch sequence completed
+1970-01-01, 00:00:59.096 [34m[INFO][0m [3m[90m usb: [0m 🔌 USB Manager: Switched to accessory gadget
+1970-01-01, 00:01:06.112 [34m[INFO][0m [3m[90m proxy: [0m tcp_bridge[HTTP]: connecting remote=10.0.0.5:9999 local=127.0.0.1:80
+1970-01-01, 00:01:06.112 [34m[INFO][0m [3m[90m proxy: [0m tcp_bridge[WS]: connecting remote=10.0.0.5:9998 local=127.0.0.1:80
+1970-01-01, 00:01:06.120 [34m[INFO][0m [3m[90m proxy: [0m tcp_bridge[HTTP]: failed to connect to remote server 10.0.0.5:9999: Connection refused (os error 111)
+1970-01-01, 00:01:06.121 [34m[INFO][0m [3m[90m proxy: [0m tcp_bridge[WS]: failed to connect to remote server 10.0.0.5:9998: Connection refused (os error 111)
+1970-01-01, 00:01:06.810 [31m[ERROR][0m [3m[90m proxy: [0m 🔴 Connection error: unexpected transfer stall
+1970-01-01, 00:01:06.810 [34m[INFO][0m [3m[90m proxy: [0m disassociating WiFi client: DE:E9:3B:55:97:CF
+1970-01-01, 00:01:06.811 [34m[INFO][0m [3m[90m proxy: [0m ⌛ session time: 10s 9ms 896us 50ns
+1970-01-01, 00:01:06.811 [34m[INFO][0m [3m[90m proxy: [0m 💤 waiting for bluetooth handshake...
+1970-01-01, 00:01:06.811 [34m[INFO][0m [3m[90m main: [0m 📵 TCP/USB connection closed or not started, trying again...
+1970-01-01, 00:01:07.012 [34m[INFO][0m [3m[90m usb: [0m 🔌 Initializing USB Manager
+1970-01-01, 00:01:07.013 [34m[INFO][0m [3m[90m usb: [0m 🔌 USB Manager: Disabled all USB gadgets
+1970-01-01, 00:01:07.022 [33m[WARN][0m [3m[90m bluetooth: [0m 🎧 Headset Profile (HSP) registering error: Bluetooth operation not permitted: UUID already registered, ignoring
+1970-01-01, 00:01:07.022 [34m[INFO][0m [3m[90m bluetooth: [0m ⏳ Waiting for phone to connect via bluetooth...
+1970-01-01, 00:01:07.022 [34m[INFO][0m [3m[90m bluetooth: [0m 📋 Loaded 1 known device(s) from /etc/aa-proxy-rs/known_devices
+1970-01-01, 00:01:07.022 [34m[INFO][0m [3m[90m bluetooth: [0m 🥏 Using 1 known-good device(s)...
+1970-01-01, 00:01:07.023 [34m[INFO][0m [3m[90m bluetooth: [0m 🧲 Attempting to start an AndroidAuto session via bluetooth with the following devices, in this order: [C0:1C:6A:6C:1E:5A]
+1970-01-01, 00:01:07.023 [34m[INFO][0m [3m[90m bluetooth: [0m 🧲 Trying to connect to: C0:1C:6A:6C:1E:5A ([1m[34mPixel 9[0m), attempt: 1/3
+1970-01-01, 00:01:07.921 [34m[INFO][0m [3m[90m bluetooth: [0m 🎧 Headset Profile (HSP): connect from [1mC0:1C:6A:6C:1E:5A[0m
+1970-01-01, 00:01:07.922 [34m[INFO][0m [3m[90m bluetooth: [0m 🔗 Successfully connected to device: C0:1C:6A:6C:1E:5A ([1m[34mPixel 9[0m)
+1970-01-01, 00:01:07.922 [34m[INFO][0m [3m[90m bluetooth: [0m 🧪 bt-wireless-proxy: waiting up to 120s for PHONE AA Wireless RFCOMM (after phone BT trigger)
+1970-01-01, 00:01:07.922 [34m[INFO][0m [3m[90m bluetooth: [0m 📱 AA Wireless Profile: inbound RFCOMM from [1mC0:1C:6A:6C:1E:5A[0m while after phone BT trigger
+1970-01-01, 00:01:07.922 [34m[INFO][0m [3m[90m bluetooth: [0m 🧪 bt-wireless-proxy: accepted PHONE AA Wireless RFCOMM from C0:1C:6A:6C:1E:5A (after phone BT trigger)
+1970-01-01, 00:01:07.924 [34m[INFO][0m [3m[90m sdr-ui: [0m current phone identity set: id=[1mphone_ed849bccf4e9[0m name=[1mPixel 9[0m mac=**:**:**:**:1E:5A
+1970-01-01, 00:01:07.924 [34m[INFO][0m [3m[90m bluetooth: [0m 📲 Sending parameters via bluetooth to phone...
+1970-01-01, 00:01:07.924 [34m[INFO][0m [3m[90m bluetooth: [0m 🛜 Sending Host IP Address: 10.0.0.1
+1970-01-01, 00:01:07.924 [34m[INFO][0m [3m[90m bluetooth: [0m 📨 stage #1 of 5: Sending [33mWifiStartRequest[0m frame to phone...
+1970-01-01, 00:01:07.924 [31m[ERROR][0m [3m[90m main: [0m bluetooth AA handshake error: Software caused connection abort (os error 103)
+1970-01-01, 00:01:08.125 [34m[INFO][0m [3m[90m usb: [0m 🔌 Initializing USB Manager
+1970-01-01, 00:01:08.125 [34m[INFO][0m [3m[90m usb: [0m 🔌 USB Manager: Disabled all USB gadgets
+1970-01-01, 00:01:08.131 [33m[WARN][0m [3m[90m bluetooth: [0m 🎧 Headset Profile (HSP) registering error: Bluetooth operation not permitted: UUID already registered, ignoring
+1970-01-01, 00:01:08.131 [34m[INFO][0m [3m[90m bluetooth: [0m ⏳ Waiting for phone to connect via bluetooth...
+1970-01-01, 00:01:08.131 [34m[INFO][0m [3m[90m bluetooth: [0m 📋 Loaded 1 known device(s) from /etc/aa-proxy-rs/known_devices
+1970-01-01, 00:01:08.131 [34m[INFO][0m [3m[90m bluetooth: [0m 🥏 Using 1 known-good device(s)...
+1970-01-01, 00:01:08.131 [34m[INFO][0m [3m[90m bluetooth: [0m 🧲 Attempting to start an AndroidAuto session via bluetooth with the following devices, in this order: [C0:1C:6A:6C:1E:5A]
+1970-01-01, 00:01:08.132 [34m[INFO][0m [3m[90m bluetooth: [0m 🧲 Trying to connect to: C0:1C:6A:6C:1E:5A ([1m[34mPixel 9[0m), attempt: 1/3
+1970-01-01, 00:01:08.133 [34m[INFO][0m [3m[90m bluetooth: [0m 🔗 Successfully connected to device: C0:1C:6A:6C:1E:5A ([1m[34mPixel 9[0m)
+1970-01-01, 00:01:08.133 [34m[INFO][0m [3m[90m bluetooth: [0m 🧪 bt-wireless-proxy: waiting up to 120s for PHONE AA Wireless RFCOMM (after phone BT trigger)
+1970-01-01, 00:01:08.492 [34m[INFO][0m [3m[90m bluetooth: [0m 📱 AA Wireless Profile: inbound RFCOMM from [1mC0:1C:6A:6C:1E:5A[0m while after phone BT trigger
+1970-01-01, 00:01:08.493 [34m[INFO][0m [3m[90m bluetooth: [0m 🧪 bt-wireless-proxy: accepted PHONE AA Wireless RFCOMM from C0:1C:6A:6C:1E:5A (after phone BT trigger)
+1970-01-01, 00:01:08.494 [34m[INFO][0m [3m[90m sdr-ui: [0m current phone identity set: id=[1mphone_ed849bccf4e9[0m name=[1mPixel 9[0m mac=**:**:**:**:1E:5A
+1970-01-01, 00:01:08.494 [34m[INFO][0m [3m[90m bluetooth: [0m 📲 Sending parameters via bluetooth to phone...
+1970-01-01, 00:01:08.494 [34m[INFO][0m [3m[90m bluetooth: [0m 🛜 Sending Host IP Address: 10.0.0.1
+1970-01-01, 00:01:08.495 [34m[INFO][0m [3m[90m bluetooth: [0m 📨 stage #1 of 5: Sending [33mWifiStartRequest[0m frame to phone...
+1970-01-01, 00:01:08.585 [34m[INFO][0m [3m[90m bluetooth: [0m 📨 stage #2 of 5: Received [33mWifiInfoRequest[0m frame from phone (⏱️ 90 ms)
+1970-01-01, 00:01:08.585 [34m[INFO][0m [3m[90m bluetooth: [0m 🛜 Sending Host SSID and Password: aa-proxy, aa-proxy
+1970-01-01, 00:01:08.585 [34m[INFO][0m [3m[90m bluetooth: [0m 📨 stage #3 of 5: Sending [33mWifiInfoResponse[0m frame to phone...
+1970-01-01, 00:01:08.586 [34m[INFO][0m [3m[90m bluetooth: [0m 📨 stage #4 of 5: Received [33mWifiStartResponse[0m frame from phone (⏱️ 0 ms)
+1970-01-01, 00:01:10.218 [34m[INFO][0m [3m[90m bluetooth: [0m 📨 stage #5 of 5: Received [33mWifiConnectStatus[0m frame from phone (⏱️ 1631 ms)
+1970-01-01, 00:01:10.218 [34m[INFO][0m [3m[90m bluetooth: [0m 📋 Loaded 1 known device(s) from /etc/aa-proxy-rs/known_devices
+1970-01-01, 00:01:10.218 [34m[INFO][0m [3m[90m proxy: [0m 🛰️ MD TCP server: listening for phone connection...
+1970-01-01, 00:01:10.430 [34m[INFO][0m [3m[90m proxy: [0m 📳 TCP server: new client connected: [1m10.0.0.5:52772[22m
+1970-01-01, 00:01:10.430 [34m[INFO][0m [3m[90m proxy: [0m starting companion reverse bridge HTTP, Android IP: 10.0.0.5, remote=10.0.0.5:9999 local=127.0.0.1:80
+1970-01-01, 00:01:10.430 [34m[INFO][0m [3m[90m proxy: [0m tcp_bridge[HTTP]: connecting remote=10.0.0.5:9999 local=127.0.0.1:80
+1970-01-01, 00:01:10.430 [34m[INFO][0m [3m[90m proxy: [0m starting companion reverse bridge WS, Android IP: 10.0.0.5, remote=10.0.0.5:9998 local=127.0.0.1:80
+1970-01-01, 00:01:10.430 [34m[INFO][0m [3m[90m proxy: [0m tcp_bridge[WS]: connecting remote=10.0.0.5:9998 local=127.0.0.1:80
+1970-01-01, 00:01:10.431 [34m[INFO][0m [3m[90m proxy: [0m starting companion reverse bridge SWUPDATE, Android IP: 10.0.0.5, remote=10.0.0.5:9997 local=127.0.0.1:8080
+1970-01-01, 00:01:10.431 [34m[INFO][0m [3m[90m proxy: [0m tcp_bridge[SWUPDATE]: connecting remote=10.0.0.5:9997 local=127.0.0.1:8080
+1970-01-01, 00:01:10.432 [34m[INFO][0m [3m[90m proxy: [0m 🧪 bt-wireless-proxy car-wifi-mitm: PHONE TCP accepted on MD listener; commit barrier seq=4
+1970-01-01, 00:01:10.432 [34m[INFO][0m [3m[90m proxy: [0m 📂 Opening USB accessory device: [4m/dev/usb_accessory[24m
+1970-01-01, 00:01:10.432 [34m[INFO][0m [3m[90m proxy: [0m ♾️ Starting to proxy data between HU and MD...
+1970-01-01, 00:01:10.432 [34m[INFO][0m [3m[90m mitm/HU: [0m 🔄 running in [1mpassthrough[0m mode (MITM disabled in config)
+1970-01-01, 00:01:10.433 [34m[INFO][0m [3m[90m mitm/MD: [0m 🔄 running in [1mpassthrough[0m mode (MITM disabled in config)
+1970-01-01, 00:01:10.433 [34m[INFO][0m [3m[90m proxy: [0m ⚙️ Showing transfer statistics: [1m[34mdisabled[0m
+1970-01-01, 00:01:10.433 [34m[INFO][0m [3m[90m proxy: [0m tcp_bridge[HTTP]: failed to connect to remote server 10.0.0.5:9999: Connection refused (os error 111)
+1970-01-01, 00:01:10.435 [34m[INFO][0m [3m[90m proxy: [0m tcp_bridge[WS]: failed to connect to remote server 10.0.0.5:9998: Connection refused (os error 111)
+1970-01-01, 00:01:10.435 [34m[INFO][0m [3m[90m proxy: [0m tcp_bridge[SWUPDATE]: failed to connect to remote server 10.0.0.5:9997: Connection refused (os error 111)
+1970-01-01, 00:01:12.085 [34m[INFO][0m [3m[90m bluetooth: [0m 🚀 Bluetooth launch sequence completed
+1970-01-01, 00:01:12.096 [34m[INFO][0m [3m[90m usb: [0m 🔌 USB Manager: Switched to accessory gadget
+1970-01-01, 00:01:19.776 [34m[INFO][0m [3m[90m proxy: [0m tcp_bridge[HTTP]: connecting remote=10.0.0.5:9999 local=127.0.0.1:80
+1970-01-01, 00:01:19.776 [34m[INFO][0m [3m[90m proxy: [0m tcp_bridge[WS]: connecting remote=10.0.0.5:9998 local=127.0.0.1:80
+1970-01-01, 00:01:19.799 [34m[INFO][0m [3m[90m proxy: [0m tcp_bridge[HTTP]: failed to connect to remote server 10.0.0.5:9999: Connection refused (os error 111)
+1970-01-01, 00:01:19.799 [34m[INFO][0m [3m[90m proxy: [0m tcp_bridge[WS]: failed to connect to remote server 10.0.0.5:9998: Connection refused (os error 111)
+1970-01-01, 00:01:20.439 [31m[ERROR][0m [3m[90m proxy: [0m 🔴 Connection error: unexpected transfer stall
+1970-01-01, 00:01:20.440 [34m[INFO][0m [3m[90m proxy: [0m disassociating WiFi client: DE:E9:3B:55:97:CF
+1970-01-01, 00:01:20.440 [34m[INFO][0m [3m[90m proxy: [0m ⌛ session time: 10s 8ms 241us 86ns
+1970-01-01, 00:01:20.441 [34m[INFO][0m [3m[90m proxy: [0m 💤 waiting for bluetooth handshake...
+1970-01-01, 00:01:20.441 [34m[INFO][0m [3m[90m main: [0m 📵 TCP/USB connection closed or not started, trying again...
+1970-01-01, 00:01:20.642 [34m[INFO][0m [3m[90m usb: [0m 🔌 Initializing USB Manager
+1970-01-01, 00:01:20.642 [34m[INFO][0m [3m[90m usb: [0m 🔌 USB Manager: Disabled all USB gadgets
+1970-01-01, 00:01:20.648 [33m[WARN][0m [3m[90m bluetooth: [0m 🎧 Headset Profile (HSP) registering error: Bluetooth operation not permitted: UUID already registered, ignoring
+1970-01-01, 00:01:20.649 [34m[INFO][0m [3m[90m bluetooth: [0m ⏳ Waiting for phone to connect via bluetooth...
+1970-01-01, 00:01:20.649 [34m[INFO][0m [3m[90m bluetooth: [0m 📋 Loaded 1 known device(s) from /etc/aa-proxy-rs/known_devices
+1970-01-01, 00:01:20.649 [34m[INFO][0m [3m[90m bluetooth: [0m 🥏 Using 1 known-good device(s)...
+1970-01-01, 00:01:20.649 [34m[INFO][0m [3m[90m bluetooth: [0m 🧲 Attempting to start an AndroidAuto session via bluetooth with the following devices, in this order: [C0:1C:6A:6C:1E:5A]
+1970-01-01, 00:01:20.650 [34m[INFO][0m [3m[90m bluetooth: [0m 🧲 Trying to connect to: C0:1C:6A:6C:1E:5A ([1m[34mPixel 9[0m), attempt: 1/3
+1970-01-01, 00:01:21.487 [34m[INFO][0m [3m[90m bluetooth: [0m 🎧 Headset Profile (HSP): connect from [1mC0:1C:6A:6C:1E:5A[0m
+1970-01-01, 00:01:21.489 [34m[INFO][0m [3m[90m bluetooth: [0m 🔗 Successfully connected to device: C0:1C:6A:6C:1E:5A ([1m[34mPixel 9[0m)
+1970-01-01, 00:01:21.489 [34m[INFO][0m [3m[90m bluetooth: [0m 🧪 bt-wireless-proxy: waiting up to 120s for PHONE AA Wireless RFCOMM (after phone BT trigger)
+1970-01-01, 00:01:21.922 [34m[INFO][0m [3m[90m bluetooth: [0m 📱 AA Wireless Profile: inbound RFCOMM from [1mC0:1C:6A:6C:1E:5A[0m while after phone BT trigger
+1970-01-01, 00:01:21.923 [34m[INFO][0m [3m[90m bluetooth: [0m 🧪 bt-wireless-proxy: accepted PHONE AA Wireless RFCOMM from C0:1C:6A:6C:1E:5A (after phone BT trigger)
+1970-01-01, 00:01:21.924 [34m[INFO][0m [3m[90m sdr-ui: [0m current phone identity set: id=[1mphone_ed849bccf4e9[0m name=[1mPixel 9[0m mac=**:**:**:**:1E:5A
+1970-01-01, 00:01:21.924 [34m[INFO][0m [3m[90m bluetooth: [0m 📲 Sending parameters via bluetooth to phone...
+1970-01-01, 00:01:21.925 [34m[INFO][0m [3m[90m bluetooth: [0m 🛜 Sending Host IP Address: 10.0.0.1
+1970-01-01, 00:01:21.925 [34m[INFO][0m [3m[90m bluetooth: [0m 📨 stage #1 of 5: Sending [33mWifiStartRequest[0m frame to phone...
+1970-01-01, 00:01:22.195 [34m[INFO][0m [3m[90m bluetooth: [0m 📨 stage #2 of 5: Received [33mWifiInfoRequest[0m frame from phone (⏱️ 270 ms)
+1970-01-01, 00:01:22.195 [34m[INFO][0m [3m[90m bluetooth: [0m 🛜 Sending Host SSID and Password: aa-proxy, aa-proxy
+1970-01-01, 00:01:22.195 [34m[INFO][0m [3m[90m bluetooth: [0m 📨 stage #3 of 5: Sending [33mWifiInfoResponse[0m frame to phone...
+1970-01-01, 00:01:22.220 [34m[INFO][0m [3m[90m bluetooth: [0m 📨 stage #4 of 5: Received [33mWifiStartResponse[0m frame from phone (⏱️ 24 ms)
+1970-01-01, 00:01:23.948 [34m[INFO][0m [3m[90m bluetooth: [0m 📨 stage #5 of 5: Received [33mWifiConnectStatus[0m frame from phone (⏱️ 1727 ms)
+1970-01-01, 00:01:23.948 [34m[INFO][0m [3m[90m bluetooth: [0m 📋 Loaded 1 known device(s) from /etc/aa-proxy-rs/known_devices
+1970-01-01, 00:01:23.948 [34m[INFO][0m [3m[90m proxy: [0m 🛰️ MD TCP server: listening for phone connection...
+1970-01-01, 00:01:24.225 [34m[INFO][0m [3m[90m proxy: [0m 📳 TCP server: new client connected: [1m10.0.0.5:43508[22m
+1970-01-01, 00:01:24.226 [34m[INFO][0m [3m[90m proxy: [0m starting companion reverse bridge HTTP, Android IP: 10.0.0.5, remote=10.0.0.5:9999 local=127.0.0.1:80
+1970-01-01, 00:01:24.226 [34m[INFO][0m [3m[90m proxy: [0m tcp_bridge[HTTP]: connecting remote=10.0.0.5:9999 local=127.0.0.1:80
+1970-01-01, 00:01:24.226 [34m[INFO][0m [3m[90m proxy: [0m starting companion reverse bridge WS, Android IP: 10.0.0.5, remote=10.0.0.5:9998 local=127.0.0.1:80
+1970-01-01, 00:01:24.226 [34m[INFO][0m [3m[90m proxy: [0m tcp_bridge[WS]: connecting remote=10.0.0.5:9998 local=127.0.0.1:80
+1970-01-01, 00:01:24.226 [34m[INFO][0m [3m[90m proxy: [0m starting companion reverse bridge SWUPDATE, Android IP: 10.0.0.5, remote=10.0.0.5:9997 local=127.0.0.1:8080
+1970-01-01, 00:01:24.227 [34m[INFO][0m [3m[90m proxy: [0m tcp_bridge[SWUPDATE]: connecting remote=10.0.0.5:9997 local=127.0.0.1:8080
+1970-01-01, 00:01:24.227 [34m[INFO][0m [3m[90m proxy: [0m 🧪 bt-wireless-proxy car-wifi-mitm: PHONE TCP accepted on MD listener; commit barrier seq=5
+1970-01-01, 00:01:24.227 [34m[INFO][0m [3m[90m proxy: [0m 📂 Opening USB accessory device: [4m/dev/usb_accessory[24m
+1970-01-01, 00:01:24.227 [34m[INFO][0m [3m[90m proxy: [0m ♾️ Starting to proxy data between HU and MD...
+1970-01-01, 00:01:24.228 [34m[INFO][0m [3m[90m mitm/HU: [0m 🔄 running in [1mpassthrough[0m mode (MITM disabled in config)
+1970-01-01, 00:01:24.228 [34m[INFO][0m [3m[90m mitm/MD: [0m 🔄 running in [1mpassthrough[0m mode (MITM disabled in config)
+1970-01-01, 00:01:24.228 [34m[INFO][0m [3m[90m proxy: [0m ⚙️ Showing transfer statistics: [1m[34mdisabled[0m
+1970-01-01, 00:01:24.229 [34m[INFO][0m [3m[90m proxy: [0m tcp_bridge[HTTP]: failed to connect to remote server 10.0.0.5:9999: Connection refused (os error 111)
+1970-01-01, 00:01:24.229 [34m[INFO][0m [3m[90m proxy: [0m tcp_bridge[WS]: failed to connect to remote server 10.0.0.5:9998: Connection refused (os error 111)
+1970-01-01, 00:01:24.233 [34m[INFO][0m [3m[90m proxy: [0m tcp_bridge[SWUPDATE]: failed to connect to remote server 10.0.0.5:9997: Connection refused (os error 111)
+1970-01-01, 00:01:26.087 [34m[INFO][0m [3m[90m bluetooth: [0m 🚀 Bluetooth launch sequence completed
+1970-01-01, 00:01:26.097 [34m[INFO][0m [3m[90m usb: [0m 🔌 USB Manager: Switched to accessory gadget
+1970-01-01, 00:01:33.454 [34m[INFO][0m [3m[90m proxy: [0m tcp_bridge[HTTP]: connecting remote=10.0.0.5:9999 local=127.0.0.1:80
+1970-01-01, 00:01:33.454 [34m[INFO][0m [3m[90m proxy: [0m tcp_bridge[WS]: connecting remote=10.0.0.5:9998 local=127.0.0.1:80
+1970-01-01, 00:01:33.461 [34m[INFO][0m [3m[90m proxy: [0m tcp_bridge[HTTP]: failed to connect to remote server 10.0.0.5:9999: Connection refused (os error 111)
+1970-01-01, 00:01:33.461 [34m[INFO][0m [3m[90m proxy: [0m tcp_bridge[WS]: failed to connect to remote server 10.0.0.5:9998: Connection refused (os error 111)
+1970-01-01, 00:01:34.240 [31m[ERROR][0m [3m[90m proxy: [0m 🔴 Connection error: unexpected transfer stall
+1970-01-01, 00:01:34.240 [34m[INFO][0m [3m[90m proxy: [0m disassociating WiFi client: DE:E9:3B:55:97:CF
+1970-01-01, 00:01:34.241 [34m[INFO][0m [3m[90m proxy: [0m ⌛ session time: 10s 13ms 113us 494ns
+1970-01-01, 00:01:34.241 [34m[INFO][0m [3m[90m proxy: [0m 💤 waiting for bluetooth handshake...
+1970-01-01, 00:01:34.241 [34m[INFO][0m [3m[90m main: [0m 📵 TCP/USB connection closed or not started, trying again...
+1970-01-01, 00:01:34.443 [34m[INFO][0m [3m[90m usb: [0m 🔌 Initializing USB Manager
+1970-01-01, 00:01:34.450 [34m[INFO][0m [3m[90m usb: [0m 🔌 USB Manager: Disabled all USB gadgets
+1970-01-01, 00:01:34.458 [33m[WARN][0m [3m[90m bluetooth: [0m 🎧 Headset Profile (HSP) registering error: Bluetooth operation not permitted: UUID already registered, ignoring
+1970-01-01, 00:01:34.459 [34m[INFO][0m [3m[90m bluetooth: [0m ⏳ Waiting for phone to connect via bluetooth...
+1970-01-01, 00:01:34.459 [34m[INFO][0m [3m[90m bluetooth: [0m 📋 Loaded 1 known device(s) from /etc/aa-proxy-rs/known_devices
+1970-01-01, 00:01:34.459 [34m[INFO][0m [3m[90m bluetooth: [0m 🥏 Using 1 known-good device(s)...
+1970-01-01, 00:01:34.459 [34m[INFO][0m [3m[90m bluetooth: [0m 🧲 Attempting to start an AndroidAuto session via bluetooth with the following devices, in this order: [C0:1C:6A:6C:1E:5A]
+1970-01-01, 00:01:34.460 [34m[INFO][0m [3m[90m bluetooth: [0m 🧲 Trying to connect to: C0:1C:6A:6C:1E:5A ([1m[34mPixel 9[0m), attempt: 1/3
+1970-01-01, 00:01:36.119 [34m[INFO][0m [3m[90m bluetooth: [0m 🎧 Headset Profile (HSP): connect from [1mC0:1C:6A:6C:1E:5A[0m
+1970-01-01, 00:01:36.120 [34m[INFO][0m [3m[90m bluetooth: [0m 🔗 Successfully connected to device: C0:1C:6A:6C:1E:5A ([1m[34mPixel 9[0m)
+1970-01-01, 00:01:36.120 [34m[INFO][0m [3m[90m bluetooth: [0m 🧪 bt-wireless-proxy: waiting up to 120s for PHONE AA Wireless RFCOMM (after phone BT trigger)
+1970-01-01, 00:01:36.120 [34m[INFO][0m [3m[90m bluetooth: [0m 📱 AA Wireless Profile: inbound RFCOMM from [1mC0:1C:6A:6C:1E:5A[0m while after phone BT trigger
+1970-01-01, 00:01:36.121 [34m[INFO][0m [3m[90m bluetooth: [0m 🧪 bt-wireless-proxy: accepted PHONE AA Wireless RFCOMM from C0:1C:6A:6C:1E:5A (after phone BT trigger)
+1970-01-01, 00:01:36.122 [34m[INFO][0m [3m[90m sdr-ui: [0m current phone identity set: id=[1mphone_ed849bccf4e9[0m name=[1mPixel 9[0m mac=**:**:**:**:1E:5A
+1970-01-01, 00:01:36.122 [34m[INFO][0m [3m[90m bluetooth: [0m 📲 Sending parameters via bluetooth to phone...
+1970-01-01, 00:01:36.122 [34m[INFO][0m [3m[90m bluetooth: [0m 🛜 Sending Host IP Address: 10.0.0.1
+1970-01-01, 00:01:36.123 [34m[INFO][0m [3m[90m bluetooth: [0m 📨 stage #1 of 5: Sending [33mWifiStartRequest[0m frame to phone...
+1970-01-01, 00:01:36.123 [31m[ERROR][0m [3m[90m main: [0m bluetooth AA handshake error: Software caused connection abort (os error 103)
+1970-01-01, 00:01:36.323 [34m[INFO][0m [3m[90m usb: [0m 🔌 Initializing USB Manager
+1970-01-01, 00:01:36.324 [34m[INFO][0m [3m[90m usb: [0m 🔌 USB Manager: Disabled all USB gadgets
+1970-01-01, 00:01:36.347 [33m[WARN][0m [3m[90m bluetooth: [0m 🎧 Headset Profile (HSP) registering error: Bluetooth operation not permitted: UUID already registered, ignoring
+1970-01-01, 00:01:36.347 [34m[INFO][0m [3m[90m bluetooth: [0m ⏳ Waiting for phone to connect via bluetooth...
+1970-01-01, 00:01:36.348 [34m[INFO][0m [3m[90m bluetooth: [0m 📋 Loaded 1 known device(s) from /etc/aa-proxy-rs/known_devices
+1970-01-01, 00:01:36.348 [34m[INFO][0m [3m[90m bluetooth: [0m 🥏 Using 1 known-good device(s)...
+1970-01-01, 00:01:36.348 [34m[INFO][0m [3m[90m bluetooth: [0m 🧲 Attempting to start an AndroidAuto session via bluetooth with the following devices, in this order: [C0:1C:6A:6C:1E:5A]
+1970-01-01, 00:01:36.349 [34m[INFO][0m [3m[90m bluetooth: [0m 🧲 Trying to connect to: C0:1C:6A:6C:1E:5A ([1m[34mPixel 9[0m), attempt: 1/3
+1970-01-01, 00:01:36.350 [34m[INFO][0m [3m[90m bluetooth: [0m 🔗 Successfully connected to device: C0:1C:6A:6C:1E:5A ([1m[34mPixel 9[0m)
+1970-01-01, 00:01:36.350 [34m[INFO][0m [3m[90m bluetooth: [0m 🧪 bt-wireless-proxy: waiting up to 120s for PHONE AA Wireless RFCOMM (after phone BT trigger)
+1970-01-01, 00:01:36.644 [34m[INFO][0m [3m[90m bluetooth: [0m 📱 AA Wireless Profile: inbound RFCOMM from [1mC0:1C:6A:6C:1E:5A[0m while after phone BT trigger
+1970-01-01, 00:01:36.644 [34m[INFO][0m [3m[90m bluetooth: [0m 🧪 bt-wireless-proxy: accepted PHONE AA Wireless RFCOMM from C0:1C:6A:6C:1E:5A (after phone BT trigger)
+1970-01-01, 00:01:36.645 [34m[INFO][0m [3m[90m sdr-ui: [0m current phone identity set: id=[1mphone_ed849bccf4e9[0m name=[1mPixel 9[0m mac=**:**:**:**:1E:5A
+1970-01-01, 00:01:36.645 [34m[INFO][0m [3m[90m bluetooth: [0m 📲 Sending parameters via bluetooth to phone...
+1970-01-01, 00:01:36.645 [34m[INFO][0m [3m[90m bluetooth: [0m 🛜 Sending Host IP Address: 10.0.0.1
+1970-01-01, 00:01:36.646 [34m[INFO][0m [3m[90m bluetooth: [0m 📨 stage #1 of 5: Sending [33mWifiStartRequest[0m frame to phone...
+1970-01-01, 00:01:36.775 [34m[INFO][0m [3m[90m bluetooth: [0m 📨 stage #2 of 5: Received [33mWifiInfoRequest[0m frame from phone (⏱️ 129 ms)
+1970-01-01, 00:01:36.775 [34m[INFO][0m [3m[90m bluetooth: [0m 🛜 Sending Host SSID and Password: aa-proxy, aa-proxy
+1970-01-01, 00:01:36.776 [34m[INFO][0m [3m[90m bluetooth: [0m 📨 stage #3 of 5: Sending [33mWifiInfoResponse[0m frame to phone...
+1970-01-01, 00:01:36.777 [34m[INFO][0m [3m[90m bluetooth: [0m 📨 stage #4 of 5: Received [33mWifiStartResponse[0m frame from phone (⏱️ 0 ms)
+1970-01-01, 00:01:43.718 [34m[INFO][0m [3m[90m bluetooth: [0m 📨 stage #5 of 5: Received [33mWifiConnectStatus[0m frame from phone (⏱️ 6941 ms)
+1970-01-01, 00:01:43.718 [34m[INFO][0m [3m[90m bluetooth: [0m 📋 Loaded 1 known device(s) from /etc/aa-proxy-rs/known_devices
+1970-01-01, 00:01:43.718 [34m[INFO][0m [3m[90m proxy: [0m 🛰️ MD TCP server: listening for phone connection...
+1970-01-01, 00:01:43.753 [34m[INFO][0m [3m[90m proxy: [0m 📳 TCP server: new client connected: [1m10.0.0.5:46480[22m
+1970-01-01, 00:01:43.753 [34m[INFO][0m [3m[90m proxy: [0m starting companion reverse bridge HTTP, Android IP: 10.0.0.5, remote=10.0.0.5:9999 local=127.0.0.1:80
+1970-01-01, 00:01:43.754 [34m[INFO][0m [3m[90m proxy: [0m tcp_bridge[HTTP]: connecting remote=10.0.0.5:9999 local=127.0.0.1:80
+1970-01-01, 00:01:43.754 [34m[INFO][0m [3m[90m proxy: [0m starting companion reverse bridge WS, Android IP: 10.0.0.5, remote=10.0.0.5:9998 local=127.0.0.1:80
+1970-01-01, 00:01:43.754 [34m[INFO][0m [3m[90m proxy: [0m tcp_bridge[WS]: connecting remote=10.0.0.5:9998 local=127.0.0.1:80
+1970-01-01, 00:01:43.754 [34m[INFO][0m [3m[90m proxy: [0m starting companion reverse bridge SWUPDATE, Android IP: 10.0.0.5, remote=10.0.0.5:9997 local=127.0.0.1:8080
+1970-01-01, 00:01:43.755 [34m[INFO][0m [3m[90m proxy: [0m tcp_bridge[SWUPDATE]: connecting remote=10.0.0.5:9997 local=127.0.0.1:8080
+1970-01-01, 00:01:43.755 [34m[INFO][0m [3m[90m proxy: [0m 🧪 bt-wireless-proxy car-wifi-mitm: PHONE TCP accepted on MD listener; commit barrier seq=6
+1970-01-01, 00:01:43.755 [34m[INFO][0m [3m[90m proxy: [0m 📂 Opening USB accessory device: [4m/dev/usb_accessory[24m
+1970-01-01, 00:01:43.755 [34m[INFO][0m [3m[90m proxy: [0m ♾️ Starting to proxy data between HU and MD...
+1970-01-01, 00:01:43.755 [34m[INFO][0m [3m[90m mitm/HU: [0m 🔄 running in [1mpassthrough[0m mode (MITM disabled in config)
+1970-01-01, 00:01:43.756 [34m[INFO][0m [3m[90m mitm/MD: [0m 🔄 running in [1mpassthrough[0m mode (MITM disabled in config)
+1970-01-01, 00:01:43.756 [34m[INFO][0m [3m[90m proxy: [0m ⚙️ Showing transfer statistics: [1m[34mdisabled[0m
+1970-01-01, 00:01:43.757 [34m[INFO][0m [3m[90m proxy: [0m tcp_bridge[HTTP]: failed to connect to remote server 10.0.0.5:9999: Connection refused (os error 111)
+1970-01-01, 00:01:43.757 [34m[INFO][0m [3m[90m proxy: [0m tcp_bridge[WS]: failed to connect to remote server 10.0.0.5:9998: Connection refused (os error 111)
+1970-01-01, 00:01:43.759 [34m[INFO][0m [3m[90m proxy: [0m tcp_bridge[SWUPDATE]: failed to connect to remote server 10.0.0.5:9997: Connection refused (os error 111)
+1970-01-01, 00:01:46.100 [34m[INFO][0m [3m[90m bluetooth: [0m 🚀 Bluetooth launch sequence completed
+1970-01-01, 00:01:46.110 [34m[INFO][0m [3m[90m usb: [0m 🔌 USB Manager: Switched to accessory gadget
+1970-01-01, 00:01:52.927 [34m[INFO][0m [3m[90m proxy: [0m tcp_bridge[HTTP]: connecting remote=10.0.0.5:9999 local=127.0.0.1:80
+1970-01-01, 00:01:52.927 [34m[INFO][0m [3m[90m proxy: [0m tcp_bridge[WS]: connecting remote=10.0.0.5:9998 local=127.0.0.1:80
+1970-01-01, 00:01:52.936 [34m[INFO][0m [3m[90m proxy: [0m tcp_bridge[HTTP]: failed to connect to remote server 10.0.0.5:9999: Connection refused (os error 111)
+1970-01-01, 00:01:52.936 [34m[INFO][0m [3m[90m proxy: [0m tcp_bridge[WS]: failed to connect to remote server 10.0.0.5:9998: Connection refused (os error 111)
+1970-01-01, 00:01:53.764 [31m[ERROR][0m [3m[90m proxy: [0m 🔴 Connection error: unexpected transfer stall
+1970-01-01, 00:01:53.764 [34m[INFO][0m [3m[90m proxy: [0m disassociating WiFi client: DE:E9:3B:55:97:CF
+1970-01-01, 00:01:53.764 [34m[INFO][0m [3m[90m proxy: [0m ⌛ session time: 10s 9ms 128us 772ns
+1970-01-01, 00:01:53.765 [34m[INFO][0m [3m[90m proxy: [0m 💤 waiting for bluetooth handshake...
+1970-01-01, 00:01:53.765 [34m[INFO][0m [3m[90m main: [0m 📵 TCP/USB connection closed or not started, trying again...
+1970-01-01, 00:01:53.966 [34m[INFO][0m [3m[90m usb: [0m 🔌 Initializing USB Manager
+1970-01-01, 00:01:53.972 [34m[INFO][0m [3m[90m usb: [0m 🔌 USB Manager: Disabled all USB gadgets
+1970-01-01, 00:01:53.983 [33m[WARN][0m [3m[90m bluetooth: [0m 🎧 Headset Profile (HSP) registering error: Bluetooth operation not permitted: UUID already registered, ignoring
+1970-01-01, 00:01:53.983 [34m[INFO][0m [3m[90m bluetooth: [0m ⏳ Waiting for phone to connect via bluetooth...
+1970-01-01, 00:01:53.983 [34m[INFO][0m [3m[90m bluetooth: [0m 📋 Loaded 1 known device(s) from /etc/aa-proxy-rs/known_devices
+1970-01-01, 00:01:53.983 [34m[INFO][0m [3m[90m bluetooth: [0m 🥏 Using 1 known-good device(s)...
+1970-01-01, 00:01:53.983 [34m[INFO][0m [3m[90m bluetooth: [0m 🧲 Attempting to start an AndroidAuto session via bluetooth with the following devices, in this order: [C0:1C:6A:6C:1E:5A]
+1970-01-01, 00:01:53.984 [34m[INFO][0m [3m[90m bluetooth: [0m 🧲 Trying to connect to: C0:1C:6A:6C:1E:5A ([1m[34mPixel 9[0m), attempt: 1/3
+1970-01-01, 00:01:55.717 [34m[INFO][0m [3m[90m bluetooth: [0m 🎧 Headset Profile (HSP): connect from [1mC0:1C:6A:6C:1E:5A[0m
+1970-01-01, 00:01:55.718 [34m[INFO][0m [3m[90m bluetooth: [0m 🔗 Successfully connected to device: C0:1C:6A:6C:1E:5A ([1m[34mPixel 9[0m)
+1970-01-01, 00:01:55.718 [34m[INFO][0m [3m[90m bluetooth: [0m 🧪 bt-wireless-proxy: waiting up to 120s for PHONE AA Wireless RFCOMM (after phone BT trigger)
+1970-01-01, 00:01:55.718 [34m[INFO][0m [3m[90m bluetooth: [0m 📱 AA Wireless Profile: inbound RFCOMM from [1mC0:1C:6A:6C:1E:5A[0m while after phone BT trigger
+1970-01-01, 00:01:55.718 [34m[INFO][0m [3m[90m bluetooth: [0m 🧪 bt-wireless-proxy: accepted PHONE AA Wireless RFCOMM from C0:1C:6A:6C:1E:5A (after phone BT trigger)
+1970-01-01, 00:01:55.719 [34m[INFO][0m [3m[90m sdr-ui: [0m current phone identity set: id=[1mphone_ed849bccf4e9[0m name=[1mPixel 9[0m mac=**:**:**:**:1E:5A
+1970-01-01, 00:01:55.720 [34m[INFO][0m [3m[90m bluetooth: [0m 📲 Sending parameters via bluetooth to phone...
+1970-01-01, 00:01:55.720 [34m[INFO][0m [3m[90m bluetooth: [0m 🛜 Sending Host IP Address: 10.0.0.1
+1970-01-01, 00:01:55.720 [34m[INFO][0m [3m[90m bluetooth: [0m 📨 stage #1 of 5: Sending [33mWifiStartRequest[0m frame to phone...
+1970-01-01, 00:01:55.720 [31m[ERROR][0m [3m[90m main: [0m bluetooth AA handshake error: Software caused connection abort (os error 103)
+1970-01-01, 00:01:55.922 [34m[INFO][0m [3m[90m usb: [0m 🔌 Initializing USB Manager
+1970-01-01, 00:01:55.922 [34m[INFO][0m [3m[90m usb: [0m 🔌 USB Manager: Disabled all USB gadgets
+1970-01-01, 00:01:55.927 [33m[WARN][0m [3m[90m bluetooth: [0m 🎧 Headset Profile (HSP) registering error: Bluetooth operation not permitted: UUID already registered, ignoring
+1970-01-01, 00:01:55.927 [34m[INFO][0m [3m[90m bluetooth: [0m ⏳ Waiting for phone to connect via bluetooth...
+1970-01-01, 00:01:55.927 [34m[INFO][0m [3m[90m bluetooth: [0m 📋 Loaded 1 known device(s) from /etc/aa-proxy-rs/known_devices
+1970-01-01, 00:01:55.927 [34m[INFO][0m [3m[90m bluetooth: [0m 🥏 Using 1 known-good device(s)...
+1970-01-01, 00:01:55.928 [34m[INFO][0m [3m[90m bluetooth: [0m 🧲 Attempting to start an AndroidAuto session via bluetooth with the following devices, in this order: [C0:1C:6A:6C:1E:5A]
+1970-01-01, 00:01:55.928 [34m[INFO][0m [3m[90m bluetooth: [0m 🧲 Trying to connect to: C0:1C:6A:6C:1E:5A ([1m[34mPixel 9[0m), attempt: 1/3
+1970-01-01, 00:01:55.930 [33m[WARN][0m [3m[90m bluetooth: [0m 🔇 C0:1C:6A:6C:1E:5A ([1m[34mPixel 9[0m): Error connecting: Bluetooth operation in progress: br-connection-busy
+1970-01-01, 00:01:55.930 [34m[INFO][0m [3m[90m bluetooth: [0m 🧲 Trying to connect to: C0:1C:6A:6C:1E:5A ([1m[34mPixel 9[0m), attempt: 2/3
+1970-01-01, 00:01:55.932 [33m[WARN][0m [3m[90m bluetooth: [0m 🔇 C0:1C:6A:6C:1E:5A ([1m[34mPixel 9[0m): Error connecting: Bluetooth operation in progress: br-connection-busy
+1970-01-01, 00:01:55.932 [34m[INFO][0m [3m[90m bluetooth: [0m 🧲 Trying to connect to: C0:1C:6A:6C:1E:5A ([1m[34mPixel 9[0m), attempt: 3/3
+1970-01-01, 00:01:55.933 [33m[WARN][0m [3m[90m bluetooth: [0m 🔇 C0:1C:6A:6C:1E:5A ([1m[34mPixel 9[0m): Error connecting: Bluetooth operation in progress: br-connection-busy
+1970-01-01, 00:01:56.934 [34m[INFO][0m [3m[90m bluetooth: [0m 🧲 Trying to connect to: C0:1C:6A:6C:1E:5A ([1m[34mPixel 9[0m), attempt: 1/3
+1970-01-01, 00:01:56.936 [34m[INFO][0m [3m[90m bluetooth: [0m 🔗 Successfully connected to device: C0:1C:6A:6C:1E:5A ([1m[34mPixel 9[0m)
+1970-01-01, 00:01:56.936 [34m[INFO][0m [3m[90m bluetooth: [0m 🧪 bt-wireless-proxy: waiting up to 120s for PHONE AA Wireless RFCOMM (after phone BT trigger)
+1970-01-01, 00:01:56.936 [34m[INFO][0m [3m[90m bluetooth: [0m 📱 AA Wireless Profile: inbound RFCOMM from [1mC0:1C:6A:6C:1E:5A[0m while after phone BT trigger
+1970-01-01, 00:01:56.937 [34m[INFO][0m [3m[90m bluetooth: [0m 🧪 bt-wireless-proxy: accepted PHONE AA Wireless RFCOMM from C0:1C:6A:6C:1E:5A (after phone BT trigger)
+1970-01-01, 00:01:56.938 [34m[INFO][0m [3m[90m sdr-ui: [0m current phone identity set: id=[1mphone_ed849bccf4e9[0m name=[1mPixel 9[0m mac=**:**:**:**:1E:5A
+1970-01-01, 00:01:56.938 [34m[INFO][0m [3m[90m bluetooth: [0m 📲 Sending parameters via bluetooth to phone...
+1970-01-01, 00:01:56.938 [34m[INFO][0m [3m[90m bluetooth: [0m 🛜 Sending Host IP Address: 10.0.0.1
+1970-01-01, 00:01:56.938 [34m[INFO][0m [3m[90m bluetooth: [0m 📨 stage #1 of 5: Sending [33mWifiStartRequest[0m frame to phone...
+1970-01-01, 00:01:57.011 [34m[INFO][0m [3m[90m bluetooth: [0m 📨 stage #2 of 5: Received [33mWifiInfoRequest[0m frame from phone (⏱️ 72 ms)
+1970-01-01, 00:01:57.011 [34m[INFO][0m [3m[90m bluetooth: [0m 🛜 Sending Host SSID and Password: aa-proxy, aa-proxy
+1970-01-01, 00:01:57.011 [34m[INFO][0m [3m[90m bluetooth: [0m 📨 stage #3 of 5: Sending [33mWifiInfoResponse[0m frame to phone...
+1970-01-01, 00:01:57.012 [34m[INFO][0m [3m[90m bluetooth: [0m 📨 stage #4 of 5: Received [33mWifiStartResponse[0m frame from phone (⏱️ 0 ms)
+1970-01-01, 00:01:59.007 [34m[INFO][0m [3m[90m bluetooth: [0m 📨 stage #5 of 5: Received [33mWifiConnectStatus[0m frame from phone (⏱️ 1994 ms)
+1970-01-01, 00:01:59.007 [34m[INFO][0m [3m[90m bluetooth: [0m 📋 Loaded 1 known device(s) from /etc/aa-proxy-rs/known_devices
+1970-01-01, 00:01:59.007 [34m[INFO][0m [3m[90m proxy: [0m 🛰️ MD TCP server: listening for phone connection...
+1970-01-01, 00:01:59.153 [34m[INFO][0m [3m[90m proxy: [0m 📳 TCP server: new client connected: [1m10.0.0.5:60982[22m
+1970-01-01, 00:01:59.153 [34m[INFO][0m [3m[90m proxy: [0m starting companion reverse bridge HTTP, Android IP: 10.0.0.5, remote=10.0.0.5:9999 local=127.0.0.1:80
+1970-01-01, 00:01:59.153 [34m[INFO][0m [3m[90m proxy: [0m tcp_bridge[HTTP]: connecting remote=10.0.0.5:9999 local=127.0.0.1:80
+1970-01-01, 00:01:59.153 [34m[INFO][0m [3m[90m proxy: [0m starting companion reverse bridge WS, Android IP: 10.0.0.5, remote=10.0.0.5:9998 local=127.0.0.1:80
+1970-01-01, 00:01:59.153 [34m[INFO][0m [3m[90m proxy: [0m tcp_bridge[WS]: connecting remote=10.0.0.5:9998 local=127.0.0.1:80
+1970-01-01, 00:01:59.154 [34m[INFO][0m [3m[90m proxy: [0m starting companion reverse bridge SWUPDATE, Android IP: 10.0.0.5, remote=10.0.0.5:9997 local=127.0.0.1:8080
+1970-01-01, 00:01:59.154 [34m[INFO][0m [3m[90m proxy: [0m tcp_bridge[SWUPDATE]: connecting remote=10.0.0.5:9997 local=127.0.0.1:8080
+1970-01-01, 00:01:59.154 [34m[INFO][0m [3m[90m proxy: [0m 🧪 bt-wireless-proxy car-wifi-mitm: PHONE TCP accepted on MD listener; commit barrier seq=7
+1970-01-01, 00:01:59.154 [34m[INFO][0m [3m[90m proxy: [0m 📂 Opening USB accessory device: [4m/dev/usb_accessory[24m
+1970-01-01, 00:01:59.155 [34m[INFO][0m [3m[90m proxy: [0m ♾️ Starting to proxy data between HU and MD...
+1970-01-01, 00:01:59.155 [34m[INFO][0m [3m[90m mitm/HU: [0m 🔄 running in [1mpassthrough[0m mode (MITM disabled in config)
+1970-01-01, 00:01:59.155 [34m[INFO][0m [3m[90m mitm/MD: [0m 🔄 running in [1mpassthrough[0m mode (MITM disabled in config)
+1970-01-01, 00:01:59.155 [34m[INFO][0m [3m[90m proxy: [0m ⚙️ Showing transfer statistics: [1m[34mdisabled[0m
+1970-01-01, 00:01:59.156 [34m[INFO][0m [3m[90m proxy: [0m tcp_bridge[HTTP]: failed to connect to remote server 10.0.0.5:9999: Connection refused (os error 111)
+1970-01-01, 00:01:59.156 [34m[INFO][0m [3m[90m proxy: [0m tcp_bridge[WS]: failed to connect to remote server 10.0.0.5:9998: Connection refused (os error 111)
+1970-01-01, 00:01:59.157 [34m[INFO][0m [3m[90m proxy: [0m tcp_bridge[SWUPDATE]: failed to connect to remote server 10.0.0.5:9997: Connection refused (os error 111)
+1970-01-01, 00:02:01.111 [34m[INFO][0m [3m[90m bluetooth: [0m 🚀 Bluetooth launch sequence completed
+1970-01-01, 00:02:01.122 [34m[INFO][0m [3m[90m usb: [0m 🔌 USB Manager: Switched to accessory gadget
+1970-01-01, 00:02:08.453 [34m[INFO][0m [3m[90m proxy: [0m tcp_bridge[HTTP]: connecting remote=10.0.0.5:9999 local=127.0.0.1:80
+1970-01-01, 00:02:08.453 [34m[INFO][0m [3m[90m proxy: [0m tcp_bridge[WS]: connecting remote=10.0.0.5:9998 local=127.0.0.1:80
+1970-01-01, 00:02:08.510 [34m[INFO][0m [3m[90m proxy: [0m tcp_bridge[HTTP]: failed to connect to remote server 10.0.0.5:9999: Connection refused (os error 111)
+1970-01-01, 00:02:08.510 [34m[INFO][0m [3m[90m proxy: [0m tcp_bridge[WS]: failed to connect to remote server 10.0.0.5:9998: Connection refused (os error 111)
+1970-01-01, 00:02:09.164 [31m[ERROR][0m [3m[90m proxy: [0m 🔴 Connection error: unexpected transfer stall
+1970-01-01, 00:02:09.164 [34m[INFO][0m [3m[90m proxy: [0m disassociating WiFi client: DE:E9:3B:55:97:CF
+1970-01-01, 00:02:09.165 [34m[INFO][0m [3m[90m proxy: [0m ⌛ session time: 10s 10ms 4us 31ns
+1970-01-01, 00:02:09.165 [34m[INFO][0m [3m[90m proxy: [0m 💤 waiting for bluetooth handshake...
+1970-01-01, 00:02:09.165 [34m[INFO][0m [3m[90m main: [0m 📵 TCP/USB connection closed or not started, trying again...
+1970-01-01, 00:02:09.367 [34m[INFO][0m [3m[90m usb: [0m 🔌 Initializing USB Manager
+1970-01-01, 00:02:09.375 [34m[INFO][0m [3m[90m usb: [0m 🔌 USB Manager: Disabled all USB gadgets
+1970-01-01, 00:02:09.378 [33m[WARN][0m [3m[90m bluetooth: [0m 🎧 Headset Profile (HSP) registering error: Bluetooth operation not permitted: UUID already registered, ignoring
+1970-01-01, 00:02:09.379 [34m[INFO][0m [3m[90m bluetooth: [0m ⏳ Waiting for phone to connect via bluetooth...
+1970-01-01, 00:02:09.379 [34m[INFO][0m [3m[90m bluetooth: [0m 📋 Loaded 1 known device(s) from /etc/aa-proxy-rs/known_devices
+1970-01-01, 00:02:09.379 [34m[INFO][0m [3m[90m bluetooth: [0m 🥏 Using 1 known-good device(s)...
+1970-01-01, 00:02:09.379 [34m[INFO][0m [3m[90m bluetooth: [0m 🧲 Attempting to start an AndroidAuto session via bluetooth with the following devices, in this order: [C0:1C:6A:6C:1E:5A]
+1970-01-01, 00:02:09.380 [34m[INFO][0m [3m[90m bluetooth: [0m 🧲 Trying to connect to: C0:1C:6A:6C:1E:5A ([1m[34mPixel 9[0m), attempt: 1/3
+1970-01-01, 00:02:11.021 [34m[INFO][0m [3m[90m bluetooth: [0m 🎧 Headset Profile (HSP): connect from [1mC0:1C:6A:6C:1E:5A[0m
+1970-01-01, 00:02:11.022 [34m[INFO][0m [3m[90m bluetooth: [0m 🔗 Successfully connected to device: C0:1C:6A:6C:1E:5A ([1m[34mPixel 9[0m)
+1970-01-01, 00:02:11.022 [34m[INFO][0m [3m[90m bluetooth: [0m 🧪 bt-wireless-proxy: waiting up to 120s for PHONE AA Wireless RFCOMM (after phone BT trigger)
+1970-01-01, 00:02:11.022 [34m[INFO][0m [3m[90m bluetooth: [0m 📱 AA Wireless Profile: inbound RFCOMM from [1mC0:1C:6A:6C:1E:5A[0m while after phone BT trigger
+1970-01-01, 00:02:11.022 [34m[INFO][0m [3m[90m bluetooth: [0m 🧪 bt-wireless-proxy: accepted PHONE AA Wireless RFCOMM from C0:1C:6A:6C:1E:5A (after phone BT trigger)
+1970-01-01, 00:02:11.023 [34m[INFO][0m [3m[90m sdr-ui: [0m current phone identity set: id=[1mphone_ed849bccf4e9[0m name=[1mPixel 9[0m mac=**:**:**:**:1E:5A
+1970-01-01, 00:02:11.023 [34m[INFO][0m [3m[90m bluetooth: [0m 📲 Sending parameters via bluetooth to phone...
+1970-01-01, 00:02:11.023 [34m[INFO][0m [3m[90m bluetooth: [0m 🛜 Sending Host IP Address: 10.0.0.1
+1970-01-01, 00:02:11.024 [34m[INFO][0m [3m[90m bluetooth: [0m 📨 stage #1 of 5: Sending [33mWifiStartRequest[0m frame to phone...
+1970-01-01, 00:02:11.024 [31m[ERROR][0m [3m[90m main: [0m bluetooth AA handshake error: Software caused connection abort (os error 103)
+1970-01-01, 00:02:11.225 [34m[INFO][0m [3m[90m usb: [0m 🔌 Initializing USB Manager
+1970-01-01, 00:02:11.225 [34m[INFO][0m [3m[90m usb: [0m 🔌 USB Manager: Disabled all USB gadgets
+1970-01-01, 00:02:11.246 [33m[WARN][0m [3m[90m bluetooth: [0m 🎧 Headset Profile (HSP) registering error: Bluetooth operation not permitted: UUID already registered, ignoring
+1970-01-01, 00:02:11.247 [34m[INFO][0m [3m[90m bluetooth: [0m ⏳ Waiting for phone to connect via bluetooth...
+1970-01-01, 00:02:11.247 [34m[INFO][0m [3m[90m bluetooth: [0m 📋 Loaded 1 known device(s) from /etc/aa-proxy-rs/known_devices
+1970-01-01, 00:02:11.247 [34m[INFO][0m [3m[90m bluetooth: [0m 🥏 Using 1 known-good device(s)...
+1970-01-01, 00:02:11.247 [34m[INFO][0m [3m[90m bluetooth: [0m 🧲 Attempting to start an AndroidAuto session via bluetooth with the following devices, in this order: [C0:1C:6A:6C:1E:5A]
+1970-01-01, 00:02:11.248 [34m[INFO][0m [3m[90m bluetooth: [0m 🧲 Trying to connect to: C0:1C:6A:6C:1E:5A ([1m[34mPixel 9[0m), attempt: 1/3
+1970-01-01, 00:02:11.250 [33m[WARN][0m [3m[90m bluetooth: [0m 🔇 C0:1C:6A:6C:1E:5A ([1m[34mPixel 9[0m): Error connecting: Bluetooth operation in progress: br-connection-busy
+1970-01-01, 00:02:11.250 [34m[INFO][0m [3m[90m bluetooth: [0m 🧲 Trying to connect to: C0:1C:6A:6C:1E:5A ([1m[34mPixel 9[0m), attempt: 2/3
+1970-01-01, 00:02:11.251 [33m[WARN][0m [3m[90m bluetooth: [0m 🔇 C0:1C:6A:6C:1E:5A ([1m[34mPixel 9[0m): Error connecting: Bluetooth operation in progress: br-connection-busy
+1970-01-01, 00:02:11.251 [34m[INFO][0m [3m[90m bluetooth: [0m 🧲 Trying to connect to: C0:1C:6A:6C:1E:5A ([1m[34mPixel 9[0m), attempt: 3/3
+1970-01-01, 00:02:11.252 [33m[WARN][0m [3m[90m bluetooth: [0m 🔇 C0:1C:6A:6C:1E:5A ([1m[34mPixel 9[0m): Error connecting: Bluetooth operation in progress: br-connection-busy
+1970-01-01, 00:02:12.255 [34m[INFO][0m [3m[90m bluetooth: [0m 🧲 Trying to connect to: C0:1C:6A:6C:1E:5A ([1m[34mPixel 9[0m), attempt: 1/3
+1970-01-01, 00:02:12.257 [34m[INFO][0m [3m[90m bluetooth: [0m 🔗 Successfully connected to device: C0:1C:6A:6C:1E:5A ([1m[34mPixel 9[0m)
+1970-01-01, 00:02:12.257 [34m[INFO][0m [3m[90m bluetooth: [0m 🧪 bt-wireless-proxy: waiting up to 120s for PHONE AA Wireless RFCOMM (after phone BT trigger)
+1970-01-01, 00:02:12.257 [34m[INFO][0m [3m[90m bluetooth: [0m 📱 AA Wireless Profile: inbound RFCOMM from [1mC0:1C:6A:6C:1E:5A[0m while after phone BT trigger
+1970-01-01, 00:02:12.257 [34m[INFO][0m [3m[90m bluetooth: [0m 🧪 bt-wireless-proxy: accepted PHONE AA Wireless RFCOMM from C0:1C:6A:6C:1E:5A (after phone BT trigger)
+1970-01-01, 00:02:12.258 [34m[INFO][0m [3m[90m sdr-ui: [0m current phone identity set: id=[1mphone_ed849bccf4e9[0m name=[1mPixel 9[0m mac=**:**:**:**:1E:5A
+1970-01-01, 00:02:12.258 [34m[INFO][0m [3m[90m bluetooth: [0m 📲 Sending parameters via bluetooth to phone...
+1970-01-01, 00:02:12.259 [34m[INFO][0m [3m[90m bluetooth: [0m 🛜 Sending Host IP Address: 10.0.0.1
+1970-01-01, 00:02:12.259 [34m[INFO][0m [3m[90m bluetooth: [0m 📨 stage #1 of 5: Sending [33mWifiStartRequest[0m frame to phone...
+1970-01-01, 00:02:12.368 [34m[INFO][0m [3m[90m bluetooth: [0m 📨 stage #2 of 5: Received [33mWifiInfoRequest[0m frame from phone (⏱️ 109 ms)
+1970-01-01, 00:02:12.368 [34m[INFO][0m [3m[90m bluetooth: [0m 🛜 Sending Host SSID and Password: aa-proxy, aa-proxy
+1970-01-01, 00:02:12.369 [34m[INFO][0m [3m[90m bluetooth: [0m 📨 stage #3 of 5: Sending [33mWifiInfoResponse[0m frame to phone...
+1970-01-01, 00:02:12.370 [34m[INFO][0m [3m[90m bluetooth: [0m 📨 stage #4 of 5: Received [33mWifiStartResponse[0m frame from phone (⏱️ 0 ms)
+1970-01-01, 00:02:14.185 [34m[INFO][0m [3m[90m bluetooth: [0m 📨 stage #5 of 5: Received [33mWifiConnectStatus[0m frame from phone (⏱️ 1814 ms)
+1970-01-01, 00:02:14.185 [34m[INFO][0m [3m[90m bluetooth: [0m 📋 Loaded 1 known device(s) from /etc/aa-proxy-rs/known_devices
+1970-01-01, 00:02:14.185 [34m[INFO][0m [3m[90m proxy: [0m 🛰️ MD TCP server: listening for phone connection...
+1970-01-01, 00:02:14.370 [34m[INFO][0m [3m[90m proxy: [0m 📳 TCP server: new client connected: [1m10.0.0.5:35010[22m
+1970-01-01, 00:02:14.370 [34m[INFO][0m [3m[90m proxy: [0m starting companion reverse bridge HTTP, Android IP: 10.0.0.5, remote=10.0.0.5:9999 local=127.0.0.1:80
+1970-01-01, 00:02:14.371 [34m[INFO][0m [3m[90m proxy: [0m tcp_bridge[HTTP]: connecting remote=10.0.0.5:9999 local=127.0.0.1:80
+1970-01-01, 00:02:14.371 [34m[INFO][0m [3m[90m proxy: [0m starting companion reverse bridge WS, Android IP: 10.0.0.5, remote=10.0.0.5:9998 local=127.0.0.1:80
+1970-01-01, 00:02:14.371 [34m[INFO][0m [3m[90m proxy: [0m tcp_bridge[WS]: connecting remote=10.0.0.5:9998 local=127.0.0.1:80
+1970-01-01, 00:02:14.371 [34m[INFO][0m [3m[90m proxy: [0m starting companion reverse bridge SWUPDATE, Android IP: 10.0.0.5, remote=10.0.0.5:9997 local=127.0.0.1:8080
+1970-01-01, 00:02:14.372 [34m[INFO][0m [3m[90m proxy: [0m tcp_bridge[SWUPDATE]: connecting remote=10.0.0.5:9997 local=127.0.0.1:8080
+1970-01-01, 00:02:14.372 [34m[INFO][0m [3m[90m proxy: [0m 🧪 bt-wireless-proxy car-wifi-mitm: PHONE TCP accepted on MD listener; commit barrier seq=8
+1970-01-01, 00:02:14.372 [34m[INFO][0m [3m[90m proxy: [0m 📂 Opening USB accessory device: [4m/dev/usb_accessory[24m
+1970-01-01, 00:02:14.372 [34m[INFO][0m [3m[90m proxy: [0m ♾️ Starting to proxy data between HU and MD...
+1970-01-01, 00:02:14.373 [34m[INFO][0m [3m[90m mitm/HU: [0m 🔄 running in [1mpassthrough[0m mode (MITM disabled in config)
+1970-01-01, 00:02:14.373 [34m[INFO][0m [3m[90m mitm/MD: [0m 🔄 running in [1mpassthrough[0m mode (MITM disabled in config)
+1970-01-01, 00:02:14.373 [34m[INFO][0m [3m[90m proxy: [0m ⚙️ Showing transfer statistics: [1m[34mdisabled[0m
+1970-01-01, 00:02:14.374 [34m[INFO][0m [3m[90m proxy: [0m tcp_bridge[HTTP]: failed to connect to remote server 10.0.0.5:9999: Connection refused (os error 111)
+1970-01-01, 00:02:14.375 [34m[INFO][0m [3m[90m proxy: [0m tcp_bridge[WS]: failed to connect to remote server 10.0.0.5:9998: Connection refused (os error 111)
+1970-01-01, 00:02:14.376 [34m[INFO][0m [3m[90m proxy: [0m tcp_bridge[SWUPDATE]: failed to connect to remote server 10.0.0.5:9997: Connection refused (os error 111)
+1970-01-01, 00:02:16.081 [34m[INFO][0m [3m[90m bluetooth: [0m 🚀 Bluetooth launch sequence completed
+1970-01-01, 00:02:16.092 [34m[INFO][0m [3m[90m usb: [0m 🔌 USB Manager: Switched to accessory gadget
+1970-01-01, 00:02:23.579 [34m[INFO][0m [3m[90m proxy: [0m tcp_bridge[HTTP]: connecting remote=10.0.0.5:9999 local=127.0.0.1:80
+1970-01-01, 00:02:23.579 [34m[INFO][0m [3m[90m proxy: [0m tcp_bridge[WS]: connecting remote=10.0.0.5:9998 local=127.0.0.1:80
+1970-01-01, 00:02:23.584 [34m[INFO][0m [3m[90m proxy: [0m tcp_bridge[HTTP]: failed to connect to remote server 10.0.0.5:9999: Connection refused (os error 111)
+1970-01-01, 00:02:23.584 [34m[INFO][0m [3m[90m proxy: [0m tcp_bridge[WS]: failed to connect to remote server 10.0.0.5:9998: Connection refused (os error 111)
+1970-01-01, 00:03:36.545 [33m[WARN][0m [3m[90m proxy: [0m tcp_bridge[HTTP]: error during bidirectional copy: Connection reset by peer (os error 104)
+1970-01-01, 00:03:36.546 [33m[WARN][0m [3m[90m proxy: [0m tcp_bridge[WS]: error during bidirectional copy: Connection reset by peer (os error 104)
+1970-01-01, 00:03:36.546 [33m[WARN][0m [3m[90m proxy: [0m tcp_bridge[SWUPDATE]: error during bidirectional copy: Connection reset by peer (os error 104)
+2026-08-20, 05:57:24.984 [34m[INFO][0m [3m[90m web: [0m 🕰️ system time set to: [1m2026-08-20 5:57:24.983758 +00:00:00[0m
+2026-08-20, 05:59:57.253 [34m[INFO][0m [3m[90m proxy: [0m tcp_bridge[WS]: connecting remote=10.0.0.5:9998 local=127.0.0.1:80
+2026-08-20, 05:59:57.253 [34m[INFO][0m [3m[90m proxy: [0m tcp_bridge[HTTP]: connecting remote=10.0.0.5:9999 local=127.0.0.1:80
+2026-08-20, 06:07:55.359 [34m[INFO][0m [3m[90m web: [0m 🕰️ system time set to: [1m2026-08-20 6:07:55.359614 +00:00:00[0m
+2026-08-20, 06:08:22.944 [33m[WARN][0m [3m[90m proxy: [0m tcp_bridge[SWUPDATE]: error during bidirectional copy: Connection reset by peer (os error 104)
+2026-08-20, 06:08:22.944 [33m[WARN][0m [3m[90m proxy: [0m tcp_bridge[HTTP]: error during bidirectional copy: Connection reset by peer (os error 104)
+2026-08-20, 06:08:22.946 [33m[WARN][0m [3m[90m proxy: [0m tcp_bridge[WS]: error during bidirectional copy: Connection reset by peer (os error 104)
+2026-08-20, 06:08:51.960 [34m[INFO][0m [3m[90m proxy: [0m tcp_bridge[HTTP]: connecting remote=10.0.0.5:9999 local=127.0.0.1:80
+2026-08-20, 06:08:51.963 [34m[INFO][0m [3m[90m proxy: [0m tcp_bridge[WS]: connecting remote=10.0.0.5:9998 local=127.0.0.1:80
+2026-08-20, 06:08:54.962 [34m[INFO][0m [3m[90m proxy: [0m tcp_bridge[HTTP]: timeout connecting to remote server 10.0.0.5:9999
+2026-08-20, 06:08:54.964 [34m[INFO][0m [3m[90m proxy: [0m tcp_bridge[WS]: timeout connecting to remote server 10.0.0.5:9998
+2026-08-20, 06:08:57.903 [34m[INFO][0m [3m[90m companion_bt: [0m connection request from [1mC0:1C:6A:6C:1E:5A[0m
+2026-08-20, 06:08:57.904 [34m[INFO][0m [3m[90m companion_bt: [0m accepted connection from [1mC0:1C:6A:6C:1E:5A[0m
+2026-08-20, 06:08:57.904 [34m[INFO][0m [3m[90m companion_bt: [0m auth: required but token is empty; entering provisioning-only mode
+2026-08-20, 06:08:57.985 [33m[WARN][0m [3m[90m companion_bt: [0m client [1mC0:1C:6A:6C:1E:5A[0m ended: Connection reset by peer (os error 104)
+2026-08-20, 06:09:04.500 [34m[INFO][0m [3m[90m web: [0m 🕰️ system time set to: [1m2026-08-20 6:09:04.500745 +00:00:00[0m
+2026-08-20, 06:09:11.944 [34m[INFO][0m [3m[90m proxy: [0m tcp_bridge[SWUPDATE]: connecting remote=10.0.0.5:9997 local=127.0.0.1:8080
