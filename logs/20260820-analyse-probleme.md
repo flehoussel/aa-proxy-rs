@@ -56,11 +56,11 @@ Le détecteur de "stall" de `aa-proxy-rs` (`src/proxy.rs`, timeout fixe = `confi
 
 ### Localisation dans le code (avant correctif)
 
-| Élément | Fichier | Rôle |
-|---|---|---|
-| Ouverture de `/dev/usb_accessory` + début du proxying | `src/proxy.rs` (`io_loop`) | Démarre sans attendre la fin du switch USB |
-| Switch réel du gadget USB en mode accessory | `src/usb_gadget.rs` (`enable_default_and_wait_for_accessory`), appelé depuis `src/main.rs` (`enable_usb_if_present`) | Tourne sur un runtime séparé, ~2-3 s, sans notifier `io_loop` |
-| Détecteur de stall (timeout 10 s) | `src/proxy.rs` (boucle `io_loop`) | Tue la session si 0 octet transféré pendant `config.timeout_secs` |
+| Élément                                               | Fichier                                                                                                              | Rôle                                                              |
+| ----------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------- |
+| Ouverture de `/dev/usb_accessory` + début du proxying | `src/proxy.rs` (`io_loop`)                                                                                           | Démarre sans attendre la fin du switch USB                        |
+| Switch réel du gadget USB en mode accessory           | `src/usb_gadget.rs` (`enable_default_and_wait_for_accessory`), appelé depuis `src/main.rs` (`enable_usb_if_present`) | Tourne sur un runtime séparé, ~2-3 s, sans notifier `io_loop`     |
+| Détecteur de stall (timeout 10 s)                     | `src/proxy.rs` (boucle `io_loop`)                                                                                    | Tue la session si 0 octet transféré pendant `config.timeout_secs` |
 
 ## 3. Stratégie de correction
 
@@ -246,3 +246,60 @@ Le RPi fonctionne correctement : le switch de gadget USB se termine **avec succ�
 ### Test décisif
 
 Le test qui permettra de confirmer définitivement le diagnostic : après build et déploiement du correctif, avec **le même câble, la même voiture et le même téléphone**, si le stall à 10 s disparaît et que la session Android Auto s'établit dès la première tentative, cela confirme que la cause était bien ce bug logiciel. Si le problème persiste malgré le correctif, ce sera le signal qu'il faut alors regarder ailleurs : `dmesg` pour un souci de câble/contrôleur USB (UDC) physique, ou un souci propre à la négociation AOA de cet autoradio en particulier.
+
+## Annexe 2 : confirmation par un second test (Raspberry Pi branché sur PC + Desktop Head Unit)
+
+Un second test a été réalisé avant l'application du correctif : le Raspberry Pi n'est plus branché sur la voiture mais **directement sur un PC en USB**, avec l'application Android Auto **Desktop Head Unit (DHU)** lancée côté PC. Ce test a l'intérêt de changer complètement l'extrémité "tête d'unité" (plus de voiture, plus de câble d'origine, plus de contrôleur USB automobile) tout en gardant le même Raspberry Pi, le même firmware et le même téléphone. C'est un excellent test de discrimination : si le bug disparaît avec un autre "HU", il est lié à la voiture/au câble ; s'il persiste à l'identique, il est interne au logiciel.
+
+Log source : `logs/20260820-dhu/aa-proxy-rs-dhu.log`. Ce fichier a la particularité de contenir en plus les messages **kernel (`dmesg`)** entrelacés avec le log applicatif, ce qui permet de dater précisément, au niveau matériel, le moment où le gadget USB du Raspberry Pi est réellement pris en compte par le noyau.
+
+### Résultat : le bug se reproduit à l'identique, 13 fois sur 15
+
+Sur toute la durée du test (16 tentatives de session, de `commit barrier seq=1` à `seq=16`, la dernière étant interrompue manuellement par l'opérateur avec Ctrl+C) :
+
+| Résultat                                                                                | Nombre de sessions | Détail                                                                                                                                                                                                 |
+| --------------------------------------------------------------------------------------- | ------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| `unexpected transfer stall` (le bug de course)                                          | **13 / 15**        | Durée de session à chaque fois ~10,00 à 10,01 s (`10s 13ms`, `10s 6ms`, `10s 11ms`, `10s 5ms`, `10s 12ms`, `10s 8ms`, `10s 11ms`, `10s 5ms`, `10s 8ms`, `10s 12ms`, `10s 11ms`, `10s 10ms`, `10s 8ms`) |
+| `read_input_data: EndpointIo read error` (coupure USB réelle, sans rapport avec le bug) | 2 / 15             | Sessions de 42 s et 1 min 23 s — voir ci-dessous                                                                                                                                                       |
+| Interrompue manuellement (Ctrl+C)                                                       | 1 (seq=16)         | Pas de résultat exploitable                                                                                                                                                                            |
+
+Pour chacune des 16 tentatives, l'écart mesuré entre `📂 Opening USB accessory device` (ouverture du device par le proxy) et `🔌 USB Manager: Switched to accessory gadget` (fin du switch du gadget) est resté **systématiquement compris entre 1,77 s et 2,75 s** (moyenne ~2,2 s) :
+
+```text
+seq=1 : 2,67 s     seq=7  : 1,77 s     seq=12 : 2,68 s
+seq=2 : 2,12 s     seq=8  : 2,00 s     seq=13 : 1,87 s
+seq=3 : 2,52 s     seq=9  : 2,28 s     seq=14 : 1,91 s
+seq=4 : 1,98 s     seq=10 : 1,97 s     seq=15 : 2,21 s
+seq=5 : 2,37 s     seq=11 : 2,12 s     seq=16 : 2,75 s
+seq=6 : 2,44 s
+```
+
+Le `dmesg` embarqué confirme, au niveau noyau, exactement la même mécanique que celle décrite en section 2 — par exemple pour `seq=1` :
+
+```text
+07:16:33.566  proxy: 📂 Opening USB accessory device: /dev/usb_accessory
+07:16:33.566  proxy: ♾️ Starting to proxy data between HU and MD...
+[  ... ]       dwc2 fe980000.usb: bound driver configfs-gadget.accessory   <-- ~2,1 s plus tard
+[  ... ]       android_work: sent uevent USB_STATE=CONFIGURED
+07:16:35.682  usb: 🔌 USB Manager: Switched to accessory gadget
+```
+
+Le device `/dev/usb_accessory` est donc ouvert et le proxying démarré **avant** que le driver gadget du noyau (`dwc2`) n'ait fini de se lier et d'énumérer côté USB — exactement la course diagnostiquée en section 2, avec cette fois la preuve au niveau kernel, sur un environnement matériel totalement différent (PC au lieu de voiture).
+
+### Les deux exceptions (`EndpointIo read error`) ne remettent pas en cause le diagnostic
+
+Deux sessions (`seq=2`, 1 min 23 s, et `seq=8`, 42 s) n'ont **pas** buté sur le stall de 10 s : des données ont visiblement circulé assez longtemps pour satisfaire le détecteur de stall, avant qu'une **vraie coupure USB physique** ne survienne (`android_work: sent uevent USB_STATE=DISCONNECTED` au niveau kernel, juste avant l'erreur applicative). Ce sont des évènements différents du bug de course :
+
+- ils durent bien plus longtemps que 10 s (donc pas de rapport avec le timeout logiciel),
+- ils se terminent par une erreur de lecture USB authentique (`EndpointIo read error`), pas par le détecteur de stall applicatif,
+- ils sont cohérents avec un débranchement/re-énumération réel côté PC (changement de port, mise en veille USB, ou fermeture du programme côté PC qui pilotait le lien) — plausible dans un test manuel sur PC, bien moins probable en voiture avec un câble fixe.
+
+Ces deux cas confirment au passage que le lien USB brut **peut** transporter des données une fois établi (jusqu'à 83 s de session ici) — le problème n'est donc pas que "le PC ne sait pas parler à ce device", mais bien la fenêtre de course initiale qui tue la session avant que quoi que ce soit ait pu s'établir, dans 13 cas sur 15.
+
+### Ce que cela change à l'analyse
+
+Ce second test, avec un "HU" totalement différent (PC + DHU au lieu de voiture), reproduit le **même bug, avec la même signature temporelle (~10 s pile), à un taux de 13/15**, ce qui renforce encore la conclusion de la section 3 :
+
+- **Voiture / câble / autoradio** : définitivement écartés comme cause du bug de course — le même défaut apparaît avec un PC et un câble différents.
+- **Raspberry Pi / buildroot** : toujours écarté comme cause matérielle — le gadget USB fonctionne et s'énumère correctement à chaque fois (`USB_STATE=CONFIGURED` obtenu systématiquement), juste trop tard par rapport à l'ouverture du device par le proxy.
+- Les deux sessions plus longues confirment que le correctif proposé (attendre la fin du switch gadget avant d'ouvrir `/dev/usb_accessory`) s'attaque bien à la bonne fenêtre : une fois cette fenêtre passée, des données peuvent circuler pendant des dizaines de secondes.
