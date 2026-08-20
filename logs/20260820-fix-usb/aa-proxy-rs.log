@@ -1,0 +1,99 @@
+# aa-proxy-rs 
+1970-01-01, 00:02:33.701 [INFO] 🛸 aa-proxy-rs is starting, build: 20260820_090313, git: f338e53-br#90dfa96
+1970-01-01, 00:02:33.701 [INFO]  main:  📟 host device: Raspberry Pi 4 Model B Rev 1.1
+1970-01-01, 00:02:33.701 [INFO] ⚙️ I/O backend: io_uring (kernel async I/O)
+1970-01-01, 00:02:33.701 [INFO]  main:  ⚙️ config loaded from file: /etc/aa-proxy-rs/config.toml
+1970-01-01, 00:02:33.701 [INFO]  main:  📜 Log file path: /var/log/aa-proxy-rs.log
+1970-01-01, 00:02:33.701 [INFO]  main:  💥 Panic reports: enabled dir=/data/aa-proxy-rs/crashes
+1970-01-01, 00:02:33.701 [INFO]  main:  🖼️ SDR UI overrides: enabled file=/etc/aa-proxy-rs/sdr-ui-overrides.toml autocreate=true
+1970-01-01, 00:02:33.703 [INFO] [wasm] initial loaded wasm script count=0
+1970-01-01, 00:02:33.703 [INFO]  proxy:  🛰️ Starting TCP server for MD...
+1970-01-01, 00:02:33.704 [INFO]  proxy:  🛰️ MD TCP server bound to: 0.0.0.0:5288
+1970-01-01, 00:02:33.704 [INFO]  proxy:  🛰️ Starting TCP server for DHU...
+1970-01-01, 00:02:33.704 [INFO]  proxy:  🛰️ DHU TCP server bound to: 0.0.0.0:5277
+1970-01-01, 00:02:33.704 [ERROR] media_dump_base_port is set but mitm = false — media tap disabled!
+1970-01-01, 00:02:33.704 [INFO]  proxy:  💤 waiting for bluetooth handshake...
+1970-01-01, 00:02:33.705 [INFO]  main:  webserver running at http://0.0.0.0:80/
+1970-01-01, 00:02:33.706 [INFO]  usb:  Using UDC: "fe980000.usb"
+1970-01-01, 00:02:33.717 [INFO]  bluetooth:  🥏 Bluetooth alias: aa-proxy-b9c1b6
+1970-01-01, 00:02:33.717 [INFO]  bluetooth:  🥏 Opened bluetooth adapter hci0 with address DC:A6:32:04:A4:8C
+1970-01-01, 00:02:33.785 [INFO]  bluetooth:  📱 AA Wireless Profile: registered
+1970-01-01, 00:02:33.787 [INFO]  companion_bt:  pairing: registered default Companion Classic BT pairing agent
+1970-01-01, 00:02:33.787 [INFO]  bluetooth:  📱 Companion Classic BT pairing agent: registered
+1970-01-01, 00:02:33.919 [INFO]  bluetooth:  📱 Companion Classic BT: adapter is pairable/discoverable with no timeout
+1970-01-01, 00:02:33.921 [INFO]  companion_bt:  registered Classic BT companion profile name=AA Proxy Companion Control uuid=3f0d2c8e-7e7e-4f38-8c98-6a7a4d94c001 channel=23
+1970-01-01, 00:02:33.921 [INFO]  bluetooth:  📱 Companion Classic BT custom profile: registered
+1970-01-01, 00:02:33.923 [INFO]  companion_bt:  registered Classic BT companion profile name=AA Proxy Companion Serial uuid=00001101-0000-1000-8000-00805f9b34fb channel=24
+1970-01-01, 00:02:33.923 [INFO]  bluetooth:  📱 Companion Classic BT SPP fallback profile: registered
+1970-01-01, 00:02:33.923 [INFO]  usb:  🔌 Initializing USB Manager
+1970-01-01, 00:02:33.924 [INFO]  usb:  🔌 USB Manager: Disabled all USB gadgets
+1970-01-01, 00:02:33.928 [INFO]  bluetooth:  🎧 Headset Profile (HSP): registered
+1970-01-01, 00:02:33.929 [INFO]  bluetooth:  ⏳ Waiting for phone to connect via bluetooth...
+1970-01-01, 00:02:33.929 [INFO]  bluetooth:  📋 Loaded 1 known device(s) from /etc/aa-proxy-rs/known_devices
+1970-01-01, 00:02:33.929 [INFO]  bluetooth:  🥏 Using 1 known-good device(s)...
+1970-01-01, 00:02:33.929 [INFO]  bluetooth:  🧲 Attempting to start an AndroidAuto session via bluetooth with the following devices, in this order: [C0:1C:6A:6C:1E:5A]
+1970-01-01, 00:02:33.930 [INFO]  bluetooth:  🧲 Trying to connect to: C0:1C:6A:6C:1E:5A (Pixel 9), attempt: 1/3
+1970-01-01, 00:02:33.931 [WARN]  bluetooth:  🔇 C0:1C:6A:6C:1E:5A (Pixel 9): Error connecting: Bluetooth operation in progress: br-connection-busy
+1970-01-01, 00:02:33.931 [INFO]  bluetooth:  🧲 Trying to connect to: C0:1C:6A:6C:1E:5A (Pixel 9), attempt: 2/3
+1970-01-01, 00:02:33.932 [WARN]  bluetooth:  🔇 C0:1C:6A:6C:1E:5A (Pixel 9): Error connecting: Bluetooth operation in progress: br-connection-busy
+1970-01-01, 00:02:33.932 [INFO]  bluetooth:  🧲 Trying to connect to: C0:1C:6A:6C:1E:5A (Pixel 9), attempt: 3/3
+1970-01-01, 00:02:33.933 [WARN][  154.143379] Bluetooth: hci0: ACL packet for unknown connection handle 12
+  bluetooth:  🔇 C0:1C:6A:6C:1E:5A (Pixel 9): Error connecting: Bluetooth operation in progress: br-connection-busy
+[  154.233433] Bluetooth: Unexpected continuation frame (len 0)
+[  154.893435] Bluetooth: Unexpected continuation frame (len 0)
+1970-01-01, 00:02:34.936 [INFO]  bluetooth:  🧲 Trying to connect to: C0:1C:6A:6C:1E:5A (Pixel 9), attempt: 1/3
+1970-01-01, 00:02:34.937 [WARN]  bluetooth:  🔇 C0:1C:6A:6C:1E:5A (Pixel 9): Error connecting: Bluetooth operation in progress: br-connection-busy
+1970-01-01, 00:02:34.938 [INFO]  bluetooth:  🧲 Trying to connect to: C0:1C:6A:6C:1E:5A (Pixel 9), attempt: 2/3
+1970-01-01, 00:02:34.939 [WARN]  bluetooth:  🔇 C0:1C:6A:6C:1E:5A (Pixel 9): Error connecting: Bluetooth operation in progress: br-connection-busy
+1970-01-01, 00:02:34.939 [INFO]  bluetooth:  🧲 Trying to connect to: C0:1C:6A:6C:1E:5A (Pixel 9), attempt: 3/3
+1970-01-01, 00:02:34.941 [WARN]  b[  155.014673] Bluetooth: Unexpected continuation frame (len 0)
+luetooth:  🔇 C0:1C:6A:6C:1E:5A (Pixel 9): Error connecting: Bluetooth operation in progress: br-connection-busy
+1970-01-01, 00:02:35.579 [INFO]  bluetooth:  🎧 Headset Profile (HSP): connect from C0:1C:6A:6C:1E:5A
+1970-01-01, 00:02:36.943 [INFO]  bluetooth:  🧲 Trying to connect to: C0:1C:6A:6C:1E:5A (Pixel 9), attempt: 1/3
+1970-01-01, 00:02:36.945 [INFO]  bluetooth:  🔗 Successfully connected to device: C0:1C:6A:6C:1E:5A (Pixel 9)
+1970-01-01, 00:02:36.945 [INFO]  bluetooth:  🧪 bt-wireless-proxy: waiting up to 120s for PHONE AA Wireless RFCOMM (after phone BT trigger)
+1970-01-01, 00:02:39.667 [INFO]  bluetooth:  📱 AA Wireless Profile: inbound RFCOMM from C0:1C:6A:6C:1E:5A while after phone BT trigger
+1970-01-01, 00:02:39.668 [INFO]  bluetooth:  🧪 bt-wireless-proxy: accepted PHONE AA Wireless RFCOMM from C0:1C:6A:6C:1E:5A (after phone BT trigger)
+1970-01-01, 00:02:39.672 [INFO]  sdr-ui:  current phone identity set: id=phone_ed849bccf4e9 name=Pixel 9 mac=**:**:**:**:1E:5A
+1970-01-01, 00:02:39.673 [INFO]  bluetooth:  📲 Sending parameters via bluetooth to phone...
+1970-01-01, 00:02:39.673 [INFO]  bluetooth:  🛜 Sending Host IP Address: 10.0.0.1
+1970-01-01, 00:02:39.682 [INFO]  bluetooth:  📨 stage #1 of 5: Sending WifiStartRequest frame to phone...
+1970-01-01, 00:02:39.739 [INFO]  bluetooth:  📨 stage #2 of 5: Received WifiInfoRequest frame from phone (⏱️ 56 ms)
+1970-01-01, 00:02:39.739 [INFO]  bluetooth:  🛜 Sending Host SSID and Password: aa-proxy, aa-proxy
+1970-01-01, 00:02:39.739 [INFO]  bluetooth:  📨 stage #3 of 5: Sending WifiInfoResponse frame to phone...
+1970-01-01, 00:02:39.745 [INFO]  bluetooth:  📨 stage #4 of 5: Received WifiStartResponse frame from phone (⏱️ 5 ms)
+[  164.284207] ieee80211 phy0: brcmf_p2p_send_action_frame: Unknown Frame: category 0x8a, action 0x6
+[  168.189125] ieee80211 phy0: brcmf_p2p_send_action_frame: Unknown Frame: category 0x8a, action 0x6
+1970-01-01, 00:02:49.773 [INFO]  bluetooth:  📨 stage #5 of 5: Received WifiConnectStatus frame from phone (⏱️ 10027 ms)
+1970-01-01, 00:02:49.773 [INFO]  bluetooth:  📋 Loaded 1 known device(s) from /etc/aa-proxy-rs/known_devices
+1970-01-01, 00:02:49.773 [INFO]  proxy:  🛰️ MD TCP server: listening for phone connection...
+1970-01-01, 00:02:49.774 [INFO]  proxy:  📳 TCP server: new client connected: 10.0.0.5:40208
+1970-01-01, 00:02:49.778 [INFO]  proxy:  starting companion reverse bridge HTTP, Android IP: 10.0.0.5, remote=10.0.0.5:9999 local=127.0.0.1:80
+1970-01-01, 00:02:49.779 [INFO]  proxy:  tcp_bridge[HTTP]: connecting remote=10.0.0.5:9999 local=127.0.0.1:80
+1970-01-01, 00:02:49.783 [INFO]  proxy:  starting companion reverse bridge WS, Android IP: 10.0.0.5, remote=10.0.0.5:9998 local=127.0.0.1:80
+1970-01-01, 00:02:49.783 [INFO]  proxy:  tcp_bridge[WS]: connecting remote=10.0.0.5:9998 local=127.0.0.1:80
+1970-01-01, 00:02:49.783 [INFO]  proxy:  starting companion reverse bridge SWUPDATE, Android IP: 10.0.0.5, remote=10.0.0.5:9997 local=127.0.0.1:8080
+1970-01-01, 00:02:49.784 [INFO]  proxy:  tcp_bridge[SWUPDATE]: connecting remote=10.0.0.5:9997 local=127.0.0.1:8080
+1970-01-01, 00:02:49.789 [INFO]  proxy:  🧪 bt-wireless-proxy car-wifi-mitm: PHONE TCP accepted on MD listener; commit barrier seq=1
+1970-01-01, 00:02:52.195 [INFO]  bluetooth:  🎧 Headset Profile (HSP): unregistering ...
+1970-01-01, 00:0[  172.499745] dwc2 fe980000.usb: bound driver configfs-gadget.accessory
+2:52.496 [INFO]  bluetooth:  🎧 Headset Profile (HSP): unregistered
+1970-01-01, 00:02:52.497 [INFO]  bluetooth:  🚀 Bluetooth launch sequence completed
+1970-01-01, 00:02:52.508 [INFO]  usb:  🔌 USB Manager: Switched to accessory gadget
+1970-01-01, 00:02:52.508 [INFO]  proxy:  📂 Opening USB accessory device: /dev/usb_accessory
+1970-01-01, 00:02:52.508 [INFO]  proxy:  ♾️ Starting to proxy data between HU and MD...
+1970-01-01, 00:02:52.510 [INFO]  mitm/HU:  🔄 running in passthrough mode (MITM disabled in config)
+1970-01-01, 00:02:52.510 [INFO]  mitm/MD:  🔄 running in passthrough mode (MITM disabled in config)
+1970-01-01, 00:02:52.510 [INFO]  proxy:  ⚙️ Showing transfer statistics: disabled
+[  172.717417] dwc2 fe980000.usb: new device is high-speed
+1970-01-01, 00:02:52.780 [INFO]  proxy:  tcp_bridge[HTTP]: timeout connecting to remote server 10.0.0.5:9999
+1970-01-01, 00:02:52.785 [INFO]  proxy:  tcp_bridge[WS]: timeout connecting to remote server 10.0.0.5:9998
+1970-01-01, 00:02:52.785 [INFO]  proxy:  tcp_bridge[SWUPDATE[  172.811883] android_work: sent uevent USB_STATE=CONNECTED
+]: timeout connecting to remote server 10.0.0.5:9997
+[  172.910722] dwc2 fe980000.usb: new device is high-speed
+[  172.984816] dwc2 fe980000.usb: new address 8
+[  173.001515] android_work: sent uevent USB_STATE=CONFIGURED
+2026-08-20, 09:10:56.979 [INFO]  web:  🕰️ system time set to: 2026-08-20 9:10:56.975325 +00:00:00
+2026-08-20, 09:11:15.025 [WARN]  proxy:  tcp_bridge[SWUPDATE]: error during bidirectional copy: Connection reset by peer (os error 104)
+2026-08-20, 09:11:15.026 [WARN]  proxy:  tcp_bridge[HTTP]: error during bidirectional copy: Connection reset by peer (os error 104)
+2026-08-20, 09:11:15.026 [WARN]  proxy:  tcp_bridge[WS]: error during bidirectional copy: Connection reset by peer (os error 104)
