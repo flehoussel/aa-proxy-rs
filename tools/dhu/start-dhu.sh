@@ -16,4 +16,13 @@ if [ ! -x "${DHU_PATH}/desktop-head-unit" ]; then
     exit 1
 fi
 
-"${DHU_PATH}/desktop-head-unit" --usb="${USB_DEVICE}" --config="${CONFIG_FILE}"
+# The DHU gives up and exits after a fixed number of USB scan attempts if
+# aa-proxy-rs hasn't switched the gadget to accessory mode yet (e.g. right
+# after restarting aa-proxy-rs, or before a phone has connected). Loop so it
+# keeps retrying instead of requiring a manual relaunch each time; Ctrl+C
+# stops the loop.
+while true; do
+    "${DHU_PATH}/desktop-head-unit" --usb="${USB_DEVICE}" --config="${CONFIG_FILE}" || true
+    echo "desktop-head-unit exited, retrying in 2s... (Ctrl+C to stop)"
+    sleep 2
+done
