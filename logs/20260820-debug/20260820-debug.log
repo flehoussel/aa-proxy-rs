@@ -1,0 +1,1134 @@
+ aa-proxy-rs  
+2026-08-20, 11:44:28.070 [INFO] 🛸 aa-proxy-rs is starting, build: 20260820_090313, git: f338e53-br#90dfa96
+2026-08-20, 11:44:28.070 [INFO]  main:  📟 host device: Raspberry Pi 4 Model B Rev 1.1
+2026-08-20, 11:44:28.070 [INFO] ⚙️ I/O backend: io_uring (kernel async I/O)
+2026-08-20, 11:44:28.070 [INFO]  main:  ⚙️ config loaded from file: /etc/aa-proxy-rs/config.toml
+2026-08-20, 11:44:28.070 [DEBUG] (1) aa_proxy_rs:  main:  ⚙️ startup configuration: AppConfig {
+    advertise: true,
+    enable_companion_bt: true,
+    companion_bt_auth_required: true,
+    companion_bt_auth_token: "",
+    dongle_mode: false,
+    preload_kernel_modules: "",
+    kernel_module_path: "/data/aa-proxy-rs/firmware",
+    bt_wireless_proxy: false,
+    bt_wireless_proxy_mode: "car-wifi-mitm",
+    bt_wireless_proxy_hu_mac: "",
+    bt_wireless_proxy_pairing_window_secs: 120,
+    bt_wireless_proxy_phone_like_pairing: false,
+    bt_wireless_proxy_phone_like_pairing_alias: "AndroidAuto",
+    bt_wireless_proxy_phone_like_pairing_class: "0x00020C",
+    bt_wireless_proxy_phone_like_sdp_profiles: false,
+    bt_wireless_proxy_phone_like_sdp_profile_set: "minimal",
+    bt_wireless_proxy_rendezvous_mode: "auto",
+    bt_wireless_proxy_hu_first_wait_phone_secs: 30,
+    bt_wireless_proxy_hu_channel: Some(
+        0,
+    ),
+    bt_wireless_proxy_tcp_probe: true,
+    bt_wireless_proxy_car_wifi_base_iface: "wlan0",
+    bt_wireless_proxy_car_wifi_join_cmd: "",
+    bt_wireless_proxy_car_wifi_auto_join: false,
+    bt_wireless_proxy_wifi_join_control: "auto",
+    bt_wireless_proxy_wpactrl_socket_timeout_secs: 12,
+    bt_wireless_proxy_wifi_association_timeout_secs: 30,
+    bt_wireless_proxy_dhcp_timeout_secs: 30,
+    bt_wireless_proxy_car_wifi_keep_ap: false,
+    bt_wireless_proxy_car_wifi_sta_iface: "",
+    bt_wireless_proxy_car_wifi_sta_phy: "",
+    bt_wireless_proxy_car_wifi_ap_iface: "",
+    bt_wireless_proxy_phone_wifi_mode: "car_ap",
+    bt_wireless_proxy_rewrite_ip: "",
+    bt_wireless_proxy_listen_port: 5288,
+    bt_wireless_proxy_use_version_projection_fallback: true,
+    bt_wireless_proxy_wpp_keepalive: false,
+    bt_wireless_proxy_wpp_keepalive_interval_ms: 2000,
+    debug: true,
+    pkt_debug: false,
+    hexdump_level: Disabled,
+    disable_console_debug: false,
+    pkt_debug_filter_enabled: false,
+    pkt_debug_filter_proxy: "both",
+    pkt_debug_filter_stages: "",
+    pkt_debug_filter_service_kinds: "",
+    pkt_debug_filter_channels: "",
+    pkt_debug_filter_exclude_channels: "",
+    pkt_debug_filter_message_ids: "",
+    pkt_debug_filter_exclude_message_ids: "",
+    pkt_debug_filter_pretty_proto: true,
+    pkt_debug_filter_max_payload_bytes: 2048,
+    pkt_debug_full_frame_enabled: false,
+    legacy: false,
+    usb_gadget_require_accessory_start: false,
+    usb_gadget_rearm_on_disconnect: false,
+    usb_gadget_rearm_cooldown_ms: 1500,
+    quick_reconnect: false,
+    bt_poweroff: false,
+    connect: BluetoothAddressList(
+        Some(
+            [
+                00:00:00:00:00:00,
+            ],
+        ),
+    ),
+    logfile: "/var/log/aa-proxy-rs.log",
+    crash_handler_enabled: true,
+    crash_dir: "/data/aa-proxy-rs/crashes",
+    sdr_ui_override_enabled: true,
+    sdr_ui_override_autocreate_profiles: true,
+    sdr_ui_override_file: "/etc/aa-proxy-rs/sdr-ui-overrides.toml",
+    inject_displays_file: "/etc/aa-proxy-rs/inject-displays.toml",
+    stats_interval: 0,
+    udc: None,
+    iface: "wlan0",
+    wlan_subnet: "10.0.0",
+    btalias: None,
+    timeout_secs: 10,
+    webserver: Some(
+        "0.0.0.0:80",
+    ),
+    bt_timeout_secs: 120,
+    mitm: false,
+    dpi: 0,
+    audio_max_unacked: 0,
+    add_vendor_channel: true,
+    remove_tap_restriction: false,
+    video_in_motion: false,
+    disable_media_sink: false,
+    disable_tts_sink: false,
+    developer_mode: false,
+    wired: None,
+    dhu: false,
+    aa_server_tcp_addr: "",
+    ev: false,
+    odometer: false,
+    tire_pressure: false,
+    remove_bluetooth: false,
+    bt_real_hu_passthrough_enabled: false,
+    bt_real_hu_passthrough_address: "",
+    bt_a2dp_sink_enabled: false,
+    remove_wifi: false,
+    inject_display_types: InjectDisplayTypes(
+        None,
+    ),
+    inject_add_input_sources: false,
+    inject_cluster_display_id: 1,
+    inject_cluster_width_margin: 270,
+    inject_cluster_height_margin: 344,
+    inject_cluster_density: 180,
+    inject_cluster_viewing_distance: 100,
+    inject_cluster_codec_resolution: InjectClusterCodecResolution(
+        VIDEO_800x480,
+    ),
+    inject_cluster_touch_width: 1280,
+    inject_cluster_touch_height: 720,
+    inject_aux_display_id: 2,
+    inject_aux_width_margin: 0,
+    inject_aux_height_margin: 0,
+    inject_aux_density: 160,
+    inject_aux_viewing_distance: 300,
+    inject_aux_touch_width: 1280,
+    inject_aux_touch_height: 720,
+    inject_force_focus_without_tap: false,
+    change_usb_order: false,
+    stop_on_disconnect: false,
+    waze_lht_workaround: false,
+    roundabout_angle_synthesis_enabled: false,
+    ev_battery_logger: None,
+    ev_connector_types: EvConnectorTypes(
+        None,
+    ),
+    enable_ssh: true,
+    usb_serial_console: false,
+    wifi_version: 5,
+    band: "5",
+    country_code: "FR",
+    channel: 36,
+    ssid: "aa-proxy",
+    wpa_passphrase: "aa-proxy",
+    eth_mode: "10.10.0.10/24",
+    startup_delay: 0,
+    protocol_version_override_enabled: false,
+    protocol_version_override_major: 5,
+    protocol_version_override_minor: 1,
+    external_antenna: false,
+    media_dump_base_port: Some(
+        0,
+    ),
+    media_wait_for_live_idr: true,
+    map_album_art_enabled: false,
+    map_album_art_source: "file",
+    map_album_art_file: "/data/aa-proxy-rs/map-album-art.png",
+    map_album_art_max_bytes: 0,
+    map_album_art_chunk_bytes: 16120,
+    map_album_art_video_display_id: "aux-1",
+    map_album_art_capture_interval_ms: 2000,
+    map_album_art_output_size_px: 256,
+    map_album_art_crop_enabled: true,
+    map_album_art_crop_mode: "percent",
+    map_album_art_crop_x: 30,
+    map_album_art_crop_y: 20,
+    map_album_art_crop_w: 40,
+    map_album_art_crop_h: 40,
+    map_album_art_duration_tick_enabled: false,
+    map_album_art_ev_text_mode: "album_art",
+    map_album_art_ev_prefix_max_age_ms: 0,
+    vehicle_energy_forecast_keep_last_on_null: true,
+    collect_speed: false,
+    disable_driving_status: false,
+    hu_button_handler: None,
+    bt_sco: false,
+    bt_sco_keep_bluetooth_alive: true,
+    bt_sco_media_bridge: false,
+    bt_sco_media_bridge_audio_type: Media,
+    bt_sco_media_bridge_gain_percent: 300,
+    bt_sco_media_bridge_limiter: Off,
+    bt_sco_media_bridge_resampler: Repeat,
+    bt_sco_media_bridge_ring_capacity: 128,
+    bt_sco_media_bridge_start_existing: true,
+    bt_sco_media_bridge_start_on_first_audio: true,
+    bt_sco_media_bridge_audio_peak_threshold: 256,
+    bt_sco_media_bridge_start_timeout_ms: 5000,
+    bt_sco_media_bridge_stop_existing_on_disconnect: true,
+    bt_sco_media_bridge_fixed_cadence: false,
+    bt_sco_media_bridge_cadence_ms: 22,
+    bt_sco_media_bridge_jitter_buffer_ms: 60,
+    bt_sco_mic_bridge: false,
+    bt_sco_mic_request: true,
+    bt_sco_mic_uplink_ring_capacity: 256,
+    bt_sco_mic_echo_control: Ducking,
+    bt_sco_mic_gain_percent: 100,
+    bt_sco_mic_duck_threshold: 700,
+    bt_sco_mic_duck_percent: 35,
+    bt_sco_mic_duck_hold_ms: 180,
+    wasm_hooks_dir: "/data/wasm-hooks",
+    wasm_script_memory_limit_mb: 5,
+    wasm_script_instance_limit: 16,
+    wasm_script_memory_count_limit: 4,
+    wasm_script_table_limit: 8,
+    wasm_script_table_elements_limit: 512,
+    wasm_script_packet_epoch_deadline: 100,
+    wasm_script_lifecycle_epoch_deadline: 1000,
+    action_requested: None,
+    runtime_mitm_failed: false,
+}
+2026-08-20, 11:44:28.749 [INFO]  main:  📜 Log file path: /var/log/aa-proxy-rs.log
+2026-08-20, 11:44:28.749 [INFO]  main:  💥 Panic reports: enabled dir=/data/aa-proxy-rs/crashes
+2026-08-20, 11:44:28.749 [INFO]  main:  android_work: sent uevent USB_STATE=DISCONNECTED
+[0m 🖼️ SDR UI overrides: enabled file=/etc/aa-proxy-rs/sdr-ui-overrides.toml autocreate=true
+2026-08-20, 11:44:28.751 [INFO] [wasm] initial loaded wasm script count=0
+2026-08-20, 11:44:28.752 [INFO]  proxy:  🛰️ Starting TCP server for MD...
+2026-08-20, 11:44:28.752 [INFO]  proxy:  🛰️ MD TCP server bound to: 0.0.0.0:5288
+2026-08-20, 11:44:28.752 [INFO]  proxy:  🛰️ Starting TCP server for DHU...
+2026-08-20, 11:44:28.753 [INFO]  proxy:  🛰️ DHU TCP server bound to: 0.0.0.0:5277
+2026-08-20, 11:44:28.753 [ERROR] media_dump_base_port is set but mitm = false — media tap disabled!
+2026-08-20, 11:44:28.753 [INFO]  proxy:  💤 waiting for bluetooth handshake...
+2026-08-20, 11:44:28.755 [INFO]  main:  webserver running at http://0.0.0.0:80/
+2026-08-20, 11:44:28.755 [DEBUG] (4) aa_proxy_rs: Found interface: Interface { name: "wlan0", flags: 69699, mac: [220, 166, 50, 4, 164, 139], address: 10.0.0.1, scope_id: None, netmask: 255.255.255.0 }
+2026-08-20, 11:44:28.755 [INFO]  usb:  Using UDC: "fe980000.usb"
+2026-08-20, 11:44:28.760 [INFO]  bluetooth:  🥏 Bluetooth alias: aa-proxy-b9c1b6
+2026-08-20, 11:44:28.761 [INFO]  bluetooth:  🥏 Opened bluetooth adapter hci0 with address DC:A6:32:04:A4:8C
+2026-08-20, 11:44:28.776 [INFO]  bluetooth:  📱 AA Wireless Profile: registered
+2026-08-20, 11:44:28.777 [INFO]  companion_bt:  pairing: registered default Companion Classic BT pairing agent
+2026-08-20, 11:44:28.777 [INFO]  bluetooth:  📱 Companion Classic BT pairing agent: registered
+2026-08-20, 11:44:28.802 [INFO]  bluetooth:  📱 Companion Classic BT: adapter is pairable/discoverable with no timeout
+2026-08-20, 11:44:28.804 [INFO]  companion_bt:  registered Classic BT companion profile name=AA Proxy Companion Control uuid=3f0d2c8e-7e7e-4f38-8c98-6a7a4d94c001 channel=23
+2026-08-20, 11:44:28.804 [INFO]  bluetooth:  📱 Companion Classic BT custom profile: registered
+2026-08-20, 11:44:28.805 [INFO]  companion_bt:  registered Classic BT companion profile name=AA Proxy Companion Serial uuid=00001101-0000-1000-8000-00805f9b34fb channel=24
+2026-08-20, 11:44:28.805 [INFO]  bluetooth:  📱 Companion Classic BT SPP fallback profile: registered
+2026-08-20, 11:44:28.806 [INFO]  usb:  🔌 Initializing USB Manager
+2026-08-20, 11:44:28.806 [INFO]  usb:  🔌 USB Manager: Disabled all USB gadgets
+2026-08-20, 11:44:28.811 [INFO]  bluetooth:  🎧 Headset Profile (HSP): registered
+2026-08-20, 11:44:28.813 [INFO]  bluetooth:  ⏳ Waiting for phone to connect via bluetooth...
+2026-08-20, 11:44:28.813 [INFO]  bluetooth:  📋 Loaded 1 known device(s) from /etc/aa-proxy-rs/known_devices
+2026-08-20, 11:44:28.813 [INFO]  bluetooth:  🥏 Using 1 known-good device(s)...
+2026-08-20, 11:44:28.813 [INFO]  bluetooth:  🧲 Attempting to start an AndroidAuto session via bluetooth with the following devices, in this order: [C0:1C:6A:6C:1E:5A]
+2026-08-20, 11:44:28.814 [INFO]  bluetooth:  🧲 Trying to connect to: C0:1C:6A:6C:1E:5A (Pixel 9),[ 4334.826696] Bluetooth: hci0: ACL packet for unknown connection handle 12
+ attempt: 1/3
+[ 4334.917019] Bluetooth: Unexpected continuation frame (len 0)
+[ 4335.065796] Bluetooth: Unexpected continuation frame (len 0)
+[ 4335.082032] Bluetooth: Unexpected continuation frame (len 0)
+2026-08-20, 11:44:29.446 [INFO]  bluetooth:  🎧 Headset Profile (HSP): connect from C0:1C:6A:6C:1E:5A
+2026-08-20, 11:44:29.447 [INFO]  bluetooth:  🔗 Successfully connected to device: C0:1C:6A:6C:1E:5A (Pixel 9)
+2026-08-20, 11:44:29.447 [INFO]  bluetooth:  🧪 bt-wireless-proxy: waiting up to 120s for PHONE AA Wireless RFCOMM (after phone BT trigger)
+2026-08-20, 11:44:29.663 [INFO]  bluetooth:  📱 AA Wireless Profile: inbound RFCOMM from C0:1C:6A:6C:1E:5A while after phone BT trigger
+2026-08-20, 11:44:29.664 [INFO]  bluetooth:  🧪 bt-wireless-proxy: accepted PHONE AA Wireless RFCOMM from C0:1C:6A:6C:1E:5A (after phone BT trigger)
+2026-08-20, 11:44:29.665 [INFO]  sdr-ui:  current phone identity set: id=phone_ed849bccf4e9 name=Pixel 9 mac=**:**:**:**:1E:5A
+2026-08-20, 11:44:29.665 [INFO]  bluetooth:  📲 Sending parameters via bluetooth to phone...
+2026-08-20, 11:44:29.665 [INFO]  bluetooth:  🛜 Sending Host IP Address: 10.0.0.1
+2026-08-20, 11:44:29.665 [INFO]  bluetooth:  📨 stage #1 of 5: Sending WifiStartRequest frame to phone...
+2026-08-20, 11:44:29.685 [DEBUG] (4) aa_proxy_rs::bluetooth: received header bytes: [00, 00, 00, 02]
+2026-08-20, 11:44:29.685 [DEBUG] (4) aa_proxy_rs::bluetooth: MessageID = 2, len = 0
+2026-08-20, 11:44:29.685 [INFO]  bluetooth:  📨 stage #2 of 5: Received WifiInfoRequest frame from phone (⏱️ 19 ms)
+2026-08-20, 11:44:29.685 [INFO]  bluetooth:  🛜 Sending Host SSID and Password: aa-proxy, aa-proxy
+2026-08-20, 11:44:29.686 [INFO]  bluetooth:  📨 stage #3 of 5: Sending WifiInfoResponse frame to phone...
+2026-08-20, 11:44:29.695 [DEBUG] (4) aa_proxy_rs::bluetooth: received header bytes: [00, 02, 00, 07]
+2026-08-20, 11:44:29.695 [DEBUG] (4) aa_proxy_rs::bluetooth: MessageID = 7, len = 2
+2026-08-20, 11:44:29.695 [INFO]  bluetooth:  📨 stage #4 of 5: Received WifiStartResponse frame from phone (⏱️ 9 ms)
+2026-08-20, 11:44:29.695 [DEBUG] (4) aa_proxy_rs::bluetooth: remaining 2 bytes: [18, 00]
+2026-08-20, 11:44:30.209 [DEBUG] (4) aa_proxy_rs::bluetooth: received header bytes: [00, 02, 00, 06]
+2026-08-20, 11:44:30.209 [DEBUG] (4) aa_proxy_rs::bluetooth: MessageID = 6, len = 2
+2026-08-20, 11:44:30.209 [INFO]  bluetooth:  📨 stage #5 of 5: Received WifiConnectStatus frame from phone (⏱️ 513 ms)
+2026-08-20, 11:44:30.209 [DEBUG] (4) aa_proxy_rs::bluetooth: remaining 2 bytes: [08, 00]
+2026-08-20, 11:44:30.209 [INFO]  bluetooth:  📋 Loaded 1 known device(s) from /etc/aa-proxy-rs/known_devices
+2026-08-20, 11:44:30.210 [DEBUG] (4) aa_proxy_rs::bluetooth:  bluetooth:  known_devices: C0:1C:6A:6C:1E:5A already recorded
+2026-08-20, 11:44:30.210 [INFO]  proxy:  🛰️ MD TCP server: listening for phone connection...
+2026-08-20, 11:44:30.446 [INFO]  proxy:  📳 TCP server: new client connected: 10.0.0.5:59660
+2026-08-20, 11:44:30.446 [DEBUG] (1) aa_proxy_rs::proxy:  proxy:  media reverse bridges are opened on demand through /media-taps/:endpoint_id/open
+2026-08-20, 11:44:30.447 [INFO]  proxy:  starting companion reverse bridge HTTP, Android IP: 10.0.0.5, remote=10.0.0.5:9999 local=127.0.0.1:80
+2026-08-20, 11:44:30.447 [INFO]  proxy:  tcp_bridge[HTTP]: connecting remote=10.0.0.5:9999 local=127.0.0.1:80
+2026-08-20, 11:44:30.447 [INFO]  proxy:  starting companion reverse bridge WS, Android IP: 10.0.0.5, remote=10.0.0.5:9998 local=127.0.0.1:80
+2026-08-20, 11:44:30.447 [INFO]  proxy:  tcp_bridge[WS]: connecting remote=10.0.0.5:9998 local=127.0.0.1:80
+2026-08-20, 11:44:30.448 [INFO]  proxy:  starting companion reverse bridge SWUPDATE, Android IP: 10.0.0.5, remote=10.0.0.5:9997 local=127.0.0.1:8080
+2026-08-20, 11:44:30.448 [INFO]  proxy:  tcp_bridge[SWUPDATE]: connecting remote=10.0.0.5:9997 local=127.0.0.1:8080
+2026-08-20, 11:44:30.449 [INFO]  proxy:  🧪 bt-wireless-proxy car-wifi-mitm: PHONE TCP accepted on MD listener; commit barrier seq=1
+2026-08-20, 11:44:32.397 [INFO]  bluetooth:  🎧 Headset Profile (HSP): unregistering ...
+2026-08-20, 11:4[ 4338.388932] dwc2 fe980000.usb: bound driver configfs-gadget.accessory
+4:32.698 [INFO]  bluetooth:  🎧 Headset Profile (HSP): unregistered
+2026-08-20, 11:44:32.699 [INFO]  bluetooth:  🚀 Bluetooth launch sequence completed
+2026-08-20, 11:44:32.710 [INFO]  usb:  🔌 USB Manager: Switched to accessory gadget
+2026-08-20, 11:44:32.710 [INFO]  proxy:  📂 Opening USB accessory device: /dev/usb_accessory
+2026-08-20, 11:44:32.710 [INFO]  proxy:  ♾️ Starting to proxy data between HU and MD...
+2026-08-20, 11:44:32.710 [INFO]  mitm/HU:  🔄 running in passthrough mode (MITM disabled in config)
+2026-08-20, 11:44:32.710 [INFO]  mitm/MD:  🔄 running in passthrough mode (MITM disabled in config)
+2026-08-20, 11:44:32.710 [INFO]  proxy:  ⚙️ Showing transfer statistics: disabled
+[ 4338.645633] dwc2 fe980000.usb: new device is high-speed
+[ 4338.886845] android_work: sent uevent USB_STATE=CONNECTED
+[ 4339.032378] dwc2 fe980000.usb: new device is high-speed
+2026-08-20, 11:44:33.448 [INFO]  proxy:  tcp_bridge[HTTP]: timeout connecting to remote server 10.0.0.5:9999
+2026-08-20, 11:44:33.448 [INFO]  proxy:  tcp_bridge[WS]: timeout connecting to remote server 10.0.0.5:9998
+2026-08-20, 11:44:33.450 [INFO]  proxy:  tcp_bridge[SWUPDATE]: timeout connecting to remote server 10.0.0.5:9997
+[ 4339.262670] dwc2 fe980000.usb: new address 25
+[ 4339.279421] android_work: sent uevent USB_STATE=CONFIGURED
+2026-08-20, 11:44:34.449 [DEBUG] (1) aa_proxy_rs::proxy:  proxy:  tcp_bridge[HTTP]: connecting remote=10.0.0.5:9999 local=127.0.0.1:80
+2026-08-20, 11:44:34.450 [DEBUG] (1) aa_proxy_rs::proxy:  proxy:  tcp_bridge[WS]: connecting remote=10.0.0.5:9998 local=127.0.0.1:80
+2026-08-20, 11:44:34.506 [DEBUG] (1) aa_proxy_rs::proxy:  proxy:  tcp_bridge[HTTP]: remote connected: 10.0.0.5:9999
+2026-08-20, 11:44:34.506 [DEBUG] (1) aa_proxy_rs::proxy:  proxy:  tcp_bridge[WS]: remote connected: 10.0.0.5:9998
+2026-08-20, 11:44:34.507 [DEBUG] (1) aa_proxy_rs::proxy:  proxy:  tcp_bridge[HTTP]: local connected: 127.0.0.1:80; starting bidirectional transfer
+2026-08-20, 11:44:34.507 [DEBUG] (1) aa_proxy_rs::proxy:  proxy:  tcp_bridge[WS]: local connected: 127.0.0.1:80; starting bidirectional transfer
+2026-08-20, 11:44:34.807 [DEBUG] (5) hyper::proto::h1::io: parsed 8 headers
+2026-08-20, 11:44:34.807 [DEBUG] (5) hyper::proto::h1::conn: incoming body is empty
+2026-08-20, 11:44:34.807 [DEBUG] (5) aa_proxy_rs::web: WS Handler called
+2026-08-20, 11:44:34.808 [DEBUG] (5) hyper::proto::h1::io: flushed 166 bytes
+2026-08-20, 11:44:34.820 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/HU:  rxr.recv
+2026-08-20, 11:44:34.820 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 0001, Some(MESSAGE_VERSION_REQUEST), channel=0x00, service_kind=control
+2026-08-20, 11:44:34.820 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: 
+proto {
+  pretty parse failed as VersionRequestOptions: Incorrect tag
+}
+2026-08-20, 11:44:34.820 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/MD:  rx.recv
+2026-08-20, 11:44:34.821 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 0001, Some(MESSAGE_VERSION_REQUEST), channel=0x00, service_kind=control
+2026-08-20, 11:44:34.821 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: 
+proto {
+  pretty parse failed as VersionRequestOptions: Incorrect tag
+}
+2026-08-20, 11:44:34.832 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/MD:  rxr.recv
+2026-08-20, 11:44:34.832 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 0002, Some(MESSAGE_VERSION_RESPONSE), channel=0x00, service_kind=control
+2026-08-20, 11:44:34.832 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: 
+proto {
+  pretty parse failed as VersionResponseOptions: Incorrect tag
+}
+2026-08-20, 11:44:34.833 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/HU:  rx.recv
+2026-08-20, 11:44:34.833 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 0002, Some(MESSAGE_VERSION_RESPONSE), channel=0x00, service_kind=control
+2026-08-20, 11:44:34.833 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: 
+proto {
+  pretty parse failed as VersionResponseOptions: Incorrect tag
+}
+2026-08-20, 11:44:34.833 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/HU:  rxr.recv
+2026-08-20, 11:44:34.834 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 0003, Some(MESSAGE_ENCAPSULATED_SSL), channel=0x00, service_kind=control
+2026-08-20, 11:44:34.834 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/MD:  rx.recv
+2026-08-20, 11:44:34.834 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 0003, Some(MESSAGE_ENCAPSULATED_SSL), channel=0x00, service_kind=control
+2026-08-20, 11:44:34.857 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/MD:  rxr.recv
+2026-08-20, 11:44:34.857 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 0003, Some(MESSAGE_ENCAPSULATED_SSL), channel=0x00, service_kind=control
+2026-08-20, 11:44:34.858 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/HU:  rx.recv
+2026-08-20, 11:44:34.858 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 0003, Some(MESSAGE_ENCAPSULATED_SSL), channel=0x00, service_kind=control
+2026-08-20, 11:44:34.861 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/HU:  rxr.recv
+2026-08-20, 11:44:34.861 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 0003, Some(MESSAGE_ENCAPSULATED_SSL), channel=0x00, service_kind=control
+2026-08-20, 11:44:34.861 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/MD:  rx.recv
+2026-08-20, 11:44:34.861 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 0003, Some(MESSAGE_ENCAPSULATED_SSL), channel=0x00, service_kind=control
+2026-08-20, 11:44:34.878 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/MD:  rxr.recv
+2026-08-20, 11:44:34.878 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 0003, Some(MESSAGE_ENCAPSULATED_SSL), channel=0x00, service_kind=control
+2026-08-20, 11:44:34.878 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/HU:  rx.recv
+2026-08-20, 11:44:34.879 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 0003, Some(MESSAGE_ENCAPSULATED_SSL), channel=0x00, service_kind=control
+2026-08-20, 11:44:34.879 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/HU:  rxr.recv
+2026-08-20, 11:44:34.879 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 0004, Some(MESSAGE_AUTH_COMPLETE), channel=0x00, service_kind=control
+2026-08-20, 11:44:34.888 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: 
+proto {
+  status: 0
+}
+2026-08-20, 11:44:34.888 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/MD:  rx.recv
+2026-08-20, 11:44:34.888 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 0004, Some(MESSAGE_AUTH_COMPLETE), channel=0x00, service_kind=control
+2026-08-20, 11:44:34.888 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: 
+proto {
+  status: 0
+}
+2026-08-20, 11:44:34.907 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/MD:  rxr.recv
+2026-08-20, 11:44:34.907 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x00, service_kind=control
+2026-08-20, 11:44:34.907 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/HU:  rx.recv
+2026-08-20, 11:44:34.907 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x00, service_kind=control
+2026-08-20, 11:44:35.246 [DEBUG] (5) hyper::proto::h1::io: parsed 6 headers
+2026-08-20, 11:44:35.247 [DEBUG] (5) hyper::proto::h1::conn: incoming body is content-length (32 bytes)
+2026-08-20, 11:44:35.247 [DEBUG] (5) hyper::proto::h1::conn: incoming body completed
+2026-08-20, 11:44:35.047 [INFO]  web:  🕰️ system time set to: 2026-08-20 11:44:35.047613 +00:00:00
+2026-08-20, 11:44:35.047 [DEBUG] (5) hyper::proto::h1::io: flushed 172 bytes
+2026-08-20, 11:44:35.048 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/HU:  rxr.recv
+2026-08-20, 11:44:35.048 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x00, service_kind=control
+2026-08-20, 11:44:35.048 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/MD:  rx.recv
+2026-08-20, 11:44:35.048 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x00, service_kind=control
+2026-08-20, 11:44:35.066 [DEBUG] (5) hyper::proto::h1::io: parsed 4 headers
+2026-08-20, 11:44:35.067 [DEBUG] (5) hyper::proto::h1::conn: incoming body is empty
+2026-08-20, 11:44:35.067 [DEBUG] (5) hyper::proto::h1::io: flushed 182 bytes
+2026-08-20, 11:44:35.254 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/MD:  rxr.recv
+2026-08-20, 11:44:35.254 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x00, service_kind=control
+2026-08-20, 11:44:35.255 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/HU:  rx.recv
+2026-08-20, 11:44:35.255 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x00, service_kind=control
+2026-08-20, 11:44:35.255 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/MD:  rxr.recv
+2026-08-20, 11:44:35.255 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x01, service_kind=unknown
+2026-08-20, 11:44:35.256 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/HU:  rx.recv
+2026-08-20, 11:44:35.256 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x01, service_kind=unknown
+2026-08-20, 11:44:35.256 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/MD:  rxr.recv
+2026-08-20, 11:44:35.256 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x03, service_kind=unknown
+2026-08-20, 11:44:35.256 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/MD:  rxr.recv
+2026-08-20, 11:44:35.257 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x02, service_kind=unknown
+2026-08-20, 11:44:35.257 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/HU:  rx.recv
+2026-08-20, 11:44:35.257 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x03, service_kind=unknown
+2026-08-20, 11:44:35.257 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/MD:  rxr.recv
+2026-08-20, 11:44:35.257 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x04, service_kind=unknown
+2026-08-20, 11:44:35.258 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/HU:  rxr.recv
+2026-08-20, 11:44:35.258 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x00, service_kind=control
+2026-08-20, 11:44:35.258 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/HU:  rx.recv
+2026-08-20, 11:44:35.258 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x02, service_kind=unknown
+2026-08-20, 11:44:35.258 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/MD:  rxr.recv
+2026-08-20, 11:44:35.258 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x05, service_kind=unknown
+2026-08-20, 11:44:35.258 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/MD:  rx.recv
+2026-08-20, 11:44:35.259 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x00, service_kind=control
+2026-08-20, 11:44:35.259 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/HU:  rxr.recv
+2026-08-20, 11:44:35.259 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x01, service_kind=unknown
+2026-08-20, 11:44:35.259 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/HU:  rxr.recv
+2026-08-20, 11:44:35.259 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x03, service_kind=unknown
+2026-08-20, 11:44:35.259 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/HU:  rx.recv
+2026-08-20, 11:44:35.260 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x04, service_kind=unknown
+2026-08-20, 11:44:35.260 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/MD:  rx.recv
+2026-08-20, 11:44:35.260 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x01, service_kind=unknown
+2026-08-20, 11:44:35.260 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/MD:  rx.recv
+2026-08-20, 11:44:35.260 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x03, service_kind=unknown
+2026-08-20, 11:44:35.261 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/HU:  rxr.recv
+2026-08-20, 11:44:35.261 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x02, service_kind=unknown
+2026-08-20, 11:44:35.600 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/HU:  rx.recv
+2026-08-20, 11:44:35.600 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x05, service_kind=unknown
+2026-08-20, 11:44:35.601 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/MD:  rxr.recv
+2026-08-20, 11:44:35.601 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x06, service_kind=unknown
+2026-08-20, 11:44:35.601 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/MD:  rx.recv
+2026-08-20, 11:44:35.601 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x02, service_kind=unknown
+2026-08-20, 11:44:35.601 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/HU:  rx.recv
+2026-08-20, 11:44:35.601 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x06, service_kind=unknown
+2026-08-20, 11:44:35.602 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/MD:  rxr.recv
+2026-08-20, 11:44:35.602 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x07, service_kind=unknown
+2026-08-20, 11:44:35.602 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/MD:  rxr.recv
+2026-08-20, 11:44:35.602 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x01, service_kind=unknown
+2026-08-20, 11:44:35.602 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/HU:  rxr.recv
+2026-08-20, 11:44:35.602 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x04, service_kind=unknown
+2026-08-20, 11:44:35.603 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/HU:  rx.recv
+2026-08-20, 11:44:35.603 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x07, service_kind=unknown
+2026-08-20, 11:44:35.603 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/MD:  rx.recv
+2026-08-20, 11:44:35.603 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x04, service_kind=unknown
+2026-08-20, 11:44:35.603 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/HU:  rx.recv
+2026-08-20, 11:44:35.603 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x01, service_kind=unknown
+2026-08-20, 11:44:35.604 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/HU:  rxr.recv
+2026-08-20, 11:44:35.604 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x05, service_kind=unknown
+2026-08-20, 11:44:35.604 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/HU:  rxr.recv
+2026-08-20, 11:44:35.604 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x06, service_kind=unknown
+2026-08-20, 11:44:35.604 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/MD:  rx.recv
+2026-08-20, 11:44:35.604 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x05, service_kind=unknown
+2026-08-20, 11:44:35.604 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/MD:  rx.recv
+2026-08-20, 11:44:35.605 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x06, service_kind=unknown
+2026-08-20, 11:44:35.605 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/HU:  rxr.recv
+2026-08-20, 11:44:35.605 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x07, service_kind=unknown
+2026-08-20, 11:44:35.605 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/MD:  rx.recv
+2026-08-20, 11:44:35.605 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x07, service_kind=unknown
+2026-08-20, 11:44:35.605 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/HU:  rxr.recv
+2026-08-20, 11:44:35.947 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x01, service_kind=unknown
+2026-08-20, 11:44:35.948 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/MD:  rx.recv
+2026-08-20, 11:44:35.948 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x01, service_kind=unknown
+2026-08-20, 11:44:35.948 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/MD:  rxr.recv
+2026-08-20, 11:44:35.948 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x03, service_kind=unknown
+2026-08-20, 11:44:35.948 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/HU:  rx.recv
+2026-08-20, 11:44:35.949 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x03, service_kind=unknown
+2026-08-20, 11:44:35.949 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/MD:  rxr.recv
+2026-08-20, 11:44:35.949 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x02, service_kind=unknown
+2026-08-20, 11:44:35.949 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/MD:  rxr.recv
+2026-08-20, 11:44:35.949 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x04, service_kind=unknown
+2026-08-20, 11:44:35.949 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/MD:  rxr.recv
+2026-08-20, 11:44:35.950 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x05, service_kind=unknown
+2026-08-20, 11:44:35.950 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/MD:  rxr.recv
+2026-08-20, 11:44:35.950 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x00, service_kind=control
+2026-08-20, 11:44:35.950 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/HU:  rx.recv
+2026-08-20, 11:44:35.950 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x02, service_kind=unknown
+2026-08-20, 11:44:35.951 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/HU:  rxr.recv
+2026-08-20, 11:44:35.951 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x01, service_kind=unknown
+2026-08-20, 11:44:35.951 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/HU:  rxr.recv
+2026-08-20, 11:44:35.951 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x03, service_kind=unknown
+2026-08-20, 11:44:35.951 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/HU:  rx.recv
+2026-08-20, 11:44:35.951 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x04, service_kind=unknown
+2026-08-20, 11:44:35.951 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/MD:  rx.recv
+2026-08-20, 11:44:35.952 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x01, service_kind=unknown
+2026-08-20, 11:44:35.952 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/HU:  rxr.recv
+2026-08-20, 11:44:35.952 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x02, service_kind=unknown
+2026-08-20, 11:44:35.952 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/HU:  rx.recv
+2026-08-20, 11:44:35.952 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x05, service_kind=unknown
+2026-08-20, 11:44:35.952 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/MD:  rx.recv
+2026-08-20, 11:44:35.953 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x03, service_kind=unknown
+2026-08-20, 11:44:35.953 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/MD:  rx.recv
+2026-08-20, 11:44:35.953 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x02, service_kind=unknown
+2026-08-20, 11:44:35.956 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/HU:  rx.recv
+2026-08-20, 11:44:36.296 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x00, service_kind=control
+2026-08-20, 11:44:36.296 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/MD:  rxr.recv
+2026-08-20, 11:44:36.296 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x01, service_kind=unknown
+2026-08-20, 11:44:36.297 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/HU:  rxr.recv
+2026-08-20, 11:44:36.297 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x02, service_kind=unknown
+2026-08-20, 11:44:36.297 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/HU:  rx.recv
+2026-08-20, 11:44:36.297 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x01, service_kind=unknown
+2026-08-20, 11:44:36.297 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/MD:  rx.recv
+2026-08-20, 11:44:36.297 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x02, service_kind=unknown
+2026-08-20, 11:44:36.298 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/HU:  rxr.recv
+2026-08-20, 11:44:36.298 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x04, service_kind=unknown
+2026-08-20, 11:44:36.298 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/HU:  rxr.recv
+2026-08-20, 11:44:36.298 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x05, service_kind=unknown
+2026-08-20, 11:44:36.298 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/MD:  rx.recv
+2026-08-20, 11:44:36.298 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x04, service_kind=unknown
+2026-08-20, 11:44:36.299 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/MD:  rx.recv
+2026-08-20, 11:44:36.299 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x05, service_kind=unknown
+2026-08-20, 11:44:36.299 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/HU:  rxr.recv
+2026-08-20, 11:44:36.299 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x00, service_kind=control
+2026-08-20, 11:44:36.299 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/MD:  rx.recv
+2026-08-20, 11:44:36.299 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x00, service_kind=control
+2026-08-20, 11:44:36.300 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/HU:  rxr.recv
+2026-08-20, 11:44:36.300 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x01, service_kind=unknown
+2026-08-20, 11:44:36.300 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/MD:  rx.recv
+2026-08-20, 11:44:36.300 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x01, service_kind=unknown
+2026-08-20, 11:44:36.301 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/HU:  rxr.recv
+2026-08-20, 11:44:36.301 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x00, service_kind=control
+2026-08-20, 11:44:36.301 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/MD:  rx.recv
+2026-08-20, 11:44:36.301 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x00, service_kind=control
+2026-08-20, 11:44:36.301 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/HU:  rxr.recv
+2026-08-20, 11:44:36.302 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x01, service_kind=unknown
+2026-08-20, 11:44:36.302 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/MD:  rx.recv
+2026-08-20, 11:44:36.302 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x01, service_kind=unknown
+2026-08-20, 11:44:36.317 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/MD:  rxr.recv
+2026-08-20, 11:44:36.655 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x00, service_kind=control
+2026-08-20, 11:44:36.655 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/MD:  rxr.recv
+2026-08-20, 11:44:36.656 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x02, service_kind=unknown
+2026-08-20, 11:44:36.656 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/HU:  rx.recv
+2026-08-20, 11:44:36.656 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x00, service_kind=control
+2026-08-20, 11:44:36.656 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/MD:  rxr.recv
+2026-08-20, 11:44:36.656 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x02, service_kind=unknown
+2026-08-20, 11:44:36.657 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/MD:  rxr.recv
+2026-08-20, 11:44:36.657 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x02, service_kind=unknown
+2026-08-20, 11:44:36.657 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/MD:  rxr.recv
+2026-08-20, 11:44:36.657 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x02, service_kind=unknown
+2026-08-20, 11:44:36.657 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/MD:  rxr.recv
+2026-08-20, 11:44:36.657 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x02, service_kind=unknown
+2026-08-20, 11:44:36.657 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/MD:  rxr.recv
+2026-08-20, 11:44:36.658 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x00, service_kind=control
+2026-08-20, 11:44:36.658 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/HU:  rx.recv
+2026-08-20, 11:44:36.658 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x02, service_kind=unknown
+2026-08-20, 11:44:36.658 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/HU:  rx.recv
+2026-08-20, 11:44:36.658 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x02, service_kind=unknown
+2026-08-20, 11:44:36.659 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/HU:  rx.recv
+2026-08-20, 11:44:36.659 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x02, service_kind=unknown
+2026-08-20, 11:44:36.659 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/HU:  rx.recv
+2026-08-20, 11:44:36.659 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x02, service_kind=unknown
+2026-08-20, 11:44:36.659 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/HU:  rx.recv
+2026-08-20, 11:44:36.659 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x02, service_kind=unknown
+2026-08-20, 11:44:36.660 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/HU:  rx.recv
+2026-08-20, 11:44:36.660 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x00, service_kind=control
+2026-08-20, 11:44:36.661 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/HU:  rxr.recv
+2026-08-20, 11:44:36.661 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x02, service_kind=unknown
+2026-08-20, 11:44:36.661 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/MD:  rx.recv
+2026-08-20, 11:44:36.661 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x02, service_kind=unknown
+2026-08-20, 11:44:36.661 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/HU:  rxr.recv
+2026-08-20, 11:44:36.662 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x00, service_kind=control
+2026-08-20, 11:44:36.713 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/MD:  rx.recv
+2026-08-20, 11:44:36.714 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x00, service_kind=control
+2026-08-20, 11:44:36.714 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/MD:  rxr.recv
+2026-08-20, 11:44:36.714 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x01, service_kind=unknown
+2026-08-20, 11:44:36.714 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/HU:  rx.recv
+2026-08-20, 11:44:37.053 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x01, service_kind=unknown
+2026-08-20, 11:44:37.053 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/HU:  rxr.recv
+2026-08-20, 11:44:37.053 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x02, service_kind=unknown
+2026-08-20, 11:44:37.054 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/MD:  rx.recv
+2026-08-20, 11:44:37.054 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x02, service_kind=unknown
+2026-08-20, 11:44:37.054 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/HU:  rxr.recv
+2026-08-20, 11:44:37.054 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x02, service_kind=unknown
+2026-08-20, 11:44:37.054 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/MD:  rx.recv
+2026-08-20, 11:44:37.055 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x02, service_kind=unknown
+2026-08-20, 11:44:37.055 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/HU:  rxr.recv
+2026-08-20, 11:44:37.055 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x00, service_kind=control
+2026-08-20, 11:44:37.055 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/MD:  rx.recv
+2026-08-20, 11:44:37.055 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x00, service_kind=control
+2026-08-20, 11:44:37.056 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/HU:  rxr.recv
+2026-08-20, 11:44:37.056 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x01, service_kind=unknown
+2026-08-20, 11:44:37.056 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/MD:  rx.recv
+2026-08-20, 11:44:37.056 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x01, service_kind=unknown
+2026-08-20, 11:44:37.056 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/HU:  rxr.recv
+2026-08-20, 11:44:37.057 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x02, service_kind=unknown
+2026-08-20, 11:44:37.057 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/MD:  rx.recv
+2026-08-20, 11:44:37.057 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x02, service_kind=unknown
+2026-08-20, 11:44:37.061 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/MD:  rxr.recv
+2026-08-20, 11:44:37.062 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x00, service_kind=control
+2026-08-20, 11:44:37.062 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/HU:  rx.recv
+2026-08-20, 11:44:37.062 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x00, service_kind=control
+2026-08-20, 11:44:37.115 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/MD:  rxr.recv
+2026-08-20, 11:44:37.116 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x02, service_kind=unknown
+2026-08-20, 11:44:37.116 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/HU:  rx.recv
+2026-08-20, 11:44:37.116 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x02, service_kind=unknown
+2026-08-20, 11:44:37.126 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/HU:  rxr.recv
+2026-08-20, 11:44:37.126 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x02, service_kind=unknown
+2026-08-20, 11:44:37.126 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/MD:  rx.recv
+2026-08-20, 11:44:37.126 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x02, service_kind=unknown
+2026-08-20, 11:44:37.646 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/MD:  rxr.recv
+2026-08-20, 11:44:37.647 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x00, service_kind=control
+2026-08-20, 11:44:37.647 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/HU:  rx.recv
+2026-08-20, 11:44:37.647 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x00, service_kind=control
+2026-08-20, 11:44:37.648 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/HU:  rxr.recv
+2026-08-20, 11:44:37.648 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x00, service_kind=control
+2026-08-20, 11:44:37.648 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/MD:  rx.recv
+2026-08-20, 11:44:37.648 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x00, service_kind=control
+2026-08-20, 11:44:38.048 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/HU:  rxr.recv
+2026-08-20, 11:44:38.048 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x00, service_kind=control
+2026-08-20, 11:44:38.048 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/MD:  rx.recv
+2026-08-20, 11:44:38.048 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x00, service_kind=control
+2026-08-20, 11:44:38.057 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/MD:  rxr.recv
+2026-08-20, 11:44:38.058 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x00, service_kind=control
+2026-08-20, 11:44:38.058 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/HU:  rx.recv
+2026-08-20, 11:44:38.058 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x00, service_kind=control
+2026-08-20, 11:44:38.153 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/MD:  rxr.recv
+2026-08-20, 11:44:38.153 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x02, service_kind=unknown
+2026-08-20, 11:44:38.153 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/HU:  rx.recv
+2026-08-20, 11:44:38.153 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x02, service_kind=unknown
+2026-08-20, 11:44:38.162 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/HU:  rxr.recv
+2026-08-20, 11:44:38.162 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x02, service_kind=unknown
+2026-08-20, 11:44:38.163 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/MD:  rx.recv
+2026-08-20, 11:44:38.163 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x02, service_kind=unknown
+2026-08-20, 11:44:38.182 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/MD:  rxr.recv
+2026-08-20, 11:44:38.182 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x02, service_kind=unknown
+2026-08-20, 11:44:38.182 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/HU:  rx.recv
+2026-08-20, 11:44:38.183 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x02, service_kind=unknown
+2026-08-20, 11:44:38.184 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/HU:  rxr.recv
+2026-08-20, 11:44:38.185 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x02, service_kind=unknown
+2026-08-20, 11:44:38.185 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/MD:  rx.recv
+2026-08-20, 11:44:38.185 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x02, service_kind=unknown
+2026-08-20, 11:44:38.215 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/MD:  rxr.recv
+2026-08-20, 11:44:38.215 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x02, service_kind=unknown
+2026-08-20, 11:44:38.215 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/HU:  rx.recv
+2026-08-20, 11:44:38.216 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x02, service_kind=unknown
+2026-08-20, 11:44:38.226 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/HU:  rxr.recv
+2026-08-20, 11:44:38.226 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x02, service_kind=unknown
+2026-08-20, 11:44:38.226 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/MD:  rx.recv
+2026-08-20, 11:44:38.226 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x02, service_kind=unknown
+2026-08-20, 11:44:38.246 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/MD:  rxr.recv
+2026-08-20, 11:44:38.246 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x02, service_kind=unknown
+2026-08-20, 11:44:38.246 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/HU:  rx.recv
+2026-08-20, 11:44:38.246 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x02, service_kind=unknown
+2026-08-20, 11:44:38.247 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/HU:  rxr.recv
+2026-08-20, 11:44:38.247 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x02, service_kind=unknown
+2026-08-20, 11:44:38.248 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/MD:  rx.recv
+2026-08-20, 11:44:38.248 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x02, service_kind=unknown
+2026-08-20, 11:44:38.282 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/MD:  rxr.recv
+2026-08-20, 11:44:38.282 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x02, service_kind=unknown
+2026-08-20, 11:44:38.283 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/HU:  rx.recv
+2026-08-20, 11:44:38.283 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x02, service_kind=unknown
+2026-08-20, 11:44:38.288 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/HU:  rxr.recv
+2026-08-20, 11:44:38.289 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x02, service_kind=unknown
+2026-08-20, 11:44:38.289 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/MD:  rx.recv
+2026-08-20, 11:44:38.289 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x02, service_kind=unknown
+2026-08-20, 11:44:38.314 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/MD:  rxr.recv
+2026-08-20, 11:44:38.314 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x02, service_kind=unknown
+2026-08-20, 11:44:38.315 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/HU:  rx.recv
+2026-08-20, 11:44:38.315 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x02, service_kind=unknown
+2026-08-20, 11:44:38.319 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/HU:  rxr.recv
+2026-08-20, 11:44:38.320 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x02, service_kind=unknown
+2026-08-20, 11:44:38.320 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/MD:  rx.recv
+2026-08-20, 11:44:38.320 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x02, service_kind=unknown
+2026-08-20, 11:44:38.348 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/MD:  rxr.recv
+2026-08-20, 11:44:38.348 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x02, service_kind=unknown
+2026-08-20, 11:44:38.348 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/HU:  rx.recv
+2026-08-20, 11:44:38.348 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x02, service_kind=unknown
+2026-08-20, 11:44:38.351 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/HU:  rxr.recv
+2026-08-20, 11:44:38.351 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x02, service_kind=unknown
+2026-08-20, 11:44:38.385 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/MD:  rx.recv
+2026-08-20, 11:44:38.385 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x02, service_kind=unknown
+2026-08-20, 11:44:38.385 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/MD:  rxr.recv
+2026-08-20, 11:44:38.385 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x02, service_kind=unknown
+2026-08-20, 11:44:38.724 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/HU:  rx.recv
+2026-08-20, 11:44:38.724 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x02, service_kind=unknown
+2026-08-20, 11:44:38.725 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/MD:  rxr.recv
+2026-08-20, 11:44:38.725 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x02, service_kind=unknown
+2026-08-20, 11:44:38.725 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/MD:  rxr.recv
+2026-08-20, 11:44:38.725 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x02, service_kind=unknown
+2026-08-20, 11:44:38.725 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/MD:  rxr.recv
+2026-08-20, 11:44:38.725 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x00, service_kind=control
+2026-08-20, 11:44:38.726 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/HU:  rx.recv
+2026-08-20, 11:44:38.726 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x02, service_kind=unknown
+2026-08-20, 11:44:38.726 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/HU:  rx.recv
+2026-08-20, 11:44:38.726 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x02, service_kind=unknown
+2026-08-20, 11:44:38.726 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/HU:  rx.recv
+2026-08-20, 11:44:38.726 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x00, service_kind=control
+2026-08-20, 11:44:38.727 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/HU:  rxr.recv
+2026-08-20, 11:44:38.727 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x00, service_kind=control
+2026-08-20, 11:44:38.727 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/MD:  rx.recv
+2026-08-20, 11:44:38.727 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x00, service_kind=control
+2026-08-20, 11:44:38.734 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/HU:  rxr.recv
+2026-08-20, 11:44:38.735 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x02, service_kind=unknown
+2026-08-20, 11:44:38.735 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/MD:  rx.recv
+2026-08-20, 11:44:38.735 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x02, service_kind=unknown
+2026-08-20, 11:44:38.736 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/HU:  rxr.recv
+2026-08-20, 11:44:38.736 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x02, service_kind=unknown
+2026-08-20, 11:44:38.736 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/MD:  rx.recv
+2026-08-20, 11:44:38.736 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x02, service_kind=unknown
+2026-08-20, 11:44:38.738 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/HU:  rxr.recv
+2026-08-20, 11:44:38.738 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x02, service_kind=unknown
+2026-08-20, 11:44:38.738 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/MD:  rx.recv
+2026-08-20, 11:44:38.738 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x02, service_kind=unknown
+2026-08-20, 11:44:38.739 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/MD:  rxr.recv
+2026-08-20, 11:44:38.740 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x02, service_kind=unknown
+2026-08-20, 11:44:38.740 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/HU:  rx.recv
+2026-08-20, 11:44:38.740 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x02, service_kind=unknown
+2026-08-20, 11:44:39.048 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/HU:  rxr.recv
+2026-08-20, 11:44:39.048 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x00, service_kind=control
+2026-08-20, 11:44:39.048 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/MD:  rxr.recv
+2026-08-20, 11:44:39.048 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x02, service_kind=unknown
+2026-08-20, 11:44:39.049 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/MD:  rxr.recv
+2026-08-20, 11:44:39.049 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x02, service_kind=unknown
+2026-08-20, 11:44:39.049 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/MD:  rx.recv
+2026-08-20, 11:44:39.049 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x00, service_kind=control
+2026-08-20, 11:44:39.049 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/HU:  rx.recv
+2026-08-20, 11:44:39.049 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x02, service_kind=unknown
+2026-08-20, 11:44:39.050 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/HU:  rx.recv
+2026-08-20, 11:44:39.050 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x02, service_kind=unknown
+2026-08-20, 11:44:39.051 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/HU:  rxr.recv
+2026-08-20, 11:44:39.051 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x02, service_kind=unknown
+2026-08-20, 11:44:39.052 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/MD:  rx.recv
+2026-08-20, 11:44:39.052 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x02, service_kind=unknown
+2026-08-20, 11:44:39.053 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/HU:  rxr.recv
+2026-08-20, 11:44:39.053 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x02, service_kind=unknown
+2026-08-20, 11:44:39.053 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/MD:  rx.recv
+2026-08-20, 11:44:39.053 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x02, service_kind=unknown
+2026-08-20, 11:44:39.054 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/HU:  rxr.recv
+2026-08-20, 11:44:39.054 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x02, service_kind=unknown
+2026-08-20, 11:44:39.054 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/MD:  rx.recv
+2026-08-20, 11:44:39.054 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x02, service_kind=unknown
+2026-08-20, 11:44:39.058 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/MD:  rxr.recv
+2026-08-20, 11:44:39.058 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x02, service_kind=unknown
+2026-08-20, 11:44:39.058 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/MD:  rxr.recv
+2026-08-20, 11:44:39.058 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x00, service_kind=control
+2026-08-20, 11:44:39.058 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/HU:  rx.recv
+2026-08-20, 11:44:39.058 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x02, service_kind=unknown
+2026-08-20, 11:44:39.397 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/MD:  rxr.recv
+2026-08-20, 11:44:39.397 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x02, service_kind=unknown
+2026-08-20, 11:44:39.397 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/MD:  rxr.recv
+2026-08-20, 11:44:39.397 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x02, service_kind=unknown
+2026-08-20, 11:44:39.398 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/HU:  rx.recv
+2026-08-20, 11:44:39.398 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x00, service_kind=control
+2026-08-20, 11:44:39.398 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/HU:  rx.recv
+2026-08-20, 11:44:39.398 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x02, service_kind=unknown
+2026-08-20, 11:44:39.398 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/HU:  rx.recv
+2026-08-20, 11:44:39.399 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x02, service_kind=unknown
+2026-08-20, 11:44:39.399 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/HU:  rxr.recv
+2026-08-20, 11:44:39.399 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x02, service_kind=unknown
+2026-08-20, 11:44:39.399 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/MD:  rx.recv
+2026-08-20, 11:44:39.399 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x02, service_kind=unknown
+2026-08-20, 11:44:39.400 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/HU:  rxr.recv
+2026-08-20, 11:44:39.400 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x02, service_kind=unknown
+2026-08-20, 11:44:39.400 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/MD:  rx.recv
+2026-08-20, 11:44:39.400 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x02, service_kind=unknown
+2026-08-20, 11:44:39.401 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/HU:  rxr.recv
+2026-08-20, 11:44:39.401 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x02, service_kind=unknown
+2026-08-20, 11:44:39.401 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/MD:  rx.recv
+2026-08-20, 11:44:39.401 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x02, service_kind=unknown
+2026-08-20, 11:44:39.403 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/MD:  rxr.recv
+2026-08-20, 11:44:39.403 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x02, service_kind=unknown
+2026-08-20, 11:44:39.403 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/HU:  rx.recv
+2026-08-20, 11:44:39.403 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x02, service_kind=unknown
+2026-08-20, 11:44:39.403 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/MD:  rxr.recv
+2026-08-20, 11:44:39.403 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x02, service_kind=unknown
+2026-08-20, 11:44:39.403 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/HU:  rx.recv
+2026-08-20, 11:44:39.403 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x02, service_kind=unknown
+2026-08-20, 11:44:39.407 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/MD:  rxr.recv
+2026-08-20, 11:44:39.407 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x02, service_kind=unknown
+2026-08-20, 11:44:39.407 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/MD:  rxr.recv
+2026-08-20, 11:44:39.407 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x02, service_kind=unknown
+2026-08-20, 11:44:39.751 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/HU:  rx.recv
+2026-08-20, 11:44:39.751 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x02, service_kind=unknown
+2026-08-20, 11:44:39.751 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/MD:  rxr.recv
+2026-08-20, 11:44:39.751 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x02, service_kind=unknown
+2026-08-20, 11:44:39.751 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/MD:  rxr.recv
+2026-08-20, 11:44:39.752 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x00, service_kind=control
+2026-08-20, 11:44:39.752 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/HU:  rx.recv
+2026-08-20, 11:44:39.752 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x02, service_kind=unknown
+2026-08-20, 11:44:39.752 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/HU:  rxr.recv
+2026-08-20, 11:44:39.752 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x02, service_kind=unknown
+2026-08-20, 11:44:39.753 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/HU:  rx.recv
+2026-08-20, 11:44:39.753 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x02, service_kind=unknown
+2026-08-20, 11:44:39.753 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/MD:  rx.recv
+2026-08-20, 11:44:39.753 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x02, service_kind=unknown
+2026-08-20, 11:44:39.753 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/HU:  rx.recv
+2026-08-20, 11:44:39.753 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x00, service_kind=control
+2026-08-20, 11:44:39.754 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/HU:  rxr.recv
+2026-08-20, 11:44:39.754 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x00, service_kind=control
+2026-08-20, 11:44:39.754 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/MD:  rx.recv
+2026-08-20, 11:44:39.754 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x00, service_kind=control
+2026-08-20, 11:44:39.757 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/MD:  rxr.recv
+2026-08-20, 11:44:39.757 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x02, service_kind=unknown
+2026-08-20, 11:44:39.757 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/HU:  rx.recv
+2026-08-20, 11:44:39.757 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x02, service_kind=unknown
+2026-08-20, 11:44:39.758 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/HU:  rxr.recv
+2026-08-20, 11:44:39.758 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x02, service_kind=unknown
+2026-08-20, 11:44:39.758 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/MD:  rx.recv
+2026-08-20, 11:44:39.758 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x02, service_kind=unknown
+2026-08-20, 11:44:39.760 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/HU:  rxr.recv
+2026-08-20, 11:44:39.760 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x02, service_kind=unknown
+2026-08-20, 11:44:39.760 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/MD:  rx.recv
+2026-08-20, 11:44:39.760 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x02, service_kind=unknown
+2026-08-20, 11:44:39.761 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/HU:  rxr.recv
+2026-08-20, 11:44:39.761 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x02, service_kind=unknown
+2026-08-20, 11:44:40.102 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/MD:  rx.recv
+2026-08-20, 11:44:40.102 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x02, service_kind=unknown
+2026-08-20, 11:44:40.102 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/MD:  rxr.recv
+2026-08-20, 11:44:40.102 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x02, service_kind=unknown
+2026-08-20, 11:44:40.103 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/HU:  rx.recv
+2026-08-20, 11:44:40.103 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x02, service_kind=unknown
+2026-08-20, 11:44:40.103 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/MD:  rxr.recv
+2026-08-20, 11:44:40.103 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x02, service_kind=unknown
+2026-08-20, 11:44:40.103 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/MD:  rxr.recv
+2026-08-20, 11:44:40.103 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x02, service_kind=unknown
+2026-08-20, 11:44:40.104 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/HU:  rx.recv
+2026-08-20, 11:44:40.104 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x02, service_kind=unknown
+2026-08-20, 11:44:40.104 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/HU:  rx.recv
+2026-08-20, 11:44:40.104 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x02, service_kind=unknown
+2026-08-20, 11:44:40.105 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/HU:  rxr.recv
+2026-08-20, 11:44:40.105 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x02, service_kind=unknown
+2026-08-20, 11:44:40.105 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/HU:  rxr.recv
+2026-08-20, 11:44:40.105 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x00, service_kind=control
+2026-08-20, 11:44:40.105 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/MD:  rx.recv
+2026-08-20, 11:44:40.105 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x02, service_kind=unknown
+2026-08-20, 11:44:40.105 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/MD:  rx.recv
+2026-08-20, 11:44:40.106 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x00, service_kind=control
+2026-08-20, 11:44:40.106 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/MD:  rxr.recv
+2026-08-20, 11:44:40.106 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x02, service_kind=unknown
+2026-08-20, 11:44:40.106 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/HU:  rx.recv
+2026-08-20, 11:44:40.107 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x02, service_kind=unknown
+2026-08-20, 11:44:40.107 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/HU:  rxr.recv
+2026-08-20, 11:44:40.107 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x02, service_kind=unknown
+2026-08-20, 11:44:40.107 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/MD:  rx.recv
+2026-08-20, 11:44:40.108 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x02, service_kind=unknown
+2026-08-20, 11:44:40.110 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/HU:  rxr.recv
+2026-08-20, 11:44:40.110 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x02, service_kind=unknown
+2026-08-20, 11:44:40.110 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/MD:  rx.recv
+2026-08-20, 11:44:40.449 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x02, service_kind=unknown
+2026-08-20, 11:44:40.449 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/MD:  rxr.recv
+2026-08-20, 11:44:40.449 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x02, service_kind=unknown
+2026-08-20, 11:44:40.449 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/MD:  rxr.recv
+2026-08-20, 11:44:40.449 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x00, service_kind=control
+2026-08-20, 11:44:40.450 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/MD:  rxr.recv
+2026-08-20, 11:44:40.450 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x02, service_kind=unknown
+2026-08-20, 11:44:40.450 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/MD:  rxr.recv
+2026-08-20, 11:44:40.450 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x02, service_kind=unknown
+2026-08-20, 11:44:40.450 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/HU:  rxr.recv
+2026-08-20, 11:44:40.450 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x02, service_kind=unknown
+2026-08-20, 11:44:40.451 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/HU:  rx.recv
+2026-08-20, 11:44:40.451 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x02, service_kind=unknown
+2026-08-20, 11:44:40.451 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/MD:  rx.recv
+2026-08-20, 11:44:40.451 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x02, service_kind=unknown
+2026-08-20, 11:44:40.451 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/HU:  rx.recv
+2026-08-20, 11:44:40.452 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x00, service_kind=control
+2026-08-20, 11:44:40.452 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/HU:  rxr.recv
+2026-08-20, 11:44:40.452 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x02, service_kind=unknown
+2026-08-20, 11:44:40.452 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/HU:  rx.recv
+2026-08-20, 11:44:40.452 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x02, service_kind=unknown
+2026-08-20, 11:44:40.453 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/MD:  rx.recv
+2026-08-20, 11:44:40.453 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x02, service_kind=unknown
+2026-08-20, 11:44:40.453 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/HU:  rx.recv
+2026-08-20, 11:44:40.453 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x02, service_kind=unknown
+2026-08-20, 11:44:40.454 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/MD:  rxr.recv
+2026-08-20, 11:44:40.454 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x02, service_kind=unknown
+2026-08-20, 11:44:40.454 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/HU:  rx.recv
+2026-08-20, 11:44:40.454 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x02, service_kind=unknown
+2026-08-20, 11:44:40.456 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/HU:  rxr.recv
+2026-08-20, 11:44:40.456 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x02, service_kind=unknown
+2026-08-20, 11:44:40.456 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/MD:  rx.recv
+2026-08-20, 11:44:40.456 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x02, service_kind=unknown
+2026-08-20, 11:44:40.795 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/HU:  rxr.recv
+2026-08-20, 11:44:40.795 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x02, service_kind=unknown
+2026-08-20, 11:44:40.795 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/MD:  rx.recv
+2026-08-20, 11:44:40.796 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x02, service_kind=unknown
+2026-08-20, 11:44:40.796 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/MD:  rxr.recv
+2026-08-20, 11:44:40.796 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x02, service_kind=unknown
+2026-08-20, 11:44:40.796 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/MD:  rxr.recv
+2026-08-20, 11:44:40.796 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x02, service_kind=unknown
+2026-08-20, 11:44:40.796 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/MD:  rxr.recv
+2026-08-20, 11:44:40.797 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x00, service_kind=control
+2026-08-20, 11:44:40.797 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/MD:  rxr.recv
+2026-08-20, 11:44:40.797 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x02, service_kind=unknown
+2026-08-20, 11:44:40.797 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/HU:  rx.recv
+2026-08-20, 11:44:40.797 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x02, service_kind=unknown
+2026-08-20, 11:44:40.797 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/HU:  rxr.recv
+2026-08-20, 11:44:40.798 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x03, service_kind=unknown
+2026-08-20, 11:44:40.798 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/HU:  rx.recv
+2026-08-20, 11:44:40.798 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x02, service_kind=unknown
+2026-08-20, 11:44:40.798 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/MD:  rx.recv
+2026-08-20, 11:44:40.798 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x03, service_kind=unknown
+2026-08-20, 11:44:40.798 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/HU:  rx.recv
+2026-08-20, 11:44:40.799 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x00, service_kind=control
+2026-08-20, 11:44:40.799 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/HU:  rxr.recv
+2026-08-20, 11:44:40.799 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x02, service_kind=unknown
+2026-08-20, 11:44:40.799 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/HU:  rx.recv
+2026-08-20, 11:44:40.799 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x02, service_kind=unknown
+2026-08-20, 11:44:40.800 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/MD:  rx.recv
+2026-08-20, 11:44:40.800 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x02, service_kind=unknown
+2026-08-20, 11:44:40.800 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/MD:  rxr.recv
+2026-08-20, 11:44:40.800 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x02, service_kind=unknown
+2026-08-20, 11:44:40.801 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/HU:  rxr.recv
+2026-08-20, 11:44:40.801 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x02, service_kind=unknown
+2026-08-20, 11:44:40.801 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/HU:  rxr.recv
+2026-08-20, 11:44:41.140 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x00, service_kind=control
+2026-08-20, 11:44:41.140 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/HU:  rx.recv
+2026-08-20, 11:44:41.140 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x02, service_kind=unknown
+2026-08-20, 11:44:41.140 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/MD:  rx.recv
+2026-08-20, 11:44:41.140 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x02, service_kind=unknown
+2026-08-20, 11:44:41.141 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/MD:  rxr.recv
+2026-08-20, 11:44:41.141 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x02, service_kind=unknown
+2026-08-20, 11:44:41.141 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/MD:  rxr.recv
+2026-08-20, 11:44:41.141 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x02, service_kind=unknown
+2026-08-20, 11:44:41.141 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/MD:  rx.recv
+2026-08-20, 11:44:41.141 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x00, service_kind=control
+2026-08-20, 11:44:41.142 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/HU:  rx.recv
+2026-08-20, 11:44:41.142 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x02, service_kind=unknown
+2026-08-20, 11:44:41.142 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/HU:  rxr.recv
+2026-08-20, 11:44:41.142 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x02, service_kind=unknown
+2026-08-20, 11:44:41.142 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/HU:  rx.recv
+2026-08-20, 11:44:41.143 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x02, service_kind=unknown
+2026-08-20, 11:44:41.143 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/MD:  rx.recv
+2026-08-20, 11:44:41.143 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x02, service_kind=unknown
+2026-08-20, 11:44:41.143 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/HU:  rxr.recv
+2026-08-20, 11:44:41.143 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x03, service_kind=unknown
+2026-08-20, 11:44:41.144 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/HU:  rxr.recv
+2026-08-20, 11:44:41.144 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x00, service_kind=control
+2026-08-20, 11:44:41.144 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/MD:  rx.recv
+2026-08-20, 11:44:41.144 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x03, service_kind=unknown
+2026-08-20, 11:44:41.144 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/MD:  rx.recv
+2026-08-20, 11:44:41.144 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x00, service_kind=control
+2026-08-20, 11:44:41.144 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/HU:  rxr.recv
+2026-08-20, 11:44:41.144 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x02, service_kind=unknown
+2026-08-20, 11:44:41.145 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/MD:  rx.recv
+2026-08-20, 11:44:41.145 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x02, service_kind=unknown
+2026-08-20, 11:44:41.145 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/HU:  rxr.recv
+2026-08-20, 11:44:41.145 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x02, service_kind=unknown
+2026-08-20, 11:44:41.151 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/MD:  rx.recv
+2026-08-20, 11:44:41.489 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x02, service_kind=unknown
+2026-08-20, 11:44:41.490 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/MD:  rxr.recv
+2026-08-20, 11:44:41.490 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x02, service_kind=unknown
+2026-08-20, 11:44:41.490 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/HU:  rx.recv
+2026-08-20, 11:44:41.490 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x02, service_kind=unknown
+2026-08-20, 11:44:41.490 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/HU:  rxr.recv
+2026-08-20, 11:44:41.490 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x02, service_kind=unknown
+2026-08-20, 11:44:41.491 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/MD:  rxr.recv
+2026-08-20, 11:44:41.491 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x02, service_kind=unknown
+2026-08-20, 11:44:41.491 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/MD:  rx.recv
+2026-08-20, 11:44:41.491 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x02, service_kind=unknown
+2026-08-20, 11:44:41.491 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/HU:  rx.recv
+2026-08-20, 11:44:41.491 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x02, service_kind=unknown
+2026-08-20, 11:44:41.492 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/MD:  rxr.recv
+2026-08-20, 11:44:41.492 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x02, service_kind=unknown
+2026-08-20, 11:44:41.492 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/MD:  rxr.recv
+2026-08-20, 11:44:41.492 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x00, service_kind=control
+2026-08-20, 11:44:41.492 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/HU:  rxr.recv
+2026-08-20, 11:44:41.493 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x02, service_kind=unknown
+2026-08-20, 11:44:41.493 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/HU:  rx.recv
+2026-08-20, 11:44:41.493 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x02, service_kind=unknown
+2026-08-20, 11:44:41.493 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/MD:  rx.recv
+2026-08-20, 11:44:41.493 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x02, service_kind=unknown
+2026-08-20, 11:44:41.494 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/HU:  rxr.recv
+2026-08-20, 11:44:41.494 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x02, service_kind=unknown
+2026-08-20, 11:44:41.494 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/HU:  rx.recv
+2026-08-20, 11:44:41.494 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x00, service_kind=control
+2026-08-20, 11:44:41.494 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/MD:  rx.recv
+2026-08-20, 11:44:41.494 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x02, service_kind=unknown
+2026-08-20, 11:44:41.495 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/HU:  rxr.recv
+2026-08-20, 11:44:41.495 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x02, service_kind=unknown
+2026-08-20, 11:44:41.495 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/MD:  rx.recv
+2026-08-20, 11:44:41.495 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x02, service_kind=unknown
+2026-08-20, 11:44:41.839 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/MD:  rxr.recv
+2026-08-20, 11:44:41.839 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x02, service_kind=unknown
+2026-08-20, 11:44:41.839 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/MD:  rxr.recv
+2026-08-20, 11:44:41.840 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x02, service_kind=unknown
+2026-08-20, 11:44:41.840 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/HU:  rx.recv
+2026-08-20, 11:44:41.840 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x02, service_kind=unknown
+2026-08-20, 11:44:41.840 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/MD:  rxr.recv
+2026-08-20, 11:44:41.840 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x02, service_kind=unknown
+2026-08-20, 11:44:41.841 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/HU:  rxr.recv
+2026-08-20, 11:44:41.841 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x02, service_kind=unknown
+2026-08-20, 11:44:41.841 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/HU:  rx.recv
+2026-08-20, 11:44:41.841 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x02, service_kind=unknown
+2026-08-20, 11:44:41.841 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/MD:  rx.recv
+2026-08-20, 11:44:41.841 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x02, service_kind=unknown
+2026-08-20, 11:44:41.842 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/MD:  rxr.recv
+2026-08-20, 11:44:41.842 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x02, service_kind=unknown
+2026-08-20, 11:44:41.842 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/MD:  rxr.recv
+2026-08-20, 11:44:41.842 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x02, service_kind=unknown
+2026-08-20, 11:44:41.842 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/MD:  rxr.recv
+2026-08-20, 11:44:41.842 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x00, service_kind=control
+2026-08-20, 11:44:41.843 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/HU:  rxr.recv
+2026-08-20, 11:44:41.843 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x02, service_kind=unknown
+2026-08-20, 11:44:41.843 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/HU:  rx.recv
+2026-08-20, 11:44:41.843 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x02, service_kind=unknown
+2026-08-20, 11:44:41.843 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/MD:  rx.recv
+2026-08-20, 11:44:41.843 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x02, service_kind=unknown
+2026-08-20, 11:44:41.843 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/HU:  rx.recv
+2026-08-20, 11:44:41.844 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x02, service_kind=unknown
+2026-08-20, 11:44:41.844 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/HU:  rx.recv
+2026-08-20, 11:44:41.844 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x02, service_kind=unknown
+2026-08-20, 11:44:41.844 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/HU:  rx.recv
+2026-08-20, 11:44:41.844 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x00, service_kind=control
+2026-08-20, 11:44:41.845 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/HU:  rxr.recv
+2026-08-20, 11:44:41.845 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x00, service_kind=control
+2026-08-20, 11:44:42.189 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/MD:  rx.recv
+2026-08-20, 11:44:42.190 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x00, service_kind=control
+2026-08-20, 11:44:42.190 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/HU:  rxr.recv
+2026-08-20, 11:44:42.190 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x02, service_kind=unknown
+2026-08-20, 11:44:42.190 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/MD:  rxr.recv
+2026-08-20, 11:44:42.190 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x02, service_kind=unknown
+2026-08-20, 11:44:42.191 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/MD:  rx.recv
+2026-08-20, 11:44:42.191 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x02, service_kind=unknown
+2026-08-20, 11:44:42.191 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/HU:  rx.recv
+2026-08-20, 11:44:42.191 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x02, service_kind=unknown
+2026-08-20, 11:44:42.191 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/MD:  rxr.recv
+2026-08-20, 11:44:42.192 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x02, service_kind=unknown
+2026-08-20, 11:44:42.192 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/MD:  rxr.recv
+2026-08-20, 11:44:42.192 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x02, service_kind=unknown
+2026-08-20, 11:44:42.192 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/HU:  rxr.recv
+2026-08-20, 11:44:42.192 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x03, service_kind=unknown
+2026-08-20, 11:44:42.193 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/HU:  rx.recv
+2026-08-20, 11:44:42.193 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x02, service_kind=unknown
+2026-08-20, 11:44:42.193 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/MD:  rx.recv
+2026-08-20, 11:44:42.193 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x03, service_kind=unknown
+2026-08-20, 11:44:42.193 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/HU:  rxr.recv
+2026-08-20, 11:44:42.193 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x00, service_kind=control
+2026-08-20, 11:44:42.193 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/HU:  rx.recv
+2026-08-20, 11:44:42.194 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x02, service_kind=unknown
+2026-08-20, 11:44:42.194 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/MD:  rx.recv
+2026-08-20, 11:44:42.194 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x00, service_kind=control
+2026-08-20, 11:44:42.194 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/HU:  rxr.recv
+2026-08-20, 11:44:42.194 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x02, service_kind=unknown
+2026-08-20, 11:44:42.194 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/MD:  rx.recv
+2026-08-20, 11:44:42.194 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x02, service_kind=unknown
+2026-08-20, 11:44:42.195 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/HU:  rxr.recv
+2026-08-20, 11:44:42.195 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x03, service_kind=unknown
+2026-08-20, 11:44:42.195 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/MD:  rx.recv
+2026-08-20, 11:44:42.536 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x03, service_kind=unknown
+2026-08-20, 11:44:42.537 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/HU:  rxr.recv
+2026-08-20, 11:44:42.537 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x02, service_kind=unknown
+2026-08-20, 11:44:42.537 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/MD:  rx.recv
+2026-08-20, 11:44:42.537 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x02, service_kind=unknown
+2026-08-20, 11:44:42.537 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/MD:  rxr.recv
+2026-08-20, 11:44:42.538 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x02, service_kind=unknown
+2026-08-20, 11:44:42.538 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/MD:  rxr.recv
+2026-08-20, 11:44:42.538 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x02, service_kind=unknown
+2026-08-20, 11:44:42.538 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/MD:  rxr.recv
+2026-08-20, 11:44:42.538 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x00, service_kind=control
+2026-08-20, 11:44:42.538 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/MD:  rxr.recv
+2026-08-20, 11:44:42.538 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x02, service_kind=unknown
+2026-08-20, 11:44:42.539 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/HU:  rx.recv
+2026-08-20, 11:44:42.539 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x02, service_kind=unknown
+2026-08-20, 11:44:42.539 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/HU:  rxr.recv
+2026-08-20, 11:44:42.539 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x02, service_kind=unknown
+2026-08-20, 11:44:42.539 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/HU:  rx.recv
+2026-08-20, 11:44:42.539 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x02, service_kind=unknown
+2026-08-20, 11:44:42.540 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/MD:  rx.recv
+2026-08-20, 11:44:42.540 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x02, service_kind=unknown
+2026-08-20, 11:44:42.540 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/HU:  rx.recv
+2026-08-20, 11:44:42.540 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x00, service_kind=control
+2026-08-20, 11:44:42.541 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/HU:  rxr.recv
+2026-08-20, 11:44:42.541 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x02, service_kind=unknown
+2026-08-20, 11:44:42.541 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/HU:  rxr.recv
+2026-08-20, 11:44:42.541 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x02, service_kind=unknown
+2026-08-20, 11:44:42.541 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/HU:  rx.recv
+2026-08-20, 11:44:42.541 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x02, service_kind=unknown
+2026-08-20, 11:44:42.541 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/MD:  rx.recv
+2026-08-20, 11:44:42.542 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x02, service_kind=unknown
+2026-08-20, 11:44:42.542 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/MD:  rx.recv
+2026-08-20, 11:44:42.542 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x02, service_kind=unknown
+2026-08-20, 11:44:42.552 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/HU:  rxr.recv
+2026-08-20, 11:44:42.891 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x02, service_kind=unknown
+2026-08-20, 11:44:42.891 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/MD:  rxr.recv
+2026-08-20, 11:44:42.891 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x02, service_kind=unknown
+2026-08-20, 11:44:42.891 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/MD:  rx.recv
+2026-08-20, 11:44:42.892 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x02, service_kind=unknown
+2026-08-20, 11:44:42.892 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/HU:  rx.recv
+2026-08-20, 11:44:42.892 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x02, service_kind=unknown
+2026-08-20, 11:44:42.892 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/MD:  rxr.recv
+2026-08-20, 11:44:42.892 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x02, service_kind=unknown
+2026-08-20, 11:44:42.893 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/MD:  rxr.recv
+2026-08-20, 11:44:42.893 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x02, service_kind=unknown
+2026-08-20, 11:44:42.893 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/MD:  rxr.recv
+2026-08-20, 11:44:42.893 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x00, service_kind=control
+2026-08-20, 11:44:42.893 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/HU:  rx.recv
+2026-08-20, 11:44:42.893 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x02, service_kind=unknown
+2026-08-20, 11:44:42.894 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/HU:  rxr.recv
+2026-08-20, 11:44:42.894 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x02, service_kind=unknown
+2026-08-20, 11:44:42.894 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/HU:  rx.recv
+2026-08-20, 11:44:42.894 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x02, service_kind=unknown
+2026-08-20, 11:44:42.894 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/MD:  rx.recv
+2026-08-20, 11:44:42.894 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x02, service_kind=unknown
+2026-08-20, 11:44:42.894 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/MD:  rxr.recv
+2026-08-20, 11:44:42.895 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x02, service_kind=unknown
+2026-08-20, 11:44:42.895 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/HU:  rx.recv
+2026-08-20, 11:44:42.895 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x00, service_kind=control
+2026-08-20, 11:44:42.895 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/HU:  rx.recv
+2026-08-20, 11:44:42.895 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x02, service_kind=unknown
+2026-08-20, 11:44:42.896 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/HU:  rxr.recv
+2026-08-20, 11:44:42.896 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x02, service_kind=unknown
+2026-08-20, 11:44:42.896 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/HU:  rxr.recv
+2026-08-20, 11:44:42.896 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x02, service_kind=unknown
+2026-08-20, 11:44:42.896 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/HU:  rxr.recv
+2026-08-20, 11:44:42.896 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x00, service_kind=control
+2026-08-20, 11:44:42.899 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/MD:  rx.recv
+2026-08-20, 11:44:43.240 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x02, service_kind=unknown
+2026-08-20, 11:44:43.240 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/MD:  rx.recv
+2026-08-20, 11:44:43.240 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x02, service_kind=unknown
+2026-08-20, 11:44:43.240 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/HU:  rxr.recv
+2026-08-20, 11:44:43.241 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x02, service_kind=unknown
+2026-08-20, 11:44:43.241 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/MD:  rxr.recv
+2026-08-20, 11:44:43.241 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x02, service_kind=unknown
+2026-08-20, 11:44:43.241 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/MD:  rxr.recv
+2026-08-20, 11:44:43.241 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x02, service_kind=unknown
+2026-08-20, 11:44:43.241 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/MD:  rxr.recv
+2026-08-20, 11:44:43.242 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x02, service_kind=unknown
+2026-08-20, 11:44:43.242 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/MD:  rx.recv
+2026-08-20, 11:44:43.242 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x00, service_kind=control
+2026-08-20, 11:44:43.242 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/HU:  rx.recv
+2026-08-20, 11:44:43.242 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x02, service_kind=unknown
+2026-08-20, 11:44:43.242 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/MD:  rx.recv
+2026-08-20, 11:44:43.243 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x02, service_kind=unknown
+2026-08-20, 11:44:43.243 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/HU:  rx.recv
+2026-08-20, 11:44:43.243 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x02, service_kind=unknown
+2026-08-20, 11:44:43.243 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/HU:  rxr.recv
+2026-08-20, 11:44:43.243 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x02, service_kind=unknown
+2026-08-20, 11:44:43.244 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/HU:  rxr.recv
+2026-08-20, 11:44:43.244 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x00, service_kind=control
+2026-08-20, 11:44:43.244 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/HU:  rx.recv
+2026-08-20, 11:44:43.244 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x02, service_kind=unknown
+2026-08-20, 11:44:43.244 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/MD:  rx.recv
+2026-08-20, 11:44:43.244 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x02, service_kind=unknown
+2026-08-20, 11:44:43.244 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/HU:  rxr.recv
+2026-08-20, 11:44:43.245 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x02, service_kind=unknown
+2026-08-20, 11:44:43.245 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/MD:  rx.recv
+2026-08-20, 11:44:43.245 [DEBUG] (1) ^Cssage_id = 1703, None, channel=0x02, service_kind=unknown
+2026-08-20, 11:44:43.584 [INFO]  main:  received Ctrl+C/SIGINT, attempting clean disconnect...
+2026-08-20, 11:44:43.585 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/HU:  rxr.recv
+2026-08-20, 11:44:43.585 [INFO]  main:  signal exit: initiating clean disconnect
+2026-08-20, 11:44:43.585 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x02, service_kind=unknown
+2026-08-20, 11:44:43.585 [INFO]  main:  signal exit: no active session tx, skipping ByeBye
+2026-08-20, 11:44:43.585 [DEBUG] (1) aa_proxy_rs::mitm:  mitm/MD:  rx.recv
+2026-08-20, 11:44:43.585 [INFO]  main:  signal exit: exiting process after teardown
+2026-08-20, 11:44:43.585 [DEBUG] (1) aa_proxy_rs::mitm_prettyprint: message_id = 1703, None, channel=0x02, service_kind=unknown

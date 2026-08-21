@@ -1,0 +1,203 @@
+# cat /var/log/aa-proxy-rs.log 
+1970-01-01, 00:00:05.155 [INFO] 🛸 aa-proxy-rs is starting, build: 20260820_090313, git: f338e53-br#90dfa96
+1970-01-01, 00:00:05.162 [INFO]  main:  🗃️ Generating config from input template: /etc/umtprd/umtprd.conf.in
+1970-01-01, 00:00:05.163 [INFO]  main:  💾 Saving generated file as: /var/run/umtprd.conf
+1970-01-01, 00:00:05.163 [INFO]  main:  🗃️ Generating config from input template: /etc/dnsmasq.conf.in
+1970-01-01, 00:00:05.163 [INFO]  main:  💾 Saving generated file as: /var/run/dnsmasq.conf
+1970-01-01, 00:00:05.164 [INFO]  main:  🗃️ Generating config from input template: /etc/network/interfaces.in
+1970-01-01, 00:00:05.164 [INFO]  main:  💾 Saving generated file as: /var/run/interfaces
+1970-01-01, 00:00:05.164 [INFO]  main:  🗃️ Generating config from input template: /etc/S92usb_gadget.in
+1970-01-01, 00:00:05.164 [INFO]  main:  💾 Saving generated file as: /var/run/S92usb_gadget
+1970-01-01, 00:00:05.164 [INFO]  main:  🚀 Making script executable: /var/run/S92usb_gadget
+1970-01-01, 00:00:05.267 [INFO] 🛸 aa-proxy-rs is starting, build: 20260820_090313, git: f338e53-br#90dfa96
+1970-01-01, 00:00:05.268 [INFO]  main:  🗃️ Generating config from input template: /etc/hostapd.conf.in
+1970-01-01, 00:00:05.268 [INFO]  main:  💾 Saving generated file as: /var/run/hostapd.conf
+1970-01-01, 00:00:07.996 [INFO] 🛸 aa-proxy-rs is starting, build: 20260820_090313, git: f338e53-br#90dfa96
+1970-01-01, 00:00:07.996 [INFO]  main:  📟 host device: Raspberry Pi 4 Model B Rev 1.1
+1970-01-01, 00:00:07.996 [INFO] ⚙️ I/O backend: io_uring (kernel async I/O)
+1970-01-01, 00:00:07.996 [INFO]  main:  ⚙️ config loaded from file: /etc/aa-proxy-rs/config.toml
+1970-01-01, 00:00:07.997 [INFO]  main:  📜 Log file path: /var/log/aa-proxy-rs.log
+1970-01-01, 00:00:07.997 [INFO]  main:  💥 Panic reports: enabled dir=/data/aa-proxy-rs/crashes
+1970-01-01, 00:00:07.997 [INFO]  main:  🖼️ SDR UI overrides: enabled file=/etc/aa-proxy-rs/sdr-ui-overrides.toml autocreate=true
+1970-01-01, 00:00:08.021 [INFO] [wasm] initial loaded wasm script count=0
+1970-01-01, 00:00:08.035 [INFO]  proxy:  🛰️ Starting TCP server for MD...
+1970-01-01, 00:00:08.035 [INFO]  proxy:  🛰️ MD TCP server bound to: 0.0.0.0:5288
+1970-01-01, 00:00:08.035 [INFO]  proxy:  🛰️ Starting TCP server for DHU...
+1970-01-01, 00:00:08.036 [INFO]  proxy:  🛰️ DHU TCP server bound to: 0.0.0.0:5277
+1970-01-01, 00:00:08.036 [ERROR] media_dump_base_port is set but mitm = false — media tap disabled!
+1970-01-01, 00:00:08.046 [INFO]  proxy:  💤 waiting for bluetooth handshake...
+1970-01-01, 00:00:08.050 [INFO]  main:  webserver running at http://0.0.0.0:80/
+1970-01-01, 00:00:08.059 [INFO]  usb:  Using UDC: "fe980000.usb"
+1970-01-01, 00:00:08.090 [INFO]  bluetooth:  🥏 Bluetooth alias: aa-proxy-b9c1b6
+1970-01-01, 00:00:08.090 [INFO]  bluetooth:  🥏 Opened bluetooth adapter hci0 with address DC:A6:32:04:A4:8C
+1970-01-01, 00:00:08.181 [INFO]  bluetooth:  📱 AA Wireless Profile: registered
+1970-01-01, 00:00:08.182 [INFO]  companion_bt:  pairing: registered default Companion Classic BT pairing agent
+1970-01-01, 00:00:08.182 [INFO]  bluetooth:  📱 Companion Classic BT pairing agent: registered
+1970-01-01, 00:00:08.313 [INFO]  bluetooth:  📱 Companion Classic BT: adapter is pairable/discoverable with no timeout
+1970-01-01, 00:00:08.314 [INFO]  companion_bt:  registered Classic BT companion profile name=AA Proxy Companion Control uuid=3f0d2c8e-7e7e-4f38-8c98-6a7a4d94c001 channel=23
+1970-01-01, 00:00:08.314 [INFO]  bluetooth:  📱 Companion Classic BT custom profile: registered
+1970-01-01, 00:00:08.315 [INFO]  companion_bt:  registered Classic BT companion profile name=AA Proxy Companion Serial uuid=00001101-0000-1000-8000-00805f9b34fb channel=24
+1970-01-01, 00:00:08.315 [INFO]  bluetooth:  📱 Companion Classic BT SPP fallback profile: registered
+1970-01-01, 00:00:08.315 [INFO]  usb:  🔌 Initializing USB Manager
+1970-01-01, 00:00:08.315 [INFO]  usb:  🔌 USB Manager: Disabled all USB gadgets
+1970-01-01, 00:00:08.320 [INFO]  bluetooth:  🎧 Headset Profile (HSP): registered
+1970-01-01, 00:00:08.324 [INFO]  bluetooth:  ⏳ Waiting for phone to connect via bluetooth...
+1970-01-01, 00:00:08.325 [INFO]  bluetooth:  📋 Loaded 1 known device(s) from /etc/aa-proxy-rs/known_devices
+1970-01-01, 00:00:08.325 [INFO]  bluetooth:  🥏 Using 1 known-good device(s)...
+1970-01-01, 00:00:08.325 [INFO]  bluetooth:  🧲 Attempting to start an AndroidAuto session via bluetooth with the following devices, in this order: [C0:1C:6A:6C:1E:5A]
+1970-01-01, 00:00:08.326 [INFO]  bluetooth:  🧲 Trying to connect to: C0:1C:6A:6C:1E:5A (Pixel 9), attempt: 1/3
+1970-01-01, 00:00:09.526 [INFO]  bluetooth:  🎧 Headset Profile (HSP): connect from C0:1C:6A:6C:1E:5A
+1970-01-01, 00:00:09.527 [INFO]  bluetooth:  🔗 Successfully connected to device: C0:1C:6A:6C:1E:5A (Pixel 9)
+1970-01-01, 00:00:09.527 [INFO]  bluetooth:  🧪 bt-wireless-proxy: waiting up to 120s for PHONE AA Wireless RFCOMM (after phone BT trigger)
+1970-01-01, 00:00:10.104 [INFO]  bluetooth:  📱 AA Wireless Profile: inbound RFCOMM from C0:1C:6A:6C:1E:5A while after phone BT trigger
+1970-01-01, 00:00:10.104 [INFO]  bluetooth:  🧪 bt-wireless-proxy: accepted PHONE AA Wireless RFCOMM from C0:1C:6A:6C:1E:5A (after phone BT trigger)
+1970-01-01, 00:00:10.108 [INFO]  sdr-ui:  current phone identity set: id=phone_ed849bccf4e9 name=Pixel 9 mac=**:**:**:**:1E:5A
+1970-01-01, 00:00:10.108 [INFO]  bluetooth:  📲 Sending parameters via bluetooth to phone...
+1970-01-01, 00:00:10.108 [INFO]  bluetooth:  🛜 Sending Host IP Address: 10.0.0.1
+1970-01-01, 00:00:10.118 [INFO]  bluetooth:  📨 stage #1 of 5: Sending WifiStartRequest frame to phone...
+1970-01-01, 00:00:10.170 [INFO]  bluetooth:  📨 stage #2 of 5: Received WifiInfoRequest frame from phone (⏱️ 52 ms)
+1970-01-01, 00:00:10.171 [INFO]  bluetooth:  🛜 Sending Host SSID and Password: aa-proxy, aa-proxy
+1970-01-01, 00:00:10.171 [INFO]  bluetooth:  📨 stage #3 of 5: Sending WifiInfoResponse frame to phone...
+1970-01-01, 00:00:10.172 [INFO]  bluetooth:  📨 stage #4 of 5: Received WifiStartResponse frame from phone (⏱️ 0 ms)
+1970-01-01, 00:00:19.932 [INFO]  bluetooth:  📨 stage #5 of 5: Received WifiConnectStatus frame from phone (⏱️ 9760 ms)
+1970-01-01, 00:00:19.932 [INFO]  bluetooth:  📋 Loaded 1 known device(s) from /etc/aa-proxy-rs/known_devices
+1970-01-01, 00:00:19.932 [INFO]  proxy:  🛰️ MD TCP server: listening for phone connection...
+1970-01-01, 00:00:19.933 [INFO]  proxy:  📳 TCP server: new client connected: 10.0.0.5:42884
+1970-01-01, 00:00:19.938 [INFO]  proxy:  starting companion reverse bridge HTTP, Android IP: 10.0.0.5, remote=10.0.0.5:9999 local=127.0.0.1:80
+1970-01-01, 00:00:19.938 [INFO]  proxy:  tcp_bridge[HTTP]: connecting remote=10.0.0.5:9999 local=127.0.0.1:80
+1970-01-01, 00:00:19.941 [INFO]  proxy:  starting companion reverse bridge WS, Android IP: 10.0.0.5, remote=10.0.0.5:9998 local=127.0.0.1:80
+1970-01-01, 00:00:19.941 [INFO]  proxy:  tcp_bridge[WS]: connecting remote=10.0.0.5:9998 local=127.0.0.1:80
+1970-01-01, 00:00:19.941 [INFO]  proxy:  starting companion reverse bridge SWUPDATE, Android IP: 10.0.0.5, remote=10.0.0.5:9997 local=127.0.0.1:8080
+1970-01-01, 00:00:19.942 [INFO]  proxy:  tcp_bridge[SWUPDATE]: connecting remote=10.0.0.5:9997 local=127.0.0.1:8080
+1970-01-01, 00:00:19.946 [INFO]  proxy:  🧪 bt-wireless-proxy car-wifi-mitm: PHONE TCP accepted on MD listener; commit barrier seq=1
+1970-01-01, 00:00:22.098 [INFO]  bluetooth:  🎧 Headset Profile (HSP): unregistering ...
+1970-01-01, 00:00:22.398 [INFO]  bluetooth:  🎧 Headset Profile (HSP): unregistered
+1970-01-01, 00:00:22.399 [INFO]  bluetooth:  🚀 Bluetooth launch sequence completed
+1970-01-01, 00:00:22.409 [INFO]  usb:  🔌 USB Manager: Switched to accessory gadget
+1970-01-01, 00:00:22.409 [INFO]  proxy:  📂 Opening USB accessory device: /dev/usb_accessory
+1970-01-01, 00:00:22.409 [INFO]  proxy:  ♾️ Starting to proxy data between HU and MD...
+1970-01-01, 00:00:22.411 [INFO]  mitm/HU:  🔄 running in passthrough mode (MITM disabled in config)
+1970-01-01, 00:00:22.411 [INFO]  mitm/MD:  🔄 running in passthrough mode (MITM disabled in config)
+1970-01-01, 00:00:22.411 [INFO]  proxy:  ⚙️ Showing transfer statistics: disabled
+1970-01-01, 00:00:22.939 [INFO]  proxy:  tcp_bridge[HTTP]: timeout connecting to remote server 10.0.0.5:9999
+1970-01-01, 00:00:22.942 [INFO]  proxy:  tcp_bridge[WS]: timeout connecting to remote server 10.0.0.5:9998
+1970-01-01, 00:00:22.942 [INFO]  proxy:  tcp_bridge[SWUPDATE]: timeout connecting to remote server 10.0.0.5:9997
+2026-08-20, 10:12:55.009 [INFO]  web:  🕰️ system time set to: 2026-08-20 10:12:55.005135 +00:00:00
+2026-08-20, 10:13:12.866 [WARN]  proxy:  tcp_bridge[SWUPDATE]: error during bidirectional copy: Connection reset by peer (os error 104)
+2026-08-20, 10:13:12.867 [WARN]  proxy:  tcp_bridge[WS]: error during bidirectional copy: Connection reset by peer (os error 104)
+2026-08-20, 10:13:12.867 [WARN]  proxy:  tcp_bridge[HTTP]: error during bidirectional copy: Connection reset by peer (os error 104)
+2026-08-20, 10:13:41.886 [INFO]  proxy:  tcp_bridge[WS]: connecting remote=10.0.0.5:9998 local=127.0.0.1:80
+2026-08-20, 10:13:41.886 [INFO]  proxy:  tcp_bridge[HTTP]: connecting remote=10.0.0.5:9999 local=127.0.0.1:80
+2026-08-20, 10:13:44.887 [INFO]  proxy:  tcp_bridge[WS]: timeout connecting to remote server 10.0.0.5:9998
+2026-08-20, 10:13:44.887 [INFO]  proxy:  tcp_bridge[HTTP]: timeout connecting to remote server 10.0.0.5:9999
+2026-08-20, 10:14:21.908 [INFO]  proxy:  tcp_bridge[WS]: connecting remote=10.0.0.5:9998 local=127.0.0.1:80
+2026-08-20, 10:14:21.908 [INFO]  proxy:  tcp_bridge[HTTP]: connecting remote=10.0.0.5:9999 local=127.0.0.1:80
+2026-08-20, 10:14:24.910 [INFO]  proxy:  tcp_bridge[WS]: timeout connecting to remote server 10.0.0.5:9998
+2026-08-20, 10:14:24.910 [INFO]  proxy:  tcp_bridge[HTTP]: timeout connecting to remote server 10.0.0.5:9999
+2026-08-20, 10:14:53.887 [INFO]  proxy:  tcp_bridge[SWUPDATE]: connecting remote=10.0.0.5:9997 local=127.0.0.1:8080
+2026-08-20, 10:14:56.889 [INFO]  proxy:  tcp_bridge[SWUPDATE]: timeout connecting to remote server 10.0.0.5:9997
+2026-08-20, 10:15:01.930 [INFO]  proxy:  tcp_bridge[WS]: connecting remote=10.0.0.5:9998 local=127.0.0.1:80
+2026-08-20, 10:15:01.930 [INFO]  proxy:  tcp_bridge[HTTP]: connecting remote=10.0.0.5:9999 local=127.0.0.1:80
+2026-08-20, 10:15:04.931 [INFO]  proxy:  tcp_bridge[WS]: timeout connecting to remote server 10.0.0.5:9998
+2026-08-20, 10:15:04.932 [INFO]  proxy:  tcp_bridge[HTTP]: timeout connecting to remote server 10.0.0.5:9999
+2026-08-20, 10:15:41.954 [INFO]  proxy:  tcp_bridge[WS]: connecting remote=10.0.0.5:9998 local=127.0.0.1:80
+2026-08-20, 10:15:41.954 [INFO]  proxy:  tcp_bridge[HTTP]: connecting remote=10.0.0.5:9999 local=127.0.0.1:80
+2026-08-20, 10:15:44.955 [INFO]  proxy:  tcp_bridge[WS]: timeout connecting to remote server 10.0.0.5:9998
+2026-08-20, 10:15:44.955 [INFO]  proxy:  tcp_bridge[HTTP]: timeout connecting to remote server 10.0.0.5:9999
+2026-08-20, 10:16:21.977 [INFO]  proxy:  tcp_bridge[WS]: connecting remote=10.0.0.5:9998 local=127.0.0.1:80
+2026-08-20, 10:16:21.977 [INFO]  proxy:  tcp_bridge[HTTP]: connecting remote=10.0.0.5:9999 local=127.0.0.1:80
+2026-08-20, 10:16:24.978 [INFO]  proxy:  tcp_bridge[WS]: timeout connecting to remote server 10.0.0.5:9998
+2026-08-20, 10:16:24.978 [INFO]  proxy:  tcp_bridge[HTTP]: timeout connecting to remote server 10.0.0.5:9999
+2026-08-20, 10:17:02.002 [INFO]  proxy:  tcp_bridge[WS]: connecting remote=10.0.0.5:9998 local=127.0.0.1:80
+2026-08-20, 10:17:02.002 [INFO]  proxy:  tcp_bridge[HTTP]: connecting remote=10.0.0.5:9999 local=127.0.0.1:80
+2026-08-20, 10:17:03.920 [INFO]  proxy:  tcp_bridge[SWUPDATE]: connecting remote=10.0.0.5:9997 local=127.0.0.1:8080
+2026-08-20, 10:17:05.003 [INFO]  proxy:  tcp_bridge[WS]: timeout connecting to remote server 10.0.0.5:9998
+2026-08-20, 10:17:05.003 [INFO]  proxy:  tcp_bridge[HTTP]: timeout connecting to remote server 10.0.0.5:9999
+2026-08-20, 10:17:06.921 [INFO]  proxy:  tcp_bridge[SWUPDATE]: timeout connecting to remote server 10.0.0.5:9997
+2026-08-20, 10:17:42.023 [INFO]  proxy:  tcp_bridge[WS]: connecting remote=10.0.0.5:9998 local=127.0.0.1:80
+2026-08-20, 10:17:42.024 [INFO]  proxy:  tcp_bridge[HTTP]: connecting remote=10.0.0.5:9999 local=127.0.0.1:80
+2026-08-20, 10:17:45.024 [INFO]  proxy:  tcp_bridge[WS]: timeout connecting to remote server 10.0.0.5:9998
+2026-08-20, 10:17:45.026 [INFO]  proxy:  tcp_bridge[HTTP]: timeout connecting to remote server 10.0.0.5:9999
+2026-08-20, 10:18:22.046 [INFO]  proxy:  tcp_bridge[WS]: connecting remote=10.0.0.5:9998 local=127.0.0.1:80
+2026-08-20, 10:18:22.048 [INFO]  proxy:  tcp_bridge[HTTP]: connecting remote=10.0.0.5:9999 local=127.0.0.1:80
+2026-08-20, 10:18:25.047 [INFO]  proxy:  tcp_bridge[WS]: timeout connecting to remote server 10.0.0.5:9998
+2026-08-20, 10:18:25.049 [INFO]  proxy:  tcp_bridge[HTTP]: timeout connecting to remote server 10.0.0.5:9999
+2026-08-20, 10:19:02.068 [INFO]  proxy:  tcp_bridge[WS]: connecting remote=10.0.0.5:9998 local=127.0.0.1:80
+2026-08-20, 10:19:02.072 [INFO]  proxy:  tcp_bridge[HTTP]: connecting remote=10.0.0.5:9999 local=127.0.0.1:80
+2026-08-20, 10:19:05.070 [INFO]  proxy:  tcp_bridge[WS]: timeout connecting to remote server 10.0.0.5:9998
+2026-08-20, 10:19:05.073 [INFO]  proxy:  tcp_bridge[HTTP]: timeout connecting to remote server 10.0.0.5:9999
+2026-08-20, 10:19:13.947 [INFO]  proxy:  tcp_bridge[SWUPDATE]: connecting remote=10.0.0.5:9997 local=127.0.0.1:8080
+2026-08-20, 10:19:16.948 [INFO]  proxy:  tcp_bridge[SWUPDATE]: timeout connecting to remote server 10.0.0.5:9997
+2026-08-20, 10:19:42.093 [INFO]  proxy:  tcp_bridge[WS]: connecting remote=10.0.0.5:9998 local=127.0.0.1:80
+2026-08-20, 10:19:42.094 [INFO]  proxy:  tcp_bridge[HTTP]: connecting remote=10.0.0.5:9999 local=127.0.0.1:80
+2026-08-20, 10:19:45.094 [INFO]  proxy:  tcp_bridge[WS]: timeout connecting to remote server 10.0.0.5:9998
+2026-08-20, 10:19:45.096 [INFO]  proxy:  tcp_bridge[HTTP]: timeout connecting to remote server 10.0.0.5:9999
+2026-08-20, 10:20:22.114 [INFO]  proxy:  tcp_bridge[WS]: connecting remote=10.0.0.5:9998 local=127.0.0.1:80
+2026-08-20, 10:20:22.118 [INFO]  proxy:  tcp_bridge[HTTP]: connecting remote=10.0.0.5:9999 local=127.0.0.1:80
+2026-08-20, 10:20:25.115 [INFO]  proxy:  tcp_bridge[WS]: timeout connecting to remote server 10.0.0.5:9998
+2026-08-20, 10:20:25.119 [INFO]  proxy:  tcp_bridge[HTTP]: timeout connecting to remote server 10.0.0.5:9999
+2026-08-20, 10:21:02.137 [INFO]  proxy:  tcp_bridge[WS]: connecting remote=10.0.0.5:9998 local=127.0.0.1:80
+2026-08-20, 10:21:02.141 [INFO]  proxy:  tcp_bridge[HTTP]: connecting remote=10.0.0.5:9999 local=127.0.0.1:80
+2026-08-20, 10:21:05.138 [INFO]  proxy:  tcp_bridge[WS]: timeout connecting to remote server 10.0.0.5:9998
+2026-08-20, 10:21:05.142 [INFO]  proxy:  tcp_bridge[HTTP]: timeout connecting to remote server 10.0.0.5:9999
+2026-08-20, 10:21:23.973 [INFO]  proxy:  tcp_bridge[SWUPDATE]: connecting remote=10.0.0.5:9997 local=127.0.0.1:8080
+2026-08-20, 10:21:26.974 [INFO]  proxy:  tcp_bridge[SWUPDATE]: timeout connecting to remote server 10.0.0.5:9997
+2026-08-20, 10:21:42.159 [INFO]  proxy:  tcp_bridge[WS]: connecting remote=10.0.0.5:9998 local=127.0.0.1:80
+2026-08-20, 10:21:42.163 [INFO]  proxy:  tcp_bridge[HTTP]: connecting remote=10.0.0.5:9999 local=127.0.0.1:80
+2026-08-20, 10:21:45.161 [INFO]  proxy:  tcp_bridge[WS]: timeout connecting to remote server 10.0.0.5:9998
+2026-08-20, 10:21:45.164 [INFO]  proxy:  tcp_bridge[HTTP]: timeout connecting to remote server 10.0.0.5:9999
+2026-08-20, 10:22:22.186 [INFO]  proxy:  tcp_bridge[WS]: connecting remote=10.0.0.5:9998 local=127.0.0.1:80
+2026-08-20, 10:22:22.186 [INFO]  proxy:  tcp_bridge[HTTP]: connecting remote=10.0.0.5:9999 local=127.0.0.1:80
+2026-08-20, 10:22:25.188 [INFO]  proxy:  tcp_bridge[WS]: timeout connecting to remote server 10.0.0.5:9998
+2026-08-20, 10:22:25.188 [INFO]  proxy:  tcp_bridge[HTTP]: timeout connecting to remote server 10.0.0.5:9999
+2026-08-20, 10:23:02.209 [INFO]  proxy:  tcp_bridge[WS]: connecting remote=10.0.0.5:9998 local=127.0.0.1:80
+2026-08-20, 10:23:02.210 [INFO]  proxy:  tcp_bridge[HTTP]: connecting remote=10.0.0.5:9999 local=127.0.0.1:80
+2026-08-20, 10:23:05.210 [INFO]  proxy:  tcp_bridge[WS]: timeout connecting to remote server 10.0.0.5:9998
+2026-08-20, 10:23:05.211 [INFO]  proxy:  tcp_bridge[HTTP]: timeout connecting to remote server 10.0.0.5:9999
+2026-08-20, 10:23:34.000 [INFO]  proxy:  tcp_bridge[SWUPDATE]: connecting remote=10.0.0.5:9997 local=127.0.0.1:8080
+2026-08-20, 10:23:37.001 [INFO]  proxy:  tcp_bridge[SWUPDATE]: timeout connecting to remote server 10.0.0.5:9997
+2026-08-20, 10:23:42.231 [INFO]  proxy:  tcp_bridge[WS]: connecting remote=10.0.0.5:9998 local=127.0.0.1:80
+2026-08-20, 10:23:42.235 [INFO]  proxy:  tcp_bridge[HTTP]: connecting remote=10.0.0.5:9999 local=127.0.0.1:80
+2026-08-20, 10:23:45.232 [INFO]  proxy:  tcp_bridge[WS]: timeout connecting to remote server 10.0.0.5:9998
+2026-08-20, 10:23:45.236 [INFO]  proxy:  tcp_bridge[HTTP]: timeout connecting to remote server 10.0.0.5:9999
+2026-08-20, 10:24:22.253 [INFO]  proxy:  tcp_bridge[WS]: connecting remote=10.0.0.5:9998 local=127.0.0.1:80
+2026-08-20, 10:24:22.259 [INFO]  proxy:  tcp_bridge[HTTP]: connecting remote=10.0.0.5:9999 local=127.0.0.1:80
+2026-08-20, 10:24:25.254 [INFO]  proxy:  tcp_bridge[WS]: timeout connecting to remote server 10.0.0.5:9998
+2026-08-20, 10:24:25.260 [INFO]  proxy:  tcp_bridge[HTTP]: timeout connecting to remote server 10.0.0.5:9999
+2026-08-20, 10:25:02.275 [INFO]  proxy:  tcp_bridge[WS]: connecting remote=10.0.0.5:9998 local=127.0.0.1:80
+2026-08-20, 10:25:02.279 [INFO]  proxy:  tcp_bridge[HTTP]: connecting remote=10.0.0.5:9999 local=127.0.0.1:80
+2026-08-20, 10:25:05.277 [INFO]  proxy:  tcp_bridge[WS]: timeout connecting to remote server 10.0.0.5:9998
+2026-08-20, 10:25:05.281 [INFO]  proxy:  tcp_bridge[HTTP]: timeout connecting to remote server 10.0.0.5:9999
+2026-08-20, 10:25:42.299 [INFO]  proxy:  tcp_bridge[WS]: connecting remote=10.0.0.5:9998 local=127.0.0.1:80
+2026-08-20, 10:25:42.302 [INFO]  proxy:  tcp_bridge[HTTP]: connecting remote=10.0.0.5:9999 local=127.0.0.1:80
+2026-08-20, 10:25:44.027 [INFO]  proxy:  tcp_bridge[SWUPDATE]: connecting remote=10.0.0.5:9997 local=127.0.0.1:8080
+2026-08-20, 10:25:45.300 [INFO]  proxy:  tcp_bridge[WS]: timeout connecting to remote server 10.0.0.5:9998
+2026-08-20, 10:25:45.303 [INFO]  proxy:  tcp_bridge[HTTP]: timeout connecting to remote server 10.0.0.5:9999
+2026-08-20, 10:25:47.028 [INFO]  proxy:  tcp_bridge[SWUPDATE]: timeout connecting to remote server 10.0.0.5:9997
+2026-08-20, 10:26:22.321 [INFO]  proxy:  tcp_bridge[WS]: connecting remote=10.0.0.5:9998 local=127.0.0.1:80
+2026-08-20, 10:26:22.323 [INFO]  proxy:  tcp_bridge[HTTP]: connecting remote=10.0.0.5:9999 local=127.0.0.1:80
+2026-08-20, 10:26:25.322 [INFO]  proxy:  tcp_bridge[WS]: timeout connecting to remote server 10.0.0.5:9998
+2026-08-20, 10:26:25.324 [INFO]  proxy:  tcp_bridge[HTTP]: timeout connecting to remote server 10.0.0.5:9999
+2026-08-20, 10:27:02.342 [INFO]  proxy:  tcp_bridge[WS]: connecting remote=10.0.0.5:9998 local=127.0.0.1:80
+2026-08-20, 10:27:02.345 [INFO]  proxy:  tcp_bridge[HTTP]: connecting remote=10.0.0.5:9999 local=127.0.0.1:80
+2026-08-20, 10:27:05.343 [INFO]  proxy:  tcp_bridge[WS]: timeout connecting to remote server 10.0.0.5:9998
+2026-08-20, 10:27:05.346 [INFO]  proxy:  tcp_bridge[HTTP]: timeout connecting to remote server 10.0.0.5:9999
+2026-08-20, 10:27:42.367 [INFO]  proxy:  tcp_bridge[WS]: connecting remote=10.0.0.5:9998 local=127.0.0.1:80
+2026-08-20, 10:27:42.367 [INFO]  proxy:  tcp_bridge[HTTP]: connecting remote=10.0.0.5:9999 local=127.0.0.1:80
+2026-08-20, 10:27:45.368 [INFO]  proxy:  tcp_bridge[WS]: timeout connecting to remote server 10.0.0.5:9998
+2026-08-20, 10:27:45.368 [INFO]  proxy:  tcp_bridge[HTTP]: timeout connecting to remote server 10.0.0.5:9999
+2026-08-20, 10:27:54.053 [INFO]  proxy:  tcp_bridge[SWUPDATE]: connecting remote=10.0.0.5:9997 local=127.0.0.1:8080
+2026-08-20, 10:27:57.054 [INFO]  proxy:  tcp_bridge[SWUPDATE]: timeout connecting to remote server 10.0.0.5:9997
+2026-08-20, 10:28:22.391 [INFO]  proxy:  tcp_bridge[WS]: connecting remote=10.0.0.5:9998 local=127.0.0.1:80
+2026-08-20, 10:28:22.391 [INFO]  proxy:  tcp_bridge[HTTP]: connecting remote=10.0.0.5:9999 local=127.0.0.1:80
+2026-08-20, 10:28:25.392 [INFO]  proxy:  tcp_bridge[WS]: timeout connecting to remote server 10.0.0.5:9998
+2026-08-20, 10:28:25.392 [INFO]  proxy:  tcp_bridge[HTTP]: timeout connecting to remote server 10.0.0.5:9999
+2026-08-20, 10:29:02.414 [INFO]  proxy:  tcp_bridge[WS]: connecting remote=10.0.0.5:9998 local=127.0.0.1:80
+2026-08-20, 10:29:02.415 [INFO]  proxy:  tcp_bridge[HTTP]: connecting remote=10.0.0.5:9999 local=127.0.0.1:80
+2026-08-20, 10:29:05.416 [INFO]  proxy:  tcp_bridge[WS]: timeout connecting to remote server 10.0.0.5:9998
+2026-08-20, 10:29:05.416 [INFO]  proxy:  tcp_bridge[HTTP]: timeout connecting to remote server 10.0.0.5:9999
+2026-08-20, 10:29:42.436 [INFO]  proxy:  tcp_bridge[WS]: connecting remote=10.0.0.5:9998 local=127.0.0.1:80
+2026-08-20, 10:29:42.437 [INFO]  proxy:  tcp_bridge[HTTP]: connecting remote=10.0.0.5:9999 local=127.0.0.1:80
+2026-08-20, 10:29:45.437 [INFO]  proxy:  tcp_bridge[WS]: timeout connecting to remote server 10.0.0.5:9998
+2026-08-20, 10:29:45.438 [INFO]  proxy:  tcp_bridge[HTTP]: timeout connecting to remote server 10.0.0.5:9999
+# 

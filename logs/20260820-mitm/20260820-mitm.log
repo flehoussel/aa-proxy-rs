@@ -1,0 +1,157 @@
+# /tmp/aa-proxy-rs
+1970-01-01, 02:40:53.117 [INFO] 🛸 aa-proxy-rs is starting, build: 20260820_152240, git: e87b12b-br#4184bba
+1970-01-01, 02:40:53.117 [INFO]  main:  📟 host device: Raspberry Pi 4 Model B Rev 1.1
+1970-01-01, 02:40:53.117 [INFO] ⚙️ I/O backend: io_uring (kernel async I/O)
+1970-01-01, 02:40:53.118 [INFO]  main:  ⚙️ config loaded from file: /etc/aa-proxy-rs/config.toml
+1970-01-01, 02:40:53.118 [INFO]  main:  📜 Log file path: /var/log/aa-proxy-rs.log
+1970-01-01, 02:40:53.118 [INFO]  main:  💥[ 9653.178105] android_work: sent uevent USB_STATE=DISCONNECTED
+ Panic r[ 9653.184534] android_work: did not send uevent (0 0 0000000000000000)
+eports: enabled dir=/data/aa-proxy-rs/crashes
+1970-01-01, 02:40:53.118 [INFO]  main:  🖼️ SDR UI overrides: enabled file=/etc/aa-proxy-rs/sdr-ui-overrides.toml autocreate=true
+1970-01-01, 02:40:53.119 [INFO] [wasm] initial loaded wasm script count=0
+1970-01-01, 02:40:53.120 [INFO]  proxy:  🛰️ Starting TCP server for MD...
+1970-01-01, 02:40:53.120 [INFO]  proxy:  🛰️ MD TCP server bound to: 0.0.0.0:5288
+1970-01-01, 02:40:53.120 [INFO]  proxy:  🛰️ Starting TCP server for DHU...
+1970-01-01, 02:40:53.121 [INFO]  proxy:  🛰️ DHU TCP server bound to: 0.0.0.0:5277
+1970-01-01, 02:40:53.121 [INFO]  proxy:  💤 waiting for bluetooth handshake...
+1970-01-01, 02:40:53.121 [INFO] media_tcp_server: video-main listening on port 0  →  vlc tcp://127.0.0.1:0  (or: ffplay tcp://127.0.0.1:0)
+1970-01-01, 02:40:53.121 [INFO] media_tcp_server: video-cluster listening on port 1  →  vlc tcp://127.0.0.1:1  (or: ffplay tcp://127.0.0.1:1)
+1970-01-01, 02:40:53.121 [INFO] media_tcp_server: audio-guidance listening on port 2  →  vlc tcp://127.0.0.1:2  (or: ffplay tcp://127.0.0.1:2)
+1970-01-01, 02:40:53.122 [INFO] media_tcp_server: audio-system listening on port 3  →  vlc tcp://127.0.0.1:3  (or: ffplay tcp://127.0.0.1:3)
+1970-01-01, 02:40:53.122 [INFO] media_tcp_server: audio-media listening on port 4  →  vlc tcp://127.0.0.1:4  (or: ffplay tcp://127.0.0.1:4)
+1970-01-01, 02:40:53.122 [INFO] media_tcp_server: audio-telephony listening on port 5  →  vlc tcp://127.0.0.1:5  (or: ffplay tcp://127.0.0.1:5)
+1970-01-01, 02:40:53.122 [INFO]  main:  webserver running at http://0.0.0.0:80/
+1970-01-01, 02:40:53.123 [INFO]  usb:  Using UDC: "fe980000.usb"
+1970-01-01, 02:40:53.127 [INFO]  bluetooth:  🥏 Bluetooth alias: aa-proxy-b9c1b6
+1970-01-01, 02:40:53.128 [INFO]  bluetooth:  🥏 Opened bluetooth adapter hci0 with address DC:A6:32:04:A4:8C
+1970-01-01, 02:40:53.144 [INFO]  bluetooth:  📱 AA Wireless Profile: registered
+1970-01-01, 02:40:53.146 [INFO]  companion_bt:  pairing: registered default Companion Classic BT pairing agent
+1970-01-01, 02:40:53.146 [INFO]  bluetooth:  📱 Companion Classic BT pairing agent: registered
+1970-01-01, 02:40:53.172 [INFO]  bluetooth:  📱 Companion Classic BT: adapter is pairable/discoverable with no timeout
+1970-01-01, 02:40:53.173 [INFO]  companion_bt:  registered Classic BT companion profile name=AA Proxy Companion Control uuid=3f0d2c8e-7e7e-4f38-8c98-6a7a4d94c001 channel=23
+1970-01-01, 02:40:53.173 [INFO]  bluetooth:  📱 Companion Classic BT custom profile: registered
+1970-01-01, 02:40:53.175 [INFO]  companion_bt:  registered Classic BT companion profile name=AA Proxy Companion Serial uuid=00001101-0000-1000-8000-00805f9b34fb channel=24
+1970-01-01, 02:40:53.175 [INFO]  bluetooth:  📱 Companion Classic BT SPP fallback profile: registered
+1970-01-01, 02:40:53.175 [INFO]  usb:  🔌 Initializing USB Manager
+1970-01-01, 02:40:53.183 [INFO]  usb:  🔌 USB Manager: Disabled all USB gadgets
+1970-01-01, 02:40:53.192 [INFO]  bluetooth:  🎧 Headset Profile (HSP): registered
+1970-01-01, 02:40:53.193 [INFO]  bluetooth:  ⏳ Waiting for phone to connect via bluetooth...
+1970-01-01, 02:40:53.193 [INFO]  bluetooth:  📋 Loaded 1 known device(s) from /etc/aa-proxy-rs/known_devices
+1970-01-01, 02:40:53.193 [INFO]  bluetooth:  🥏 Using 1 known-good device(s)...
+1970-01-01, 02:40:53.532 [INFO]  bluetooth:  🧲 Attempting to start an AndroidAuto session via bluetooth with the following devices, in this order: [C0:1C:6A:6C:1E:5A]
+1970-01-01, 02:40:53.533 [INFO]  bluetooth:  🧲 Trying to connect to: C0:1C:6A:6C:1E:5A (Pixel 9), attempt: 1/3
+1970-01-01, 02:41:40.317 [WARN]  bluetooth:  🔇 C0:1C:6A:6C:1E:5A (Pixel 9): Error connecting: Bluetooth operation failed: le-connection-abort-by-local
+1970-01-01, 02:41:40.317 [INFO]  bluetooth:  🧲 Trying to connect to: C0:1C:6A:6C:1E:5A (Pixel 9), attempt: 2/3
+[ 9700.486441] Bluetooth: hci0: ACL packet for unknown connection handle 12
+[ 9700.589339] Bluetooth: Unexpected continuation frame (len 0)
+[ 9700.778120] Bluetooth: Unexpected continuation frame (len 0)
+[ 9700.794332] Bluetooth: Unexpected continuation frame (len 0)
+1970-01-01, 02:41:40.832 [INFO]  bluetooth:  🎧 Headset Profile (HSP): connect from C0:1C:6A:6C:1E:5A
+1970-01-01, 02:41:40.833 [INFO]  bluetooth:  🔗 Successfully connected to device: C0:1C:6A:6C:1E:5A (Pixel 9)
+1970-01-01, 02:41:40.833 [INFO]  bluetooth:  🧪 bt-wireless-proxy: waiting up to 120s for PHONE AA Wireless RFCOMM (after phone BT trigger)
+1970-01-01, 02:41:41.087 [INFO]  bluetooth:  📱 AA Wireless Profile: inbound RFCOMM from C0:1C:6A:6C:1E:5A while after phone BT trigger
+1970-01-01, 02:41:41.087 [INFO]  bluetooth:  🧪 bt-wireless-proxy: accepted PHONE AA Wireless RFCOMM from C0:1C:6A:6C:1E:5A (after phone BT trigger)
+1970-01-01, 02:41:41.088 [INFO]  sdr-ui:  current phone identity set: id=phone_ed849bccf4e9 name=Pixel 9 mac=**:**:**:**:1E:5A
+1970-01-01, 02:41:41.089 [INFO]  bluetooth:  📲 Sending parameters via bluetooth to phone...
+1970-01-01, 02:41:41.089 [INFO]  bluetooth:  🛜 Sending Host IP Address: 10.0.0.1
+1970-01-01, 02:41:41.089 [INFO]  bluetooth:  📨 stage #1 of 5: Sending WifiStartRequest frame to phone...
+1970-01-01, 02:41:41.130 [INFO]  bluetooth:  📨 stage #2 of 5: Received WifiInfoRequest frame from phone (⏱️ 40 ms)
+1970-01-01, 02:41:41.130 [INFO]  bluetooth:  🛜 Sending Host SSID and Password: aa-proxy, aa-proxy
+1970-01-01, 02:41:41.130 [INFO]  bluetooth:  📨 stage #3 of 5: Sending WifiInfoResponse frame to phone...
+1970-01-01, 02:41:41.142 [INFO]  bluetooth:  📨 stage #4 of 5: Received WifiStartResponse frame from phone (⏱️ 11 ms)
+1970-01-01, 02:41:41.650 [INFO]  bluetooth:  📨 stage #5 of 5: Received WifiConnectStatus frame from phone (⏱️ 507 ms)
+1970-01-01, 02:41:41.650 [INFO]  bluetooth:  📋 Loaded 1 known device(s) from /etc/aa-proxy-rs/known_devices
+1970-01-01, 02:41:41.650 [INFO]  proxy:  🛰️ MD TCP server: listening for phone connection...
+1970-01-01, 02:41:41.860 [INFO]  proxy:  📳 TCP server: new client connected: 10.0.0.5:56396
+1970-01-01, 02:41:41.860 [INFO]  proxy:  starting companion reverse bridge HTTP, Android IP: 10.0.0.5, remote=10.0.0.5:9999 local=127.0.0.1:80
+1970-01-01, 02:41:41.860 [INFO]  proxy:  tcp_bridge[HTTP]: connecting remote=10.0.0.5:9999 local=127.0.0.1:80
+1970-01-01, 02:41:41.861 [INFO]  proxy:  starting companion reverse bridge WS, Android IP: 10.0.0.5, remote=10.0.0.5:9998 local=127.0.0.1:80
+1970-01-01, 02:41:41.861 [INFO]  proxy:  tcp_bridge[WS]: connecting remote=10.0.0.5:9998 local=127.0.0.1:80
+1970-01-01, 02:41:41.861 [INFO]  proxy:  starting companion reverse bridge SWUPDATE, Android IP: 10.0.0.5, remote=10.0.0.5:9997 local=127.0.0.1:8080
+1970-01-01, 02:41:41.861 [INFO]  proxy:  tcp_bridge[SWUPDATE]: connecting remote=10.0.0.5:9997 local=127.0.0.1:8080
+1970-01-01, 02:41:41.862 [INFO]  proxy:  🧪 bt-wireless-proxy car-wifi-mitm: PHONE TCP accepted on MD listener; commit barrier seq=1
+1970-01-01, 02:41:41.864 [INFO]  proxy:  tcp_bridge[HTTP]: failed to connect to remote server 10.0.0.5:9999: Connection refused (os error 111)
+1970-01-01, 02:41:41.864 [INFO]  proxy:  tcp_bridge[WS]: failed to connect to remote server 10.0.0.5:9998: Connection refused (os error 111)
+1970-01-01, 02:41:41.864 [INFO]  proxy:  tcp_bridge[SWUPDATE]: failed to connect to remote server 10.0.0.5:9997: Connection refused (os error 111)
+1970-01-01, 02:41:44.103 [INFO]  bluetooth:  🎧 Headset Profile (HSP): unregistering ...
+1970-01-01, 02:4[ 9704.406950] dwc2 fe980000.usb: bound driver configfs-gadget.accessory
+1:44.404 [INFO]  bluetooth:  🎧 Headset Profile (HSP): unregistered
+1970-01-01, 02:41:44.404 [INFO]  bluetooth:  🚀 Bluetooth launch sequence completed
+1970-01-01, 02:41:44.415 [INFO]  usb:  🔌 USB Manager: Switched to accessory gadget
+1970-01-01, 02:41:44.415 [INFO]  proxy:  📂 Opening USB accessory device: /dev/usb_accessory
+1970-01-01, 02:41:44.415 [INFO]  proxy:  ♾️ Starting to proxy data between HU and MD...
+1970-01-01, 02:41:44.416 [INFO]  mitm/HU:  🔐 running in MITM mode
+1970-01-01, 02:41:44.419 [INFO]  mitm/MD:  🔐 running in MITM mode
+1970-01-01, 02:41:44.569 [INFO]  proxy:  ⚙️ Showing transfer statistics: disabled
+[ 9704.632038] dwc2 fe980000.usb: new device is high-speed
+[ 9704.696577] android_work: sent uevent USB_STATE=CONNECTED
+[ 9704.825402] dwc2 fe980000.usb: new device is high-speed
+[ 9705.073525] dwc2 fe980000.usb: new address 8
+[ 9705.091206] android_work: sent uevent USB_STATE=CONFIGURED
+1970-01-01, 02:41:46.105 [INFO]  mitm/MD:  🔒 stage #1: SSL handshake: TLS handshake in progress
+1970-01-01, 02:41:46.118 [INFO]  mitm/HU:  🔒 stage #1: SSL handshake: TLS handshake in progress
+1970-01-01, 02:41:46.121 [INFO]  mitm/HU:  🔒 stage #2: SSL handshake: SSL negotiation finished successfully (TLSv1_2)
+1970-01-01, 02:41:46.121 [INFO]  mitm/HU:  🔒 SSL init complete, negotiated cipher: TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+1970-01-01, 02:41:46.165 [INFO]  mitm/MD:  🔒 stage #2: SSL handshake: TLS handshake in progress
+1970-01-01, 02:41:46.181 [INFO]  mitm/MD:  🔒 stage #3: SSL handshake: SSL negotiation finished successfully (TLSv1_2)
+1970-01-01, 02:41:46.181 [INFO]  mitm/MD:  🔒 SSL init complete, negotiated cipher: TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+1970-01-01, 02:41:46.201 [INFO]  mitm/HU:  input_source_service channel is: 0x03
+1970-01-01, 02:41:46.205 [INFO]  sdr-ui:  auto-created/updated SDR UI profile file: /etc/aa-proxy-rs/sdr-ui-overrides.toml
+1970-01-01, 02:41:46.206 [INFO]  mitm/HU:  SDR UI: vehicle=veh_11e0f28960f8 (Google / Desktop Head Unit) profile_enabled=false phone_profile_enabled=false patch_applied=false patch_count=0
+1970-01-01, 02:41:46.206 [INFO]  mitm/HU:  SDR_TRACE add_vendor_channel requested; already_present=false current_ids=[1, 2, 3, 4, 5, 6, 7]
+1970-01-01, 02:41:46.206 [INFO]  mitm/HU:  MESSAGE_SERVICE_DISCOVERY_RESPONSE: added extra vendor_extension_service id=0x08 name=aaproxy_companion package=com.github.deadknight.aaproxycompanion
+1970-01-01, 02:41:46.206 [INFO] media tap: reusing sink for offset 0 (video-main); reset seen_first_idr for new session
+1970-01-01, 02:41:46.206 [INFO]  mitm/HU:  media tap: video channel 0x02 → static port offset 0 (MEDIA_CODEC_AUDIO_PCM, DISPLAY_TYPE_MAIN, display_id=0)
+1970-01-01, 02:41:46.206 [INFO] media tap: reusing sink for offset 2 (audio-guidance); reset seen_first_idr for new session
+1970-01-01, 02:41:46.207 [INFO]  mitm/HU:  media tap: audio channel 0x04 → static port offset 2 (MEDIA_CODEC_AUDIO_PCM, AUDIO_STREAM_GUIDANCE, 16000Hz, 1ch, 16bit)
+1970-01-01, 02:41:46.207 [INFO] media tap: reusing sink for offset 4 (audio-media); reset seen_first_idr for new session
+1970-01-01, 02:41:46.207 [INFO]  mitm/HU:  media tap: audio channel 0x05 → static port offset 4 (MEDIA_CODEC_AUDIO_PCM, AUDIO_STREAM_MEDIA, 48000Hz, 2ch, 16bit)
+1970-01-01, 02:41:46.207 [INFO]  mitm/HU:  vendor_service_ids now = {8}
+1970-01-01, 02:41:46.207 [INFO]  mitm/HU:  final SDR service ids: [1, 2, 3, 4, 5, 6, 7, 8]
+1970-01-01, 02:41:46.395 [INFO]  mitm/MD:  ChannelOpenRequest: flow=FromEndpoint, service_id=1, priority=0, injected=false, hu_known=false
+1970-01-01, 02:41:46.396 [INFO]  mitm/MD:  MESSAGE_CHANNEL_OPEN_REQUEST: received CHANNEL_OPEN_REQUEST for service_id=0x01 vendor_match=false
+1970-01-01, 02:41:46.396 [INFO]  mitm/HU:  ChannelOpenRequest: flow=ToEndpoint, service_id=1, priority=0, injected=false, hu_known=true
+1970-01-01, 02:41:46.396 [INFO]  mitm/HU:  MESSAGE_CHANNEL_OPEN_REQUEST: received CHANNEL_OPEN_REQUEST for service_id=0x01 vendor_match=false
+1970-01-01, 02:41:46.397 [INFO]  mitm/MD:  ChannelOpenRequest: flow=FromEndpoint, service_id=2, priority=0, injected=false, hu_known=false
+1970-01-01, 02:41:46.397 [INFO]  mitm/MD:  MESSAGE_CHANNEL_OPEN_REQUEST: received CHANNEL_OPEN_REQUEST for service_id=0x02 vendor_match=false
+1970-01-01, 02:41:46.397 [INFO]  mitm/HU:  ChannelOpenRequest: flow=ToEndpoint, service_id=2, priority=0, injected=false, hu_known=true
+1970-01-01, 02:41:46.397 [INFO]  mitm/HU:  MESSAGE_CHANNEL_OPEN_REQUEST: received CHANNEL_OPEN_REQUEST for service_id=0x02 vendor_match=false
+1970-01-01, 02:41:46.398 [INFO]  mitm/MD:  ChannelOpenRequest: flow=FromEndpoint, service_id=3, priority=0, injected=false, hu_known=false
+1970-01-01, 02:41:46.398 [INFO]  mitm/MD:  MESSAGE_CHANNEL_OPEN_REQUEST: received CHANNEL_OPEN_REQUEST for service_id=0x03 vendor_match=false
+1970-01-01, 02:41:46.398 [INFO]  mitm/HU:  ChannelOpenRequest: flow=ToEndpoint, service_id=3, priority=0, injected=false, hu_known=true
+1970-01-01, 02:41:46.398 [INFO]  mitm/HU:  MESSAGE_CHANNEL_OPEN_REQUEST: received CHANNEL_OPEN_REQUEST for service_id=0x03 vendor_match=false
+1970-01-01, 02:41:46.401 [INFO]  mitm/MD:  ChannelOpenRequest: flow=FromEndpoint, service_id=4, priority=0, injected=false, hu_known=false
+1970-01-01, 02:41:46.401 [INFO]  mitm/MD:  MESSAGE_CHANNEL_OPEN_REQUEST: received CHANNEL_OPEN_REQUEST for service_id=0x04 vendor_match=false
+1970-01-01, 02:41:46.401 [INFO]  mitm/MD:  ChannelOpenRequest: flow=FromEndpoint, service_id=5, priority=0, injected=false, hu_known=false
+1970-01-01, 02:41:46.401 [INFO]  mitm/MD:  MESSAGE_CHANNEL_OPEN_REQUEST: received CHANNEL_OPEN_REQUEST for service_id=0x05 vendor_match=false
+1970-01-01, 02:41:46.402 [INFO]  mitm/MD:  ChannelOpenRequest: flow=FromEndpoint, service_id=6, priority=0, injected=false, hu_known=false
+1970-01-01, 02:41:46.402 [INFO]  mitm/MD:  MESSAGE_CHANNEL_OPEN_REQUEST: received CHANNEL_OPEN_REQUEST for service_id=0x06 vendor_match=false
+1970-01-01, 02:41:46.402 [INFO]  mitm/HU:  ChannelOpenRequest: flow=ToEndpoint, service_id=4, priority=0, injected=false, hu_known=true
+1970-01-01, 02:41:46.402 [INFO]  mitm/HU:  MESSAGE_CHANNEL_OPEN_REQUEST: received CHANNEL_OPEN_REQUEST for service_id=0x04 vendor_match=false
+1970-01-01, 02:41:46.402 [INFO]  mitm/MD:  ChannelOpenRequest: flow=FromEndpoint, service_id=7, priority=0, injected=false, hu_known=false
+1970-01-01, 02:41:46.402 [INFO]  mitm/MD:  MESSAGE_CHANNEL_OPEN_REQUEST: received CHANNEL_OPEN_REQUEST for service_id=0x07 vendor_match=false
+1970-01-01, 02:41:46.402 [INFO]  mitm/MD:  ChannelOpenRequest: flow=FromEndpoint, service_id=8, priority=0, injected=false, hu_known=false
+1970-01-01, 02:41:46.403 [INFO]  mitm/MD:  MESSAGE_CHANNEL_OPEN_REQUEST: received CHANNEL_OPEN_REQUEST for service_id=0x08 vendor_match=false
+1970-01-01, 02:41:46.742 [INFO]  mitm/HU:  ChannelOpenRequest: flow=ToEndpoint, service_id=5, priority=0, injected=false, hu_known=true
+1970-01-01, 02:41:46.742 [INFO]  mitm/HU:  MESSAGE_CHANNEL_OPEN_REQUEST: received CHANNEL_OPEN_REQUEST for service_id=0x05 vendor_match=false
+1970-01-01, 02:41:46.742 [INFO]  mitm/HU:  ChannelOpenRequest: flow=ToEndpoint, service_id=6, priority=0, injected=false, hu_known=true
+1970-01-01, 02:41:46.742 [INFO]  mitm/HU:  MESSAGE_CHANNEL_OPEN_REQUEST: received CHANNEL_OPEN_REQUEST for service_id=0x06 vendor_match=false
+1970-01-01, 02:41:46.743 [INFO]  mitm/HU:  ChannelOpenRequest: flow=ToEndpoint, service_id=7, priority=0, injected=false, hu_known=true
+1970-01-01, 02:41:46.743 [INFO]  mitm/HU:  MESSAGE_CHANNEL_OPEN_REQUEST: received CHANNEL_OPEN_REQUEST for service_id=0x07 vendor_match=false
+1970-01-01, 02:41:46.743 [INFO] Starting Companion topic event bridge channel=0x08
+1970-01-01, 02:41:46.743 [INFO]  mitm/HU:  accepted injected VEC open channel=0x08 service_id=8; custom app messages will be handled locally
+1970-01-01, 02:41:46.946 [INFO] mitm/MD media tap CODEC_CONFIG ch 0x02: 29 bytes, bytes: [00, 00, 00, 01, 67, 42, 00, 1F, DA, 02, D0, 28, 69, A8, 08, 08, 08, 3C, 50, AA, 80, 00, 00, 00, 01, 68, CE, 0D, 88]
+1970-01-01, 02:41:46.949 [INFO] mitm/MD media tap: IDR cached on ch 0x02, burst=FIRST (wide window)
+1970-01-01, 02:41:47.077 [INFO] VEC PING received channel=0x08 payload=[68, 65, 6C, 6C, 6F, 20, 66, 72, 6F, 6D, 20, 61, 6E, 64, 72, 6F, 69, 64]
+1970-01-01, 02:41:51.058 [INFO]  proxy:  tcp_bridge[HTTP]: connecting remote=10.0.0.5:9999 local=127.0.0.1:80
+1970-01-01, 02:41:51.058 [INFO]  proxy:  tcp_bridge[WS]: connecting remote=10.0.0.5:9998 local=127.0.0.1:80
+1970-01-01, 02:41:51.063 [INFO]  proxy:  tcp_bridge[HTTP]: failed to connect to remote server 10.0.0.5:9999: Connection refused (os error 111)
+1970-01-01, 02:41:51.063 [INFO]  proxy:  tcp_bridge[WS]: failed to connect to remote server 10.0.0.5:9998: Connection refused (os error 111)
+1970-01-01, 02:42:01.111 [INFO]  proxy:  tcp_bridge[HTTP]: connecting remote=10.0.0.5:9999 local=127.0.0.1:80
+1970-01-01, 02:42:01.111 [INFO]  proxy:  tcp_bridge[WS]: connecting remote=10.0.0.5:9998 local=127.0.0.1:80
+1970-01-01, 02:42:01.115 [INFO]  proxy:  tcp_bridge[HTTP]: failed to connect to remote server 10.0.0.5:9999: Connection refused (os error 111)
+1970-01-01, 02:42:01.115 [INFO]  proxy:  tcp_bridge[WS]: failed to connect to remote server 10.0.0.5:9998: Connection refused (os error 111)
+1970-01-01, 02:42:11.164 [INFO]  proxy:  tcp_bridge[HTTP]: connecting remote=10.0.0.5:9999 local=127.0.0.1:80
+1970-01-01, 02:42:11.164 [INFO]  proxy:  tcp_bridge[WS]: connecting remote=10.0.0.5:9998 local=127.0.0.1:80
+1970-01-01, 02:42:11.168 [INFO]  proxy:  tcp_bridge[HTTP]: failed to connect to remote server 10.0.0.5:9999: Connection refused (os error 111)
+1970-01-01, 02:42:11.168 [INFO]  proxy:  tcp_bridge[WS]: failed to connect to remote server 10.0.0.5:9998: Connection refused (os error 111)
