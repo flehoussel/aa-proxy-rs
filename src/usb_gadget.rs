@@ -118,6 +118,19 @@ impl UsbGadgetState {
         accessory_started: Arc<tokio::sync::Notify>,
         require_accessory_start: bool,
     ) -> bool {
+        // In non-legacy mode the gadget is bound directly as "accessory", so
+        // there is no pre-switch negotiation stage: unlike legacy, we cannot
+        // wait for ACCESSORY_START before the device exists on the bus. Some
+        // HUs still send it right after enumerating an already-AOAP device,
+        // so register the waiter now (before the UDC bind below) to catch a
+        // confirmation that the HU actually started talking, instead of only
+        // relying on the local ConfigFS write to declare success.
+        let post_switch_confirm = if !self.legacy {
+            Some(accessory_started.notified())
+        } else {
+            None
+        };
+
         if self.legacy {
             const PER_TRY_TIMEOUT: Duration = Duration::from_secs(6);
             const COOLDOWN_MS: u64 = 100;
@@ -185,6 +198,34 @@ impl UsbGadgetState {
             return false;
         }
         info!("{} 🔌 USB Manager: Switched to accessory gadget", NAME);
+
+        if let Some(notified_fut) = post_switch_confirm {
+            const POST_SWITCH_CONFIRM_TIMEOUT: Duration = Duration::from_secs(6);
+            match timeout(POST_SWITCH_CONFIRM_TIMEOUT, notified_fut).await {
+                Ok(()) => {
+                    info!(
+                        "{} 🔌 USB Manager: HU confirmed ACCESSORY_START after switch",
+                        NAME
+                    );
+                }
+                Err(_) => {
+                    warn!(
+                        "{} 🔌 USB Manager: no ACCESSORY_START confirmation from HU after switch{}",
+                        NAME,
+                        if require_accessory_start {
+                            "; treating switch as failed"
+                        } else {
+                            "; proceeding anyway"
+                        }
+                    );
+                    if require_accessory_start {
+                        let _ = self.disable(ACCESSORY_GADGET_NAME);
+                        return false;
+                    }
+                }
+            }
+        }
+
         true
     }
 

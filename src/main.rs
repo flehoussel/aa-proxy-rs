@@ -816,10 +816,10 @@ async fn tokio_main(
         .ok();
     let mut usb = None;
     if !cfg.dhu {
-        if cfg.legacy {
-            // start uevent listener in own task
-            std::thread::spawn(|| uevent_listener(accessory_started_cloned));
-        }
+        // start uevent listener in own task; used by the legacy pre-switch
+        // handshake and, in non-legacy mode, as a post-switch confirmation
+        // that the HU actually engaged AOAP (see usb_gadget.rs).
+        std::thread::spawn(|| uevent_listener(accessory_started_cloned));
         usb = Some(UsbGadgetState::new(cfg.legacy, cfg.udc.clone()));
     }
 
