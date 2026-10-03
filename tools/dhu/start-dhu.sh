@@ -1,9 +1,17 @@
 #!/bin/bash
 set -euo pipefail
 
+
+export DHU_PATH="/home/faleh/Documents/Projects/Perso/AA-proxy/_Tools/desktop-head-unit-linux-x64_r02.1/"
+
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 CONFIG_FILE="${SCRIPT_DIR}/dhu.ini"
-USB_DEVICE="100000001eb9c1b6"
+
+# rpi 4
+#USB_DEVICE="100000001eb9c1b6"
+
+# orange pi
+USB_DEVICE="3380200052a5831b"
 
 if [ -z "${DHU_PATH:-}" ]; then
     echo "error: DHU_PATH is not set" >&2
